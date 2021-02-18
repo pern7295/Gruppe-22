@@ -12,6 +12,103 @@
 </head>
 
 <body>
-    <script src=""></script>
-</body>
-</html>
+    <nav id="overordnet-nav">
+        <a href="index.html">Forside</a>
+        <a href="#">om os?</a>
+        <a href="#">kontakt?</a>
+
+    </nav>
+
+    <header>
+        <h1>Wine site</h1>
+    </header>
+
+
+
+    <!--<nav id="filtrering-nav">
+        <button data-land="alle" class="valgt">Alle</button>
+        <button data-land="Italien">Italien</button>
+        <button data-land="Frankrig">Frankrig</button>
+        <button data-land="Spanien">Spanien</button>
+        <button data-land="Argentina">Argentina</button>
+    </nav>-->
+
+    <main>
+        <!--<h2>Alle</h2>-->
+
+
+        <button>Tilbage til forside</button>
+
+
+        <article class="wines">
+            <img src="" alt="" class="billede">
+            <h3 class="navn"></h3>
+            <p class="vintype"></p>
+            <p class="land"></p>
+            <p class="druesort"></p>
+            <p class="aargang"></p>
+            <p class="beskrivelse"></p>
+            <p class="pris"></p>
+            <p class="land_ikon"></p>
+            <p class="land_billede"></p>
+        </article>
+
+    </main>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get("id");
+
+        const medieurl = "https://tema7-763a.restdb.io/media/";
+        let vin;
+        const myHeaders = {
+
+            "x-apikey": "602e5f605ad3610fb5bb6308"
+        }
+
+
+        console.log("id", id);
+        document.addEventListener("DOMContentLoaded", loadJSON);
+
+
+        async function loadJSON() {
+            console.log(loadJSON);
+            const JSONData = await fetch(`https://tema7-763a.restdb.io/rest/vinsite/${id}`, {
+                headers: myHeaders
+            });
+
+            vin = await JSONData.json();
+
+            console.log("Vine", vin);
+            visVin(vin);
+        }
+
+        function visVin() {
+
+            document.querySelector(".billede").src = medieurl + vin.billede;
+            document.querySelector(".navn").textContent = vin.navn;
+            document.querySelector(".vintype").textContent = vin.vintype;
+            document.querySelector(".land").textContent = vin.land;
+            document.querySelector(".druesort").textContent = vin.druesort;
+            document.querySelector(".aargang").textContent = vin.aargang;
+            document.querySelector(".beskrivelse").textContent = vin.beskrivelse;
+            document.querySelector(".pris").textContent = vin.pris;
+            document.querySelector(".land_ikon").textContent = vin.land_ikon;
+            document.querySelector(".land_billede").src = medieurl + vin.land_billede;
+
+            document.querySelector("button").addEventListener("click", tilbageTilListe);
+
+        }
+
+        function tilbageTilListe() {
+            history.back();
+        }
+
+    </script>
+
+
+
+
+
+
+
+</body></html>
