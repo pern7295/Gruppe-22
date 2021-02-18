@@ -28,11 +28,11 @@
 
 
     <nav id="filtrering-nav">
-        <button data-lande="alle" class="valgt">Alle</button>
-        <button data-lande="italien">Italien</button>
-        <button data-lande="frankrig">Frankrig</button>
-        <button data-lande="spanien">Spanien</button>
-        <button data-lande="argentina">Argentina</button>
+        <button data-land="alle" class="valgt">Alle</button>
+        <button data-land="Italien">Italien</button>
+        <button data-land="Frankrig">Frankrig</button>
+        <button data-land="Spanien">Spanien</button>
+        <button data-land="Argentina">Argentina</button>
     </nav>
 
     <main>
@@ -57,7 +57,7 @@
     </main>
 
     <script>
-        const header = document.querySelector("header h2");
+        const header = document.querySelector("h2");
         const medieurl = "https://tema7-763a.restdb.io/media/"
 
         const myHeaders = {
@@ -84,7 +84,7 @@
         function filtrerVine() {
             console.log(filtrerVine);
 
-            filter = this.data.kategori;
+            filter = this.dataset.land;
 
             document.querySelector(".valgt").classList.remove("valgt");
 
@@ -115,10 +115,10 @@
             dest.textContent = "";
             vine.forEach(vin => {
 
-                if (filter == vin.kategori || filter == "alle") {
+                if (filter == vin.land || filter == "alle") {
                     const klon = skabelon.cloneNode(true);
 
-                    klon.querySelector(".billede").src = medieurl + vin.billede;
+                   /* klon.querySelector(".billede").src = medieurl + vin.billede;*/
                     klon.querySelector(".navn").textContent = vin.navn;
                     klon.querySelector(".vintype").textContent = vin.vintype;
                     klon.querySelector(".land").textContent = vin.land;
@@ -127,16 +127,19 @@
                     klon.querySelector(".beskrivelse").textContent = vin.beskrivelse;
                     klon.querySelector(".pris").textContent = vin.pris;
                     klon.querySelector(".land_ikon").textContent = vin.land_ikon;
-
                     klon.querySelector(".land_billede").src = medieurl + vin.land_billede;
 
 
 
-
+                    klon.querySelector(".wines").addEventListener("click", () => visDetaljer(vin));
 
                     dest.appendChild(klon);
                 }
             })
+
+            function visDetaljer(hvilken) {
+                location.href = `singleView.html?id=${hvilken._id}`;
+            }
 
         }
     </script>
