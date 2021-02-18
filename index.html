@@ -4,165 +4,70 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Landing Page</title>
     <!--<link rel="stylesheet" href="">-->
-
     <style>
-
-
-        img {
-            width: 40%;
+        /* Overordnet css */
+        * {
+            box-sizing: border-box;
         }
 
-        #liste {
-            display: grid;
-            max-width: 1100px;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 2em;
-            margin: auto;
+        /*Landing page*/
+
+        #landing_page {
+            max-width: 1080px;
+            margin: 1rem auto;
         }
 
-        .wines {
-            padding: 1em;
-            margin: 1em;
-            text-align: center;
-            align-items: center;
+        /*Video & splash billede mobil*/
+
+        video {
+            display: none;
+        }
+
+        /*Logo*/
+
+        .overlay_logo {
+            position: absolute;
+            top: 30%;
+            right: 20%;
+        }
+
+        /*Media til video*/
+        @media (min-width: 1200px) {
+            video {
+                display: block;
+                position: relative;
+                width: 100%;
+            }
+
+            #videoBG {
+                width: 100%;
+                z-index: -1;
+            }
         }
 
     </style>
 </head>
 
 <body>
-    <nav id="overordnet-nav">
-        <a href="index.html">Forside</a>
-        <a href="#">om os?</a>
-        <a href="#">kontakt?</a>
-
-    </nav>
-
     <header>
-        <h1>Wine site</h1>
+        <nav id="overordnet-nav">
+            <a href="index.html">Forside</a>
+            <a href="oversigt.html">Vin</a>
+            <a href="#">Kontakt</a>
+        </nav>
     </header>
-
-
-
-    <nav id="filtrering-nav">
-        <button data-land="alle" class="valgt">Alle</button>
-        <button data-land="Italien">Italien</button>
-        <button data-land="Frankrig">Frankrig</button>
-        <button data-land="Spanien">Spanien</button>
-        <button data-land="Argentina">Argentina</button>
-    </nav>
-
-    <main>
-        <h2>Alle</h2>
-
-        <section id="liste"></section>
-
-        <template>
-            <article class="wines">
-                <img src="" alt="" class="billede">
-                <h3 class="navn"></h3>
-                <p class="vintype"></p>
-                <p class="land"></p>
-                <p class="druesort"></p>
-                <p class="aargang"></p>
-                <p class="beskrivelse"></p>
-                <p class="pris"></p>
-                <p class="land_ikon"></p>
-                <p class="land_billede"></p>
-            </article>
-        </template>
+    <main id="landing_page">
+        <div class="splash"></div>
+        <div class="video"><video id="videoBG" autoplay muted loop>
+                <source src="http://nicolinechristiansen.dk/kea/vin_forside_Vid.mp4" type="video/mp4">
+            </video></div>
+        <div class="overlay_logo"></div>
     </main>
-
-    <script>
-        const header = document.querySelector("h2");
-        const medieurl = "https://tema7-763a.restdb.io/media/"
-
-        const myHeaders = {
-
-            "x-apikey": "602e5f605ad3610fb5bb6308"
-        }
-
-        document.addEventListener("DOMContentLoaded", start);
-
-        let vine;
-        let filter = "alle";
-
-        function start() {
-            console.log(start);
-
-            const filterKnapper = document.querySelectorAll("nav button");
-
-            filterKnapper.forEach(knap => knap.addEventListener("click", filtrerVine));
-
-            loadJSON();
-
-        }
-
-        function filtrerVine() {
-            console.log(filtrerVine);
-
-            filter = this.dataset.land;
-
-            document.querySelector(".valgt").classList.remove("valgt");
-
-            this.classList.add("valgt");
-
-            visVine();
-            header.textContent = this.textContent;
-        }
-
-        async function loadJSON() {
-            const JSONData = await fetch("https://tema7-763a.restdb.io/rest/vinsite", {
-                headers: myHeaders
-            });
-
-            vine = await JSONData.json();
-            console.log("vine", vine);
-            visVine();
-
-        }
-
-        function visVine() {
-            console.log(visVine);
-
-            const dest = document.querySelector("#liste");
-            const skabelon = document.querySelector("template").content;
-
-
-            dest.textContent = "";
-            vine.forEach(vin => {
-
-                if (filter == vin.land || filter == "alle") {
-                    const klon = skabelon.cloneNode(true);
-
-                    klon.querySelector(".billede").src = medieurl + vin.billede;
-                    klon.querySelector(".navn").textContent = vin.navn;
-                    klon.querySelector(".vintype").textContent = vin.vintype;
-                    klon.querySelector(".land").textContent = vin.land;
-                    klon.querySelector(".druesort").textContent = vin.druesort;
-                    klon.querySelector(".aargang").textContent = vin.aargang;
-                    klon.querySelector(".beskrivelse").textContent = vin.beskrivelse;
-                    klon.querySelector(".pris").textContent = vin.pris;
-                    klon.querySelector(".land_ikon").textContent = vin.land_ikon;
-                    klon.querySelector(".land_billede").src = medieurl + vin.land_billede;
-
-
-
-                    klon.querySelector(".wines").addEventListener("click", () => visDetaljer(vin));
-
-                    dest.appendChild(klon);
-                }
-            })
-
-            function visDetaljer(hvilken) {
-                location.href = `singleView.html?id=${hvilken._id}`;
-            }
-
-        }
-
-    </script>
+    <footer></footer>
+    <!--<script src=""></script>-->
+    <script></script>
 </body>
 
 </html>
