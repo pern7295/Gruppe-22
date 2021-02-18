@@ -118,7 +118,7 @@
                 if (filter == vin.land || filter == "alle") {
                     const klon = skabelon.cloneNode(true);
 
-                   /* klon.querySelector(".billede").src = medieurl + vin.billede;*/
+                    klon.querySelector(".billede").src = medieurl + vin.billede;
                     klon.querySelector(".navn").textContent = vin.navn;
                     klon.querySelector(".vintype").textContent = vin.vintype;
                     klon.querySelector(".land").textContent = vin.land;
