@@ -1,0 +1,244 @@
+ /* Overordnet css */
+ * {
+     box-sizing: border-box;
+     margin: 0;
+ }
+
+
+ /*Navigation mobil*/
+ #burgermenu {
+     width: 3rem;
+     height: 3rem;
+     margin-top: 2.5rem;
+     margin-left: 1rem;
+     cursor: pointer;
+     z-index: 5;
+ }
+
+ .bar {
+     height: 0.3rem;
+     width: 100%;
+     background-color: #F3EEE7;
+     display: block;
+     border-radius: 0.3rem;
+     transition: 0.4s ease;
+ }
+
+ .burgermenu_container {
+     position: fixed;
+ }
+
+ /*-----------------------ANIMATION AF BURGERMENU-----------------*/
+
+ #bar1 {
+     transform: translateY(-1rem);
+ }
+
+ #bar3 {
+     transform: translateY(1rem);
+ }
+
+ #burger_bck {
+     position: fixed;
+ }
+
+ .change .bar {
+     background-color: black;
+ }
+
+ .change #bar1 {
+     transform: translateY(0.4rem) rotateZ(-45deg);
+     background-color: black;
+ }
+
+ .change #bar3 {
+     transform: translateY(0rem) rotateZ(45deg);
+     background-color: black;
+ }
+
+ .change #bar2 {
+     display: none;
+ }
+
+ /*------JS-CLASSES, ANIMATION, BURGERMENU-------*/
+
+ .change .bar {
+     background-color: #F3EEE7;
+ }
+
+ .change #bar1 {
+     transform: translateY(0.4rem) rotateZ(-45deg);
+     background-color: #F3EEE7;
+ }
+
+ .change #bar3 {
+     transform: translateY(0.1rem) rotateZ(45deg);
+     background-color: #F3EEE7;
+ }
+
+ .change #bar2 {
+     display: none;
+ }
+
+ /*-----------BURGERMENU DISPLAY-----------*/
+
+ .burgermenu_link {
+     display: none;
+     position: fixed;
+     z-index: 2;
+     margin: auto;
+     margin-top: 9rem;
+     max-width: 100vw;
+ }
+
+ .burgermenu_link a {
+     color: #F3EEE7;
+     text-decoration: none;
+     text-align: left;
+     font-family: sofia pro, sans-serif;
+     font-size: 1.5rem;
+ }
+
+ .burgermenu_link a:hover {
+     color: white;
+     font-weight: bold;
+ }
+
+ .burger_link {
+     display: block;
+     padding: 2rem;
+ }
+
+ /*-----------BURGERMENU DESIGN-----------*/
+
+ .burger_bck,
+ #burgermenu {
+     top: 0;
+     position: absolute;
+ }
+
+ .burger_bck {
+     z-index: 1;
+     width: 0;
+     height: 0;
+     background-color: #22222E;
+     opacity: 0.9;
+     transition: 0.3s ease;
+ }
+
+ .change_img {
+     width: 30%;
+     height: 100%;
+ }
+
+ .change {
+     display: block;
+ }
+
+ .change1 {
+     animation-name: ease_nav_kf;
+     animation-duration: 0.5s;
+     animation-iteration-count: 1;
+     animation-timing-function: linear;
+     animation-fill-mode: forwards;
+ }
+
+ @keyframes ease_nav_kf {
+     0% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ /*Video & splash billede mobil*/
+
+ .video {
+     display: none;
+ }
+
+ .splash {
+     position: relative;
+     background-image: url(img/splash_3.jpg);
+     background-size: cover;
+     background-position: 40% 50%;
+     width: 100vw;
+     height: 100vh;
+ }
+
+ /*Logo*/
+
+ .overlay_logo {
+     position: absolute;
+     background-image: url(img/logo.png);
+     background-size: cover;
+     opacity: 0.8;
+     width: 350px;
+     height: 350px;
+     top: 30%;
+     left: 15%;
+ }
+
+ /*Media til video*/
+ @media (min-width: 1000px) {
+
+     /*Landing page*/
+
+     #landing_page {
+         padding: 0;
+         margin: 0;
+     }
+
+     #body_lp {
+         overflow-y: hidden;
+     }
+
+     /*Navigation landing_page*/
+     .lp_header {
+         position: absolute;
+         height: auto;
+         width: 100%;
+     }
+
+     #overordnet-nav {
+         margin-top: 1.5rem;
+         display: flex;
+         justify-content: space-around;
+     }
+
+     .lp_header #overordnet-nav a {
+         text-decoration: none;
+         text-transform: uppercase;
+         color: #F3EEE7;
+         font-family: sofia pro, sans-serif;
+         font-size: 1.5rem;
+     }
+
+     #overordnet-nav a:hover {
+         transform: translateY(-15%);
+     }
+
+     /*Video & splash billede*/
+     .splash {
+         display: none;
+     }
+
+     .video {
+         display: block;
+         position: relative;
+         z-index: -1;
+         width: 100%;
+     }
+
+     #videoBG {
+         width: 100%;
+         z-index: -1;
+     }
+
+     .overlay_logo {
+         top: 30%;
+         left: 37.5%;
+     }
+ }
