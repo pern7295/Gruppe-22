@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <!--<link rel="stylesheet" href="">-->
+    <title>Singleview</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <style>
+        .land_billede {
+            width: 100%;
+        }
+
+        .land_ikon {
+            width: 50px;
+        }
 
     </style>
 </head>
 
 <body>
-    <nav id="overordnet-nav">
-        <a href="index.html">Forside</a>
-        <a href="#">om os?</a>
-        <a href="#">kontakt?</a>
-
-    </nav>
-
-    <header>
-        <h1>Wine site</h1>
+    <header class="p_header">
+        <div class="overlay_logo"></div>
+        <nav id="overordnet-nav">
+            <a href="index.html">Forside</a>
+            <a href="#">Om os</a>
+            <a href="oversigt.html">Udvalg</a>
+            <a href="#">Kontakt</a>
+        </nav>
     </header>
 
 
-
-    <!--<nav id="filtrering-nav">
-        <button data-land="alle" class="valgt">Alle</button>
-        <button data-land="Italien">Italien</button>
-        <button data-land="Frankrig">Frankrig</button>
-        <button data-land="Spanien">Spanien</button>
-        <button data-land="Argentina">Argentina</button>
-    </nav>-->
-
     <main>
-        <!--<h2>Alle</h2>-->
-
-
         <button>Tilbage til forside</button>
 
-
         <article class="wines">
-            <img src="" alt="" class="billede">
             <h3 class="navn"></h3>
+            <img src="#" alt="" class="billede">
             <p class="vintype"></p>
             <p class="land"></p>
             <p class="druesort"></p>
             <p class="aargang"></p>
             <p class="beskrivelse"></p>
             <p class="pris"></p>
-            <p class="land_ikon"></p>
-            <p class="land_billede"></p>
+            <img src="#" alt="" class="land_ikon">
+            <img src="#" alt="" class="land_billede">
         </article>
 
     </main>
@@ -92,7 +87,7 @@
             document.querySelector(".aargang").textContent = vin.aargang;
             document.querySelector(".beskrivelse").textContent = vin.beskrivelse;
             document.querySelector(".pris").textContent = vin.pris;
-            document.querySelector(".land_ikon").textContent = vin.land_ikon;
+            document.querySelector(".land_ikon").src = medieurl + vin.land_ikon;
             document.querySelector(".land_billede").src = medieurl + vin.land_billede;
 
             document.querySelector("button").addEventListener("click", tilbageTilListe);
@@ -111,4 +106,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>
