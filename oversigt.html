@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vin oversigt</title>
     <link rel="stylesheet" href="oversigt.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <style>
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-   <header class="lp_header">
+    <header class="p_header">
 
         <div class="overlay_logo"></div>
 
@@ -31,40 +32,46 @@
     </header>
 
 
-
-
-
-
-
-    <nav id="filtrering-nav">
-        <button data-land="alle" class="valgt">Alle</button>
-        <button data-land="Italien">Italien</button>
-        <button data-land="Frankrig">Frankrig</button>
-        <button data-land="Spanien">Spanien</button>
-        <button data-land="Argentina">Argentina</button>
-    </nav>
-
     <main>
         <!--<h2>Alle</h2>-->
 
-        <img src="splashibillede mangler" alt="">
+        <div class="pic">
 
-        <section id="liste"></section>
 
-        <template>
-            <article class="wines">
-                <img src="" alt="" class="billede">
-                <h3 class="navn"></h3>
-                <p class="vintype"></p>
-                <p class="land"></p>
-                <p class="druesort"></p>
-                <p class="aargang"></p>
-                <p class="beskrivelse"></p>
-                <p class="pris"></p>
-                <p class="land_ikon"></p>
-                <p class="land_billede"></p>
-            </article>
-        </template>
+
+
+            <nav id="filtrering-nav">
+               <h2 class="vin-overskrift">Vin</h2>
+               <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
+                <button data-land="alle" class="valgt">Alle</button>
+                <button data-land="Italien">Italien</button>
+                <button data-land="Frankrig">Frankrig</button>
+                <button data-land="Spanien">Spanien</button>
+                <button data-land="Argentina">Argentina</button>
+            </nav>
+
+
+            <section id="liste">
+            </section>
+
+
+
+
+            <template>
+                <article class="wines">
+                    <img src="" alt="" class="billede">
+                    <h3 class="navn"></h3>
+                    <p class="vintype"></p>
+                    <p class="land"></p>
+                    <p class="druesort"></p>
+                    <p class="aargang"></p>
+                    <p class="beskrivelse"></p>
+                    <p class="pris"></p>
+                    <p class="land_ikon"></p>
+                    <p class="land_billede"></p>
+                </article>
+            </template>
+        </div>
     </main>
 
     <script>

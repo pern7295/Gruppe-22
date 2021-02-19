@@ -2,53 +2,7 @@
 
 
 
-body {
-    background-color: #F1EFEA;
-}
 
-
-.overlay_logo {
-    position: relative;
-    z-index: 1;
-    background-image: url(img/logo.png);
-    background-size: cover;
-    opacity: 0.8;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-}
-
-
-.lp_header {
-    /*position: relative;
-    height: auto;*/
-    width: 100%;
-}
-
-#overordnet-nav {
-    margin-top: 1.5rem;
-    display: inline-block;
-    float: right;
-}
-
-.lp_header #overordnet-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    font-family: sofia pro, sans-serif;
-    font-size: 1.5rem;
-    padding-right: 20px;
-
-}
-
-#overordnet-nav a:hover {
-    transform: translateY(-15%);
-}
-
-#filtrering-nav {
-
-    text-align: center;
-}
 
 button {
     text-decoration: none;
@@ -58,17 +12,21 @@ button {
     font-size: 1.1rem;
     padding-right: 20px;
     border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: transparent;
 
 }
 
 section {
     background: rgba(249, 247, 242, 0.79);
-
 }
+
 
 img {
     width: 40%;
 }
+
 
 #liste {
     display: grid;
@@ -76,6 +34,7 @@ img {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 2em;
     margin: auto;
+    /*margin-top: 10px;*/
 }
 
 .wines {
@@ -83,4 +42,25 @@ img {
     margin: 1em;
     text-align: center;
     align-items: center;
+}
+
+#first_background {
+
+}
+
+.pic {
+    background-image: url(img/splash_2.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+}
+
+.intro-tekst {
+    max-width: 480px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
