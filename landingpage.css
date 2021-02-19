@@ -222,7 +222,15 @@
      .alm_menu {
          margin-top: 1.5rem;
          display: flex;
-         justify-content: space-around;
+         justify-content: space-evenly;
+     }
+
+     .alm_menu img {
+         width: 6rem;
+         height: 6rem;
+         padding: 0.5rem;
+         margin-top: 1rem;
+         cursor: pointer;
      }
 
      .lp_header .alm_menu a {
@@ -232,6 +240,7 @@
          color: #22222E;
          font-family: sofia pro, sans-serif;
          font-size: 1.5rem;
+         padding: 3rem;
      }
 
      #overordnet-nav a:hover {
@@ -255,8 +264,12 @@
          z-index: -1;
      }
 
-     .overlay_logo {
+     /*.overlay_logo {
          top: 30%;
          left: 37.5%;
+     }*/
+
+     .overlay_logo {
+         display: none;
      }
  }
