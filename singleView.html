@@ -92,18 +92,39 @@
         .land_ikon {
             width: 50px;
         }
-
     </style>
 </head>
 
 <body>
-    <header class="p_header">
-        <div class="overlay_logo"></div>
+    <header>
         <nav id="overordnet-nav">
-            <a href="index.html">Forside</a>
-            <a href="#">Om os</a>
-            <a href="oversigt.html">Udvalg</a>
-            <a href="#">Kontakt</a>
+            <div id="burgermenu">
+                <div id="burgermenu_container">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <div class="burgermenu_link">
+                <div id="burger1" class="burger_link">
+                    <a href="index.html">Om os</a>
+                </div>
+                <div id="burger2" class="burger_link">
+                    <a href="oversigt.html">Udvalg</a>
+                </div>
+                <div id="burger3" class="burger_link">
+                    <a href="#">Kontakt</a>
+                </div>
+            </div>
+            <div class="alm_menu">
+                <a href="#">Om os</a>
+                <a href="oversigt.html">Udvalg</a>
+                <img src="img/logo.png" alt="Logo">
+                <a href="#">Kontakt</a>
+                <a href="#">Vin Guide</a>
+            </div>
+            <!--Baggrund på burgermenu, ved klik-->
+            <div id="burger_bck" class="burger_bck"></div>
         </nav>
     </header>
 
@@ -180,7 +201,6 @@
         function tilbageTilListe() {
             history.back();
         }
-
     </script>
 
 
@@ -189,6 +209,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>
