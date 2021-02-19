@@ -264,8 +264,11 @@
          z-index: -1;
      }
 
-     .overlay_logo {
+     /*.overlay_logo {
          top: 30%;
          left: 37.5%;
+     }*/
+     .overlay_logo {
+         display: none;
      }
  }
