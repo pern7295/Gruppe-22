@@ -5,75 +5,73 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vin oversigt</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="oversigt.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <style>
-        img {
-            width: 40%;
-        }
 
-        #liste {
-            display: grid;
-            max-width: 1100px;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 2em;
-            margin: auto;
-        }
 
-        .wines {
-            padding: 1em;
-            margin: 1em;
-            text-align: center;
-            align-items: center;
-        }
     </style>
 </head>
 
 <body>
+    <header class="p_header">
 
-   <div class="overlay_logo"></div>
+        <div class="overlay_logo"></div>
 
-    <nav id="overordnet-nav">
-        <a href="index.html">Forside</a>
-        <a href="#">Om os</a>
-        <a href="oversigt.html">Udvalg</a>
-        <a href="#">Kontakt</a>
 
-    </nav>
+        <nav id="overordnet-nav">
 
-    <header class="lp_header">
-        <h1>Wine site</h1>
+            <a href="index.html">Forside</a>
+            <a href="#">Om os</a>
+            <a href="oversigt.html">Udvalg</a>
+            <a href="#">Kontakt</a>
+
+        </nav>
     </header>
 
 
-
-    <nav id="filtrering-nav">
-        <button data-land="alle" class="valgt">Alle</button>
-        <button data-land="Italien">Italien</button>
-        <button data-land="Frankrig">Frankrig</button>
-        <button data-land="Spanien">Spanien</button>
-        <button data-land="Argentina">Argentina</button>
-    </nav>
-
     <main>
-        <h2>Alle</h2>
+        <!--<h2>Alle</h2>-->
 
-        <section id="liste"></section>
+        <div class="pic">
 
-        <template>
-            <article class="wines">
-                <img src="" alt="" class="billede">
-                <h3 class="navn"></h3>
-                <p class="vintype"></p>
-                <p class="land"></p>
-                <p class="druesort"></p>
-                <p class="aargang"></p>
-                <p class="beskrivelse"></p>
-                <p class="pris"></p>
-                <p class="land_ikon"></p>
-                <p class="land_billede"></p>
-            </article>
-        </template>
+
+
+
+            <nav id="filtrering-nav">
+               <h2 class="vin-overskrift">Vin</h2>
+               <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
+                <button data-land="alle" class="valgt">Alle</button>
+                <button data-land="Italien">Italien</button>
+                <button data-land="Frankrig">Frankrig</button>
+                <button data-land="Spanien">Spanien</button>
+                <button data-land="Argentina">Argentina</button>
+            </nav>
+
+
+            <section id="liste">
+            </section>
+
+
+
+
+            <template>
+                <article class="wines">
+                    <img src="" alt="" class="billede">
+                    <h3 class="navn"></h3>
+                    <p class="vintype"></p>
+                    <p class="land"></p>
+                    <p class="druesort"></p>
+                    <p class="aargang"></p>
+                    <p class="beskrivelse"></p>
+                    <p class="pris"></p>
+                    <p class="land_ikon"></p>
+                    <img src="" alt="" class="land_billede">
+                </article>
+            </template>
+        </div>
     </main>
 
     <script>
@@ -146,7 +144,7 @@
                     klon.querySelector(".aargang").textContent = vin.aargang;
                     klon.querySelector(".beskrivelse").textContent = vin.beskrivelse;
                     klon.querySelector(".pris").textContent = vin.pris;
-                    klon.querySelector(".land_ikon").textContent = vin.land_ikon;
+                    klon.querySelector(".land_ikon").src = vin.land_ikon;
                     klon.querySelector(".land_billede").src = medieurl + vin.land_billede;
 
 
@@ -162,5 +160,8 @@
             }
 
         }
+
     </script>
-</body></html>
+</body>
+
+</html>

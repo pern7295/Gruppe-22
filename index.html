@@ -5,125 +5,80 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <!--<link rel="stylesheet" href="">-->
+    <link rel="stylesheet" href="landingpage.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <style>
-        /* Overordnet css */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            overflow-y: hidden;
-        }
-
-        /*Video & splash billede mobil*/
-
-        .video {
-            display: none;
-        }
-
-        .splash {
-            position: relative;
-            background-image: url(img/splash_3.jpg);
-            background-size: cover;
-            background-position: 40% 50%;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        /*Logo*/
-
-        .overlay_logo {
-            position: absolute;
-            z-index: 1;
-            background-image: url(img/logo.png);
-            background-size: cover;
-            opacity: 0.8;
-            width: 350px;
-            height: 350px;
-            top: 30%;
-            left: 15%;
-        }
-
-        /*Media til video*/
-        @media (min-width: 1000px) {
-
-            /*Landing page*/
-
-            #landing_page {
-                padding: 0;
-                margin: 0;
-            }
-
-            /*Navigation landing_page*/
-            .lp_header {
-                position: absolute;
-                height: auto;
-                width: 100%;
-            }
-
-            #overordnet-nav {
-                margin-top: 1.5rem;
-                display: flex;
-                justify-content: space-around;
-            }
-
-            .lp_header #overordnet-nav a {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: #F3EEE7;
-                font-family: sofia pro, sans-serif;
-                font-size: 1.5rem;
-            }
-
-            #overordnet-nav a:hover {
-                transform: translateY(-15%);
-            }
-
-            /*Video & splash billede*/
-            .splash {
-                display: none;
-            }
-
-            .video {
-                display: block;
-                position: relative;
-                z-index: -1;
-                width: 100%;
-            }
-
-            #videoBG {
-                width: 100%;
-                z-index: -1;
-            }
-
-            .overlay_logo {
-                top: 30%;
-                left: 37.5%;
-            }
-        }
     </style>
 </head>
 
-<body>
+<body id="body_lp">
     <header class="lp_header">
         <nav id="overordnet-nav">
-            <a href="index.html">Om os</a>
-            <a href="oversigt.html">Udvalg</a>
-            <a href="#">Kontakt</a>
+            <div id="burgermenu">
+                <div id="burgermenu_container">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <div class="burgermenu_link">
+                <div id="burger1" class="burger_link">
+                    <a href="index.html">Om os</a>
+                </div>
+                <div id="burger2" class="burger_link">
+                    <a href="oversigt.html">Udvalg</a>
+                </div>
+                <div id="burger3" class="burger_link">
+                    <a href="#">Kontakt</a>
+                </div>
+            </div>
+            <div class=alm_menu>
+                <a href="index.html">Om os</a>
+                <a href="oversigt.html">Udvalg</a>
+                <a href="#">Kontakt</a>
+            </div>
+
+            <!--Baggrund på burgermenu, ved klik-->
+            <div id="burger_bck" class="burger_bck"></div>
+
+
         </nav>
     </header>
     <main id="landing_page">
+        <!-- Splashbillede i mobil & tablet -->
         <div class="splash"></div>
+        <!-- Video baggrund i desktop -->
         <div class="video">
             <video id="videoBG" autoplay muted loop>
                 <source src="http://nicolinechristiansen.dk/kea/vino_vid.mp4" type="video/mp4">
                 <!--http://nicolinechristiansen.dk/kea/forsideVid_vin.mp4 alternativ video-->
             </video>
         </div>
+        <!-- Logo overlay på video-->
         <div class="overlay_logo"></div>
     </main>
     <footer></footer>
     <!--<script src=""></script>-->
-    <script></script>
-</body></html>
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        //Der klikkes på burgermenuen
+        function start() {
+            document.querySelector("#burgermenu").addEventListener("click", onClickMenu);
+        }
+
+        //Når der er klikket på burgermenuen, benyttes css-toggle-classes til at ændre udseende på menuen
+        function onClickMenu() {
+            document.querySelector("#burgermenu_container").classList.toggle("change");
+            document.querySelector(".burgermenu_link").classList.toggle("change");
+            document.querySelector(".burger_bck").classList.toggle("change_img");
+            document.querySelector("#burger1").classList.toggle("change1");
+            document.querySelector("#burger2").classList.toggle("change1");
+            document.querySelector("#burger3").classList.toggle("change1");
+        }
+
+    </script>
+</body>
+
+</html>
