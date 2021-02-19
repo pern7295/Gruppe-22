@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <title>Footer</title>
+    <style>
+        /*********************Se bort fra denne kode*************************/
+        * {
+            margin: 0;
+        }
+
+        p {
+            font-family: sofia pro, sans-serif;
+            font-weight: 200;
+
+        }
+
+        article {
+            max-width: 850px;
+            height: 70vh;
+        }
+
+
+        .baggrund {
+            position: relative;
+            background-image: url(img/splash_1.jpg);
+            background-size: cover;
+            background-position: 50%;
+            background-attachment: fixed;
+            height: 100%;
+            margin: 0;
+        }
+
+        /*****************************Footer****************************************/
+        footer {
+            padding: 1.5rem;
+            text-align: center;
+            color: white;
+            margin-top: 1rem;
+            background-color: rgba(34, 34, 46, 0.40);
+        }
+
+        .footer_tekst {
+            font-size: 0.8rem;
+            margin: 0;
+            margin-top: 1rem;
+        }
+
+        footer h4 {
+            font-family: span, serif;
+            font-weight: 100;
+            letter-spacing: 0.3rem;
+            margin-top: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .line {
+            width: 12rem;
+            height: 0.01rem;
+            background-color: white;
+            margin: auto;
+            margin-bottom: 1rem;
+        }
+
+        /* Socialmedie ikoner */
+        .col_2 img {
+            width: 3rem;
+        }
+
+        .col_2 img:hover {
+            cursor: pointer;
+
+        }
+
+        @media (min-width: 1000px) {
+
+
+            footer h4 {
+                margin-top: 0;
+            }
+
+            #footer_flex {
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+            }
+
+            .col_2 img {
+                width: 4rem;
+                padding-top: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="baggrund">
+        <article>
+        </article>
+        <!---Footer starter her--->
+        <footer>
+            <div id="footer_flex">
+                <div class="col_1">
+                    <h4>Åbningstider</h4>
+                    <div class="line"></div>
+                    <p>Mandag - Fredag</p>
+                    <p>10.00 - 17.00</p>
+                    <p>Lørdag</p>
+                    <p>10.00 - 14.00</p>
+                    <p>Søndag</p>
+                    <p>Lukket</p>
+                </div>
+                <div class="col_2">
+                    <h4>Socialemedier</h4>
+                    <div class="line"></div>
+                    <img src="img/instagram.png" alt="Instagram Logo">
+                    <img src="img/facebook.png" alt="Instagram Logo">
+                </div>
+                <div class="col_3">
+                    <h4>Kontakt</h4>
+                    <div class="line"></div>
+                    <p>Tlf.</p>
+                    <p>+45 12 34 56 78</p>
+                    <p>Email</p>
+                    <p>godvin@email.dk</p>
+                </div>
+            </div>
+            <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
+        </footer>
+        <!---Footer slutter her--->
+    </div>
+</body></html>
