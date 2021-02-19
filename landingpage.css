@@ -6,6 +6,10 @@
 
 
  /*Navigation mobil*/
+ .alm_menu {
+     display: none;
+ }
+
  #burgermenu {
      width: 3rem;
      height: 3rem;
@@ -196,19 +200,32 @@
      }
 
      /*Navigation landing_page*/
+
+     #burgermenu {
+         display: none;
+     }
+
+     .burgermenu_link {
+         display: none;
+     }
+
+     #burger_bck {
+         display: none;
+     }
+
      .lp_header {
          position: absolute;
          height: auto;
          width: 100%;
      }
 
-     #overordnet-nav {
+     .alm_menu {
          margin-top: 1.5rem;
          display: flex;
          justify-content: space-around;
      }
 
-     .lp_header #overordnet-nav a {
+     .lp_header .alm_menu a {
          text-decoration: none;
          text-transform: uppercase;
          color: #F3EEE7;
