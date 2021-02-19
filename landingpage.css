@@ -213,8 +213,8 @@
          display: none;
      }
 
-     .lp_header {
-         position: absolute;
+     header {
+         position: fixed;
          height: auto;
          width: 100%;
      }
@@ -222,16 +222,25 @@
      .alm_menu {
          margin-top: 1.5rem;
          display: flex;
-         justify-content: space-around;
+         justify-content: space-evenly;
      }
 
-     .lp_header .alm_menu a {
+     .alm_menu img {
+         width: 6rem;
+         height: 6rem;
+         padding: 0.5rem;
+         margin-top: 1rem;
+         cursor: pointer;
+     }
+
+     header .alm_menu a {
          text-decoration: none;
          text-transform: uppercase;
          /*color: #F3EEE7;*/
          color: #22222E;
          font-family: sofia pro, sans-serif;
          font-size: 1.5rem;
+         padding: 3rem;
      }
 
      #overordnet-nav a:hover {
