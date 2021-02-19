@@ -41,12 +41,19 @@ img {
     padding: 1em;
     margin: 1em;
     text-align: center;
-    align-items: center;
+    background-image: url(img/cirkel_2.png);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+
 }
 
-#first_background {
+.wines-pic {
 
 }
+
+#first_background {}
 
 .pic {
     background-image: url(img/splash_2.jpg);
@@ -63,4 +70,27 @@ img {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.ikon_italien {
+    width: 10%;
+    background-image: url(img/italy_flag.png);
+}
+
+.ikon_frankrig {
+    width: 10%;
+}
+
+.ikon_spanien {
+    width: 10%;
+}
+
+.ikon_argentina {
+    width: 10%;
+}
+
+
+.beskrivelse {
+    max-width: 200px;
+    margin: auto;
 }
