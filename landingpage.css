@@ -98,6 +98,7 @@
  .burgermenu_link a {
      color: #F3EEE7;
      text-decoration: none;
+     text-transform: uppercase;
      text-align: left;
      font-family: sofia pro, sans-serif;
      font-size: 1.5rem;
@@ -105,7 +106,6 @@
 
  .burgermenu_link a:hover {
      color: white;
-     font-weight: bold;
  }
 
  .burger_link {
