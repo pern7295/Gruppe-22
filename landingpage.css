@@ -214,7 +214,7 @@
      }
 
      .lp_header {
-         position: absolute;
+         position: fixed;
          height: auto;
          width: 100%;
      }
