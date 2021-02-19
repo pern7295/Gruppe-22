@@ -5,45 +5,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vin oversigt</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="oversigt.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <style>
-        img {
-            width: 40%;
-        }
 
-        #liste {
-            display: grid;
-            max-width: 1100px;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 2em;
-            margin: auto;
-        }
 
-        .wines {
-            padding: 1em;
-            margin: 1em;
-            text-align: center;
-            align-items: center;
-        }
     </style>
 </head>
 
 <body>
+   <header class="lp_header">
 
-   <div class="overlay_logo"></div>
+        <div class="overlay_logo"></div>
 
-    <nav id="overordnet-nav">
-        <a href="index.html">Forside</a>
-        <a href="#">Om os</a>
-        <a href="oversigt.html">Udvalg</a>
-        <a href="#">Kontakt</a>
 
-    </nav>
+        <nav id="overordnet-nav">
 
-    <header class="lp_header">
-        <h1>Wine site</h1>
+            <a href="index.html">Forside</a>
+            <a href="#">Om os</a>
+            <a href="oversigt.html">Udvalg</a>
+            <a href="#">Kontakt</a>
+
+        </nav>
     </header>
+
+
+
+
 
 
 
@@ -56,7 +45,9 @@
     </nav>
 
     <main>
-        <h2>Alle</h2>
+        <!--<h2>Alle</h2>-->
+
+        <img src="splashibillede mangler" alt="">
 
         <section id="liste"></section>
 
@@ -162,5 +153,8 @@
             }
 
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
