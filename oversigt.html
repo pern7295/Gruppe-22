@@ -41,32 +41,44 @@
 
 
             <nav id="filtrering-nav">
-               <h2 class="vin-overskrift">Vin</h2>
-               <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
-                <button data-land="alle" class="valgt">Alle</button>
-                <button data-land="Italien">Italien</button>
-                <button data-land="Frankrig">Frankrig</button>
-                <button data-land="Spanien">Spanien</button>
-                <button data-land="Argentina">Argentina</button>
+                <h2 class="vin-overskrift">Vin</h2>
+                <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
+
+                <div>
+                    <button data-land="alle" class="valgt">Alle vin</button>
+
+                    <!--<img src="img/italy_flag.png" alt="" class="ikon_italien">-->
+                    <button data-land="Italien">Italien</button>
+
+                   <!--  <img src="img/france_flag.png" alt="" class="ikon_frankrig">-->
+                    <button data-land="Frankrig">Frankrig</button>
+
+                    <!--<img src="img/france_flag.png" alt="" class="ikon_spanien">-->
+                    <button data-land="Spanien">Spanien</button>
+
+                     <!--<img src="img/france_flag.png" alt="" class="ikon_argentina">-->
+                    <button data-land="Argentina">Argentina</button>
+                    </div>
             </nav>
 
 
-            <section id="liste">
-            </section>
+        <section id="liste">
+        </section>
 
 
 
 
-            <template>
-                <article class="wines">
-                    <img src="" alt="" class="billede">
-                    <h3 class="navn"></h3>
-                    <p class="vintype"></p>
-                    <p class="land"></p>
-                    <p class="beskrivelse"></p>
-                    <p class="pris"></p>
-                </article>
-            </template>
+        <template>
+            <article class="wines" class="wines-pic">
+                <img src="" alt="" class="billede">
+                <h3 class="navn"></h3>
+                <p class="vintype"></p>
+                <p class="land"></p>
+                <!--<p class="beskrivelse"></p>-->
+                <p class="pris"></p>
+                <p class="fake_button">Læs mere</p>
+            </article>
+        </template>
         </div>
     </main>
 
@@ -134,14 +146,14 @@
 
                     klon.querySelector(".billede").src = medieurl + vin.billede;
                     klon.querySelector(".navn").textContent = vin.navn;
-                    klon.querySelector(".vintype").textContent = vin.vintype;
-                    klon.querySelector(".land").textContent = vin.land;
-                    /*klon.querySelector(".druesort").textContent = vin.druesort;
-                    klon.querySelector(".aargang").textContent = vin.aargang;
-                    klon.querySelector(".beskrivelse").textContent = vin.beskrivelse;*/
-                    klon.querySelector(".pris").textContent = vin.pris;
-                   /* klon.querySelector(".land_ikon").src = vin.land_ikon;
-                    klon.querySelector(".land_billede").src = medieurl + vin.land_billede;*/
+                    klon.querySelector(".vintype").textContent = "Vintype:" + " " + vin.vintype;
+                    klon.querySelector(".land").textContent = "Land:" + " " + vin.land;
+                    /*    klon.querySelector(".druesort").textContent = vin.druesort;
+                        klon.querySelector(".aargang").textContent = vin.aargang;*/
+                    /*klon.querySelector(".beskrivelse").textContent = vin.beskrivelse;*/
+                    klon.querySelector(".pris").textContent = "Pris:" + " " + vin.pris + ",-";
+                    /* klon.querySelector(".land_ikon").src = vin.land_ikon;
+                     klon.querySelector(".land_billede").src = medieurl + vin.land_billede;*/
 
 
 
