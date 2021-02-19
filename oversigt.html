@@ -16,18 +16,35 @@
 </head>
 
 <body>
-    <header class="p_header">
-
-        <div class="overlay_logo"></div>
-
-
+    <header>
         <nav id="overordnet-nav">
-
-            <a href="index.html">Forside</a>
-            <a href="#">Om os</a>
-            <a href="oversigt.html">Udvalg</a>
-            <a href="#">Kontakt</a>
-
+            <div id="burgermenu">
+                <div id="burgermenu_container">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <div class="burgermenu_link">
+                <div id="burger1" class="burger_link">
+                    <a href="index.html">Om os</a>
+                </div>
+                <div id="burger2" class="burger_link">
+                    <a href="oversigt.html">Udvalg</a>
+                </div>
+                <div id="burger3" class="burger_link">
+                    <a href="#">Kontakt</a>
+                </div>
+            </div>
+            <div class="alm_menu">
+                <a href="#">Om os</a>
+                <a href="oversigt.html">Udvalg</a>
+                <img src="img/logo.png" alt="Logo">
+                <a href="#">Kontakt</a>
+                <a href="#">Vin Guide</a>
+            </div>
+            <!--Baggrund på burgermenu, ved klik-->
+            <div id="burger_bck" class="burger_bck"></div>
         </nav>
     </header>
 
@@ -36,49 +53,84 @@
         <!--<h2>Alle</h2>-->
 
         <div class="pic">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section class="indhold">
+                <nav id="filtrering-nav">
+                    <h2 class="vin-overskrift">Vin</h2>
+                    <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
 
+                    <div>
+                        <button data-land="alle" class="valgt">Alle vin</button>
 
+                        <!--<img src="img/italy_flag.png" alt="" class="ikon_italien">-->
+                        <button data-land="Italien">Italien</button>
 
+                        <!--  <img src="img/france_flag.png" alt="" class="ikon_frankrig">-->
+                        <button data-land="Frankrig">Frankrig</button>
 
-            <nav id="filtrering-nav">
-                <h2 class="vin-overskrift">Vin</h2>
-                <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
+                        <!--<img src="img/france_flag.png" alt="" class="ikon_spanien">-->
+                        <button data-land="Spanien">Spanien</button>
 
-                <div>
-                    <button data-land="alle" class="valgt">Alle vin</button>
-
-                    <!--<img src="img/italy_flag.png" alt="" class="ikon_italien">-->
-                    <button data-land="Italien">Italien</button>
-
-                   <!--  <img src="img/france_flag.png" alt="" class="ikon_frankrig">-->
-                    <button data-land="Frankrig">Frankrig</button>
-
-                    <!--<img src="img/france_flag.png" alt="" class="ikon_spanien">-->
-                    <button data-land="Spanien">Spanien</button>
-
-                     <!--<img src="img/france_flag.png" alt="" class="ikon_argentina">-->
-                    <button data-land="Argentina">Argentina</button>
+                        <!--<img src="img/france_flag.png" alt="" class="ikon_argentina">-->
+                        <button data-land="Argentina">Argentina</button>
                     </div>
-            </nav>
+                </nav>
 
 
-        <section id="liste">
-        </section>
+                <section id="liste">
+                </section>
 
 
 
 
-        <template>
-            <article class="wines" class="wines-pic">
-                <img src="" alt="" class="billede">
-                <h3 class="navn"></h3>
-                <p class="vintype"></p>
-                <p class="land"></p>
-                <!--<p class="beskrivelse"></p>-->
-                <p class="pris"></p>
-                <p class="fake_button">Læs mere</p>
-            </article>
-        </template>
+                <template>
+                    <article class="wines" class="wines-pic">
+                        <img src="" alt="" class="billede">
+                        <h3 class="navn"></h3>
+                        <p class="vintype"></p>
+                        <p class="land"></p>
+                        <!--<p class="beskrivelse"></p>-->
+                        <p class="pris"></p>
+                        <p class="fake_button">Læs mere</p>
+                    </article>
+                </template>
+            </section>
+            <footer>
+                <div id="footer_flex">
+                    <div class="col_1">
+                        <h4>Åbningstider</h4>
+                        <div class="line"></div>
+                        <p>Mandag - Fredag</p>
+                        <p>10.00 - 17.00</p>
+                        <p>Lørdag</p>
+                        <p>10.00 - 14.00</p>
+                        <p>Søndag</p>
+                        <p>Lukket</p>
+                    </div>
+                    <div class="col_2">
+                        <h4>Socialemedier</h4>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col_3">
+                        <h4>Kontakt</h4>
+                        <div class="line"></div>
+                        <p>Tlf.</p>
+                        <p>+45 12 34 56 78</p>
+                        <p>Email</p>
+                        <p>godvin@email.dk</p>
+                    </div>
+                </div>
+                <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
+            </footer>
         </div>
     </main>
 
@@ -168,8 +220,5 @@
             }
 
         }
-
     </script>
-</body>
-
-</html>
+</body></html>

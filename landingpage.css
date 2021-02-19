@@ -213,7 +213,7 @@
          display: none;
      }
 
-     .lp_header {
+     header {
          position: fixed;
          height: auto;
          width: 100%;
@@ -233,7 +233,7 @@
          cursor: pointer;
      }
 
-     .lp_header .alm_menu a {
+     header .alm_menu a {
          text-decoration: none;
          text-transform: uppercase;
          /*color: #F3EEE7;*/

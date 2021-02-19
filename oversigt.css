@@ -1,9 +1,5 @@
 /*Navigationslinje*/
 
-
-
-
-
 button {
     text-decoration: none;
     text-transform: uppercase;
@@ -18,10 +14,12 @@ button {
 
 }
 
-section {
-    background: rgba(249, 247, 242, 0.79);
+.indhold {
+    background: rgb(232, 229, 225, 0.35);
+    max-width: 860px;
+    margin: auto;
+    padding: 5rem;
 }
-
 
 img {
     width: 50%;
@@ -32,7 +30,7 @@ img {
     display: grid;
     max-width: 950px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2em;
+    grid-gap: 2rem;
     margin: auto;
     /*margin-top: 10px;*/
 }
@@ -54,9 +52,9 @@ img {
 #first_background {}
 
 .pic {
-    background-image: url(img/splash_2.jpg);
+    background-image: url(img/vin3.jpg);
     background-size: cover;
-    background-position: 50%;
+    background-position: 10% 80%;
     background-attachment: fixed;
     height: 100%;
     margin: 0;
@@ -98,7 +96,6 @@ img {
     text-align: center;
     max-width: 950px;
     margin: auto;
-    background-color: rgba(249, 247, 242, 0.79);
     padding-top: 70px;
 
 
@@ -129,7 +126,6 @@ h3 {
         text-align: center;
         max-width: 750px;
         margin: auto;
-        background-color: rgba(249, 247, 242, 0.79);
         padding-top: 70px;
 
 
@@ -158,6 +154,7 @@ h3 {
     h2 {
         font-size: 1rem;
     }
+
     h3 {
         font-size: 1.5rem;
     }
@@ -177,9 +174,6 @@ h3 {
         text-align: center;
         max-width: 540px;
         margin: auto;
-        background-color: rgba(249, 247, 242, 0.79);
-        padding-top: 70px;
-
 
     }
 
