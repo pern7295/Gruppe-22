@@ -76,6 +76,7 @@
                 <p class="land"></p>
                 <!--<p class="beskrivelse"></p>-->
                 <p class="pris"></p>
+                <p class="fake_button">Læs mere</p>
             </article>
         </template>
         </div>
@@ -145,12 +146,12 @@
 
                     klon.querySelector(".billede").src = medieurl + vin.billede;
                     klon.querySelector(".navn").textContent = vin.navn;
-                    klon.querySelector(".vintype").textContent = vin.vintype;
-                    klon.querySelector(".land").textContent = vin.land;
+                    klon.querySelector(".vintype").textContent = "Vintype:" + " " + vin.vintype;
+                    klon.querySelector(".land").textContent = "Land:" + " " + vin.land;
                     /*    klon.querySelector(".druesort").textContent = vin.druesort;
                         klon.querySelector(".aargang").textContent = vin.aargang;*/
                     /*klon.querySelector(".beskrivelse").textContent = vin.beskrivelse;*/
-                    klon.querySelector(".pris").textContent = vin.pris;
+                    klon.querySelector(".pris").textContent = "Pris:" + " " + vin.pris + ",-";
                     /* klon.querySelector(".land_ikon").src = vin.land_ikon;
                      klon.querySelector(".land_billede").src = medieurl + vin.land_billede;*/
 
