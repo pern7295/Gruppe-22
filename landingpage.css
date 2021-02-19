@@ -228,7 +228,8 @@
      .lp_header .alm_menu a {
          text-decoration: none;
          text-transform: uppercase;
-         color: #F3EEE7;
+         /*color: #F3EEE7;*/
+         color: #22222E;
          font-family: sofia pro, sans-serif;
          font-size: 1.5rem;
      }
