@@ -68,7 +68,7 @@
                     <p class="beskrivelse"></p>
                     <p class="pris"></p>
                     <p class="land_ikon"></p>
-                    <p class="land_billede"></p>
+                    <img src="" alt="" class="land_billede">
                 </article>
             </template>
         </div>
@@ -144,7 +144,7 @@
                     klon.querySelector(".aargang").textContent = vin.aargang;
                     klon.querySelector(".beskrivelse").textContent = vin.beskrivelse;
                     klon.querySelector(".pris").textContent = vin.pris;
-                    klon.querySelector(".land_ikon").textContent = vin.land_ikon;
+                    klon.querySelector(".land_ikon").src = vin.land_ikon;
                     klon.querySelector(".land_billede").src = medieurl + vin.land_billede;
 
 
