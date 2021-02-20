@@ -98,6 +98,7 @@
  .burgermenu_link a {
      color: #F3EEE7;
      text-decoration: none;
+     text-transform: uppercase;
      text-align: left;
      font-family: sofia pro, sans-serif;
      font-size: 1.5rem;
@@ -105,7 +106,6 @@
 
  .burgermenu_link a:hover {
      color: white;
-     font-weight: bold;
  }
 
  .burger_link {
@@ -165,9 +165,9 @@
 
  .splash {
      position: relative;
-     background-image: url(img/splash_3.jpg);
+     background-image: url(img/splash_5.jpg);
      background-size: cover;
-     background-position: 40% 50%;
+     background-position: 60% 50%;
      width: 100vw;
      height: 100vh;
  }
@@ -213,8 +213,8 @@
          display: none;
      }
 
-     .lp_header {
-         position: absolute;
+     header {
+         position: fixed;
          height: auto;
          width: 100%;
      }
@@ -222,15 +222,25 @@
      .alm_menu {
          margin-top: 1.5rem;
          display: flex;
-         justify-content: space-around;
+         justify-content: space-evenly;
      }
 
-     .lp_header .alm_menu a {
+     .alm_menu img {
+         width: 6rem;
+         height: 6rem;
+         padding: 0.5rem;
+         margin-top: 1rem;
+         cursor: pointer;
+     }
+
+     header .alm_menu a {
          text-decoration: none;
          text-transform: uppercase;
-         color: #F3EEE7;
+         /*color: #F3EEE7;*/
+         color: #22222E;
          font-family: sofia pro, sans-serif;
          font-size: 1.5rem;
+         padding: 3rem;
      }
 
      #overordnet-nav a:hover {
@@ -254,8 +264,11 @@
          z-index: -1;
      }
 
-     .overlay_logo {
+     /*.overlay_logo {
          top: 30%;
          left: 37.5%;
+     }*/
+     .overlay_logo {
+         display: none;
      }
  }

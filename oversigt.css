@@ -24,13 +24,13 @@ section {
 
 
 img {
-    width: 40%;
+    width: 50%;
 }
 
 
 #liste {
     display: grid;
-    max-width: 850px;
+    max-width: 950px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 2em;
     margin: auto;
@@ -38,15 +38,20 @@ img {
 }
 
 .wines {
-    padding: 1em;
-    margin: 1em;
+    padding: 2em;
+    margin: 0em;
     text-align: center;
-    align-items: center;
+    background-image: url(img/cirkel_2.png);
+    background-size: 360px 360px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+
 }
 
-#first_background {
+.wines-pic {}
 
-}
+#first_background {}
 
 .pic {
     background-image: url(img/splash_2.jpg);
@@ -63,4 +68,131 @@ img {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.ikon_italien {
+    width: 10%;
+    background-image: url(img/italy_flag.png);
+}
+
+.ikon_frankrig {
+    width: 10%;
+}
+
+.ikon_spanien {
+    width: 10%;
+}
+
+.ikon_argentina {
+    width: 10%;
+}
+
+
+.beskrivelse {
+    max-width: 200px;
+    margin: auto;
+}
+
+#filtrering-nav {
+
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+    background-color: rgba(249, 247, 242, 0.79);
+    padding-top: 70px;
+
+
+}
+
+.fake_button {
+    background-color: #4C0D0C;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    font-family: sofia pro, sans-serif;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+    #filtrering-nav {
+
+        text-align: center;
+        max-width: 750px;
+        margin: auto;
+        background-color: rgba(249, 247, 242, 0.79);
+        padding-top: 70px;
+
+
+    }
+
+    #liste {
+        display: grid;
+        max-width: 750px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 2em;
+        margin: auto;
+        /*margin-top: 10px;*/
+    }
+
+    .wines {
+        padding: 2em;
+        margin: 0em;
+        text-align: center;
+        background-image: url(img/cirkel_2.png);
+        background-size: 330px 330px;
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #filtrering-nav {
+
+        text-align: center;
+        max-width: 540px;
+        margin: auto;
+        background-color: rgba(249, 247, 242, 0.79);
+        padding-top: 70px;
+
+
+    }
+
+    #liste {
+        display: grid;
+        max-width: 540px;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        grid-gap: 2em;
+        margin: auto;
+        /*margin-top: 10px;*/
+    }
+
+    img {
+        width: 40%;
+    }
 }
