@@ -20,6 +20,44 @@
 }
 
 
+.overlay_logo {
+    position: relative;
+    z-index: 1;
+    background-image: url(img/logo.png);
+    background-size: cover;
+    opacity: 0.8;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+
+.p_header {
+    /*position: relative;
+    height: auto;*/
+    width: 100%;
+}
+
+/*#overordnet-nav {
+    margin-top: 1.5rem;
+    display: inline-block;
+    float: right;
+}*/
+
+.p_header #overordnet-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-family: sofia pro, sans-serif;
+    font-size: 1.5rem;
+    padding-right: 20px;
+
+}
+
+#overordnet-nav a:hover {
+    transform: translateY(-15%);
+}
+
 button {
     text-decoration: none;
     text-transform: uppercase;
@@ -373,5 +411,27 @@ h3 {
     }
 
 
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .p_header #overordnet-nav a {
+        color: #fff;
+
+
+    }
+
+    .overlay_logo {
+        position: relative;
+        z-index: 1;
+        background-image: url(img/logo.png);
+        background-size: cover;
+        opacity: 0.8;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 0;
+    }
 
 }
