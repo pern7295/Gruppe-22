@@ -22,7 +22,7 @@
  .bar {
      height: 0.3rem;
      width: 100%;
-     background-color: #F3EEE7;
+     background-color: #22222E;
      display: block;
      border-radius: 0.3rem;
      transition: 0.4s ease;
@@ -67,17 +67,17 @@
  /*------JS-CLASSES, ANIMATION, BURGERMENU-------*/
 
  .change .bar {
-     background-color: #F3EEE7;
+     background-color: #22222E;
  }
 
  .change #bar1 {
      transform: translateY(0.4rem) rotateZ(-45deg);
-     background-color: #F3EEE7;
+     background-color: #22222E;
  }
 
  .change #bar3 {
      transform: translateY(0.1rem) rotateZ(45deg);
-     background-color: #F3EEE7;
+     background-color: #22222E;
  }
 
  .change #bar2 {
@@ -96,7 +96,7 @@
  }
 
  .burgermenu_link a {
-     color: #F3EEE7;
+     color: #22222E;
      text-decoration: none;
      text-transform: uppercase;
      text-align: left;
@@ -105,7 +105,7 @@
  }
 
  .burgermenu_link a:hover {
-     color: white;
+     color: #721615;
  }
 
  .burger_link {
@@ -125,13 +125,13 @@
      z-index: 1;
      width: 0;
      height: 0;
-     background-color: #22222E;
+     background-color: white;
      opacity: 0.9;
      transition: 0.3s ease;
  }
 
  .change_img {
-     width: 30%;
+     width: 40%;
      height: 100%;
  }
 
@@ -165,9 +165,9 @@
 
  .splash {
      position: relative;
-     background-image: url(img/splash_5.jpg);
+     background-image: url(img/splash_7.jpeg);
      background-size: cover;
-     background-position: 60% 50%;
+     background-position: 80%;
      width: 100vw;
      height: 100vh;
  }
@@ -238,13 +238,13 @@
          text-transform: uppercase;
          /*color: #F3EEE7;*/
          color: #22222E;
-         font-family: sofia pro, sans-serif;
+         font-family: span, sans-serif;
          font-size: 1.5rem;
          padding: 3rem;
      }
 
      #overordnet-nav a:hover {
-         transform: translateY(-15%);
+         transform: translateY(-5%);
      }
 
      /*Video & splash billede*/
