@@ -17,18 +17,39 @@
 
 <body>
     <header class="p_header">
-
-        <div class="overlay_logo"></div>
-
-
         <nav id="overordnet-nav">
+            <div class="overlay_logo"></div>
 
-            <a href="index.html">Forside</a>
-            <a href="#">Om os</a>
-            <a href="oversigt.html">Udvalg</a>
-            <a href="#">Kontakt</a>
 
+
+            <div id="burgermenu">
+                <div id="burgermenu_container">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <div class="burgermenu_link">
+                <div id="burger1" class="burger_link">
+                    <a href="index.html">Om os</a>
+                </div>
+                <div id="burger2" class="burger_link">
+                    <a href="oversigt.html">Udvalg</a>
+                </div>
+                <div id="burger3" class="burger_link">
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="alm_menu">
+                <a href="index.html">Om os</a>
+                <a href="oversigt.html">Udvalg</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="#">Vin Guide</a>
+            </div>
+            <!--Baggrund på burgermenu, ved klik-->
+            <div id="burger_bck" class="burger_bck"></div>
         </nav>
+
     </header>
 
 
@@ -50,35 +71,35 @@
                     <!--<img src="img/italy_flag.png" alt="" class="ikon_italien">-->
                     <button data-land="Italien">Italien</button>
 
-                   <!--  <img src="img/france_flag.png" alt="" class="ikon_frankrig">-->
+                    <!--  <img src="img/france_flag.png" alt="" class="ikon_frankrig">-->
                     <button data-land="Frankrig">Frankrig</button>
 
                     <!--<img src="img/france_flag.png" alt="" class="ikon_spanien">-->
                     <button data-land="Spanien">Spanien</button>
 
-                     <!--<img src="img/france_flag.png" alt="" class="ikon_argentina">-->
+                    <!--<img src="img/france_flag.png" alt="" class="ikon_argentina">-->
                     <button data-land="Argentina">Argentina</button>
-                    </div>
+                </div>
             </nav>
 
 
-        <section id="liste">
-        </section>
+            <section id="liste">
+            </section>
 
 
 
 
-        <template>
-            <article class="wines" class="wines-pic">
-                <img src="" alt="" class="billede">
-                <h3 class="navn"></h3>
-                <p class="vintype"></p>
-                <p class="land"></p>
-                <!--<p class="beskrivelse"></p>-->
-                <p class="pris"></p>
-                <p class="fake_button">Læs mere</p>
-            </article>
-        </template>
+            <template>
+                <article class="wines" class="wines-pic">
+                    <img src="" alt="" class="billede">
+                    <h3 class="navn"></h3>
+                    <p class="vintype"></p>
+                    <p class="land"></p>
+                    <!--<p class="beskrivelse"></p>-->
+                    <p class="pris"></p>
+                    <p class="fake_button">Læs mere</p>
+                </article>
+            </template>
         </div>
     </main>
 
@@ -167,6 +188,23 @@
                 location.href = `singleView.html?id=${hvilken._id}`;
             }
 
+        }
+
+        document.addEventListener("DOMContentLoaded", start2);
+
+        //Der klikkes på burgermenuen
+        function start2() {
+            document.querySelector("#burgermenu").addEventListener("click", onClickMenu);
+        }
+
+        //Når der er klikket på burgermenuen, benyttes css-toggle-classes til at ændre udseende på menuen
+        function onClickMenu() {
+            document.querySelector("#burgermenu_container").classList.toggle("change");
+            document.querySelector(".burgermenu_link").classList.toggle("change");
+            document.querySelector(".burger_bck").classList.toggle("change_img");
+            document.querySelector("#burger1").classList.toggle("change1");
+            document.querySelector("#burger2").classList.toggle("change1");
+            document.querySelector("#burger3").classList.toggle("change1");
         }
 
     </script>
