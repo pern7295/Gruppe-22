@@ -1,7 +1,23 @@
 /*Navigationslinje*/
 
+#burgermenu {
+    display: none;
+}
+
+.burgermenu_link {
+    display: none;
+}
+
+#burger_bck {
+    display: none;
+}
 
 
+.alm_menu {
+    margin-top: 1.5rem;
+    /*display: inline-block;*/
+    float: right;
+}
 
 
 button {
@@ -158,6 +174,7 @@ h3 {
     h2 {
         font-size: 1rem;
     }
+
     h3 {
         font-size: 1.5rem;
     }
@@ -195,4 +212,166 @@ h3 {
     img {
         width: 40%;
     }
+}
+
+@media only screen and (max-width: 700px) {
+
+    /*Navigation mobil*/
+    .alm_menu {
+        display: none;
+    }
+
+    #burgermenu {
+        width: 3rem;
+        height: 3rem;
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+        cursor: pointer;
+        z-index: 5;
+        display: block;
+    }
+
+    .bar {
+        height: 0.3rem;
+        width: 100%;
+        background-color: #000;
+        display: block;
+        border-radius: 0.3rem;
+        transition: 0.4s ease;
+        display: block;
+    }
+
+    .burgermenu_container {
+        position: fixed;
+        display: block;
+    }
+
+    /*-----------------------ANIMATION AF BURGERMENU-----------------*/
+
+    #bar1 {
+        transform: translateY(-1rem);
+    }
+
+    #bar3 {
+        transform: translateY(1rem);
+    }
+
+    #burger_bck {
+        position: fixed;
+        display: block;
+    }
+
+    .change .bar {
+        background-color: black;
+    }
+
+    .change #bar1 {
+        transform: translateY(0.4rem) rotateZ(-45deg);
+        background-color: black;
+    }
+
+    .change #bar3 {
+        transform: translateY(0rem) rotateZ(45deg);
+        background-color: black;
+    }
+
+    .change #bar2 {
+        display: none;
+    }
+
+    /*------JS-CLASSES, ANIMATION, BURGERMENU-------*/
+
+    .change .bar {
+        background-color: #F3EEE7;
+    }
+
+    .change #bar1 {
+        transform: translateY(0.4rem) rotateZ(-45deg);
+        background-color: #F3EEE7;
+    }
+
+    .change #bar3 {
+        transform: translateY(0.1rem) rotateZ(45deg);
+        background-color: #F3EEE7;
+    }
+
+    .change #bar2 {
+        display: none;
+    }
+
+    /*-----------BURGERMENU DISPLAY-----------*/
+
+    .burgermenu_link {
+        display: none;
+        position: fixed;
+        z-index: 2;
+        margin: auto;
+        margin-top: 9rem;
+        max-width: 100vw;
+    }
+
+    .burgermenu_link a {
+        color: #F3EEE7;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: left;
+        font-family: sofia pro, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .burgermenu_link a:hover {
+        color: white;
+    }
+
+    .burger_link {
+        display: block;
+        padding: 2rem;
+    }
+
+    /*-----------BURGERMENU DESIGN-----------*/
+
+    .burger_bck,
+    #burgermenu {
+        top: 0;
+        position: absolute;
+    }
+
+    .burger_bck {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        background-color: #22222E;
+        opacity: 0.9;
+        transition: 0.3s ease;
+    }
+
+    .change_img {
+        width: 30%;
+        height: 100%;
+    }
+
+    .change {
+        display: block;
+    }
+
+    .change1 {
+        animation-name: ease_nav_kf;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes ease_nav_kf {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+
 }
