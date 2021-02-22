@@ -18,7 +18,7 @@
 <body>
     <header class="p_header">
         <nav id="overordnet-nav">
-           <img src="img/logo.png" alt="" class="logo2">
+            <img src="img/logo.png" alt="" class="logo2">
             <div id="burgermenu">
                 <div id="burgermenu_container">
                     <div id="bar1" class="bar"></div>
@@ -55,19 +55,48 @@
     <main>
         <!--<h2>Alle</h2>-->
 
-        <div class="pic">
+        <section class="splash"></section>
 
 
 
+        <nav id="filtrering-nav">
+            <h2 class="vin-overskrift">Vin</h2>
+            <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
 
-            <nav id="filtrering-nav">
-                <h2 class="vin-overskrift">Vin</h2>
-                <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
+            <div class="button_flex">
 
-                <div class="button_flex">
+                <div class="flexiii">
+                    <button data-land="alle" class="valgt">Alle vin</button>
 
+                </div>
+                <div class="flexii">
+                    <img src="img/italy_flag.png" alt="" class="ikon_italien">
+                    <button data-land="Italien">Italien</button>
+                </div>
+
+                <div class="flexii">
+                    <img src="img/france_flag.png" alt="" class="ikon_frankrig">
+                    <button data-land="Frankrig">Frankrig</button>
+                </div>
+
+                <div class="flexii">
+                    <img src="img/spain_flag.png" alt="" class="ikon_spanien">
+                    <button data-land="Spanien">Spanien</button>
+                </div>
+
+                <div class="flexii">
+                    <img src="img/argentina_flag.png" alt="" class="ikon_argentina">
+                    <button data-land="Argentina">Argentina</button>
+                </div>
+            </div>
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Vælg Land</button>
+                <div class="dropdown-content">
                     <div class="flexiii">
-                        <button data-land="alle" class="valgt">Alle vin</button>
+                        <button data-land="alle" class="valgt" class="dropbtn">Alle vin</button>
 
                     </div>
                     <div class="flexii">
@@ -90,27 +119,30 @@
                         <button data-land="Argentina">Argentina</button>
                     </div>
                 </div>
-            </nav>
+            </div>
 
 
-            <section id="liste">
-            </section>
-
+        </nav>
 
 
 
-            <template>
-                <article class="wines" class="wines-pic">
-                    <img src="" alt="" class="billede">
-                    <h3 class="navn"></h3>
-                    <p class="vintype"></p>
-                    <p class="land"></p>
-                    <!--<p class="beskrivelse"></p>-->
-                    <p class="pris"></p>
-                    <p class="fake_button">Læs mere</p>
-                </article>
-            </template>
-        </div>
+        <section id="liste">
+        </section>
+
+
+
+
+        <template>
+            <article class="wines" class="wines-pic">
+                <img src="" alt="" class="billede">
+                <h3 class="navn"></h3>
+                <p class="vintype"></p>
+                <p class="land"></p>
+                <!--<p class="beskrivelse"></p>-->
+                <p class="pris"></p>
+                <p class="fake_button">Læs mere</p>
+            </article>
+        </template>
     </main>
     <footer>
         <div id="footer_flex">
