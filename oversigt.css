@@ -88,9 +88,9 @@ button {
     color: #000;
     font-family: sofia pro, sans-serif;
     font-size: 1.1rem;
-    padding-right: 20px;
+    /* padding-right: 20px;*/
     border: none;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     cursor: pointer;
     background-color: transparent;
 
@@ -135,22 +135,7 @@ button {
     margin-bottom: 40px;
 }
 
-.ikon_italien {
-    width: 10%;
-    background-image: url(img/italy_flag.png);
-}
 
-.ikon_frankrig {
-    width: 10%;
-}
-
-.ikon_spanien {
-    width: 10%;
-}
-
-.ikon_argentina {
-    width: 10%;
-}
 
 .beskrivelse {
     max-width: 200px;
@@ -181,6 +166,41 @@ button {
     cursor: pointer;
 }
 
+.button_flex {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.flexii {
+    display: flex;
+    flex-direction: column;
+}
+
+/*.flexiii {
+   padding-left: 10px;
+}*/
+
+.ikon_italien {
+    width: 15%;
+    margin: auto;
+}
+
+.ikon_frankrig {
+    width: 15%;
+    margin: auto;
+}
+
+.ikon_spanien {
+    width: 15%;
+    margin: auto;
+}
+
+.ikon_argentina {
+    width: 15%;
+    margin: auto;
+}
 
 
 @media only screen and (max-width: 1050px) {
@@ -230,6 +250,26 @@ button {
     img {
         width: 60%;
     }
+
+    .ikon_italien {
+        width: 20%;
+        margin: auto;
+    }
+
+    .ikon_frankrig {
+        width: 20%;
+        margin: auto;
+    }
+
+    .ikon_spanien {
+        width: 20%;
+        margin: auto;
+    }
+
+    .ikon_argentina {
+        width: 20%;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -255,6 +295,26 @@ button {
 
     img {
         width: 40%;
+    }
+
+    .ikon_italien {
+        width: 25%;
+        margin: auto;
+    }
+
+    .ikon_frankrig {
+        width: 20%;
+        margin: auto;
+    }
+
+    .ikon_spanien {
+        width: 25%;
+        margin: auto;
+    }
+
+    .ikon_argentina {
+        width: 20%;
+        margin: auto;
     }
 }
 
