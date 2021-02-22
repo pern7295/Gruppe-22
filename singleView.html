@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="singleView.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
 </head>
 
 <body>
     <header class="p_header">
         <nav id="overordnet-nav">
-            <div class="overlay_logo"></div>
-
-
-
+            <img src="img/logo.png" alt="" class="logo2">
             <div id="burgermenu">
                 <div id="burgermenu_container">
                     <div id="bar1" class="bar"></div>
@@ -24,6 +23,7 @@
                     <div id="bar3" class="bar"></div>
                 </div>
             </div>
+
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
                     <a href="index.html">Om os</a>
@@ -32,14 +32,15 @@
                     <a href="oversigt.html">Udvalg</a>
                 </div>
                 <div id="burger3" class="burger_link">
-                    <a href="kontakt.html">Kontakt</a>
+                    <a href="#">Kontakt</a>
                 </div>
             </div>
             <div class="alm_menu">
-                <a href="index.html">Om os</a>
+                <img src="img/logo.png" alt="Logo">
+                <a href="#">Om os</a>
                 <a href="oversigt.html">Udvalg</a>
                 <a href="kontakt.html">Kontakt</a>
-                <a href="#">Vin Guide</a>
+                <a href="#">Events</a>
             </div>
             <!--Baggrund på burgermenu, ved klik-->
             <div id="burger_bck" class="burger_bck"></div>
@@ -49,24 +50,29 @@
 
 
     <main>
-
-
-
         <div class="single_container">
             <img src="#" alt="" class="land_billede">
             <article class="wines">
-                <button>Tilbage til oversigt</button>
                 <img src="#" alt="" class="land_ikon">
                 <h3 class="navn"></h3>
-                <p class="beskrivelse">Pris: </p>
-                <h4> Om vinen</h4>
-                <p class="vintype"> Vintype: </p>
-                <p class="land"> Land: </p>
-                <p class="druesort"> Druesort: </p>
-                <p class="aargang"> Årgang: </p>
-                <p class="pris">Pris: </p>
                 <img src="#" alt="" class="billede">
+                <div class="row">
+                    <div class="col col-left">
+                        <h4> Beskrivelse</h4>
+                        <p class="beskrivelse"> </p>
+                    </div>
+                    <div class="col col-right">
+                        <h4> Om vinen</h4>
+                        <p class="vintype"> Vintype: </p>
+                        <p class="land"> Land: </p>
+                        <p class="druesort"> Druesort: </p>
+                        <p class="aargang"> Årgang: </p>
+                    </div>
+                </div>
+                <p class="pris"> </p>
+                <button class="buy_btn">Køb</button>
             </article>
+            <button class="bk_btn">Tilbage til oversigt</button>
 
         </div>
 
@@ -102,6 +108,10 @@
         </div>
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
+
+    <a class="gotopbtn" href="#"> <i class="fas fa-angle-up"></i>
+    </a>
+
 
     <script src="script.js"></script>
     <script>
@@ -141,11 +151,11 @@
             document.querySelector(".druesort").textContent += vin.druesort;
             document.querySelector(".aargang").textContent += vin.aargang;
             document.querySelector(".beskrivelse").textContent = vin.beskrivelse;
-            document.querySelector(".pris").textContent += `${vin.pris},-`;
+            document.querySelector(".pris").textContent += `${vin.pris}kr/flaske`;
             document.querySelector(".land_ikon").src = medieurl + vin.land_ikon;
             document.querySelector(".land_billede").src = medieurl + vin.land_billede;
 
-            document.querySelector("button").addEventListener("click", tilbageTilListe);
+            document.querySelector(".bk_btn").addEventListener("click", tilbageTilListe);
 
         }
 
@@ -154,13 +164,6 @@
         }
 
     </script>
-
-
-
-
-
-
-
 </body>
 
 </html>

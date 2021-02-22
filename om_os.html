@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om os | Vinsite</title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        /*iPHONE X - 375 x 812*/
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        main {
+            margin: 0 auto;
+            background-color: #E8E5E1;
+            overflow-x: hidden;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 2vh;
+        }
+
+        p {
+            text-align: center;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+        }
+
+        #first_section {
+            background-image: url(img/om_os/om_splash.jpg);
+            background-size: cover;
+            background-position: 1%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 10fr 1fr;
+            grid-template-rows: 1fr 10fr 1fr;
+        }
+
+        .first_background {
+            max-height: 100%;
+            width: 100%;
+            grid-column: 2 / 3;
+            grid-row: 2 / 4;
+        }
+
+        .first_logo {
+            text-align: center;
+        }
+
+        .first_logo img {
+            width: 50%;
+            padding-top: 10%;
+        }
+
+        .first_txt_wrapper {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            background-image: url(img/om_os/circle_bck.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 10%;
+        }
+
+        .first_txt_wrapper p {
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .splash_ani {
+            animation-name: splash_ani_kf;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-timing-function: ease;
+        }
+
+        @keyframes splash_ani_kf {
+            0% {
+                opacity: 0;
+                transform: scale(1.5);
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .linje {
+            width: 20%;
+            height: 5px;
+            background-color: #2A2A28;
+            margin: 0 auto;
+        }
+
+        #video_section img {
+            height: 25vh;
+        }
+
+        #kontakt_section .kontakt_img {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        #kontakt_section .kontakt_img {
+            height: 50vh;
+            background-image: url(img/om_os/om_kontakt.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            grid-column: 1 / 4;
+        }
+
+        #kontakt_section .kontakt_img img {
+            width: 60vw;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .btn {
+            background-color: #4C0D0C;
+            width: 150px;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+
+        @media only screen and (min-width: 800px) {
+            #first_section {
+                width: 100%;
+                padding: 0;
+            }
+            .first_background {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+            .first_logo {
+                display: none;
+            }
+            .first_txt_wrapper {
+                grid-column: 2 / 2;
+                grid-row: 2 / 3;
+                padding: 0;
+                height: 50vh;
+            }
+            .first_txt_wrapper h2 {
+                padding-top: 15%;
+            }
+            #velkommen_section,
+            #video_section,
+            #kontakt_section {
+                padding-left: 15vw;
+                padding-right: 15vw;
+            }
+            .velkommen_txt,
+            .kontakt_txt {
+                background-color: #f0f0f0;
+            }
+            #kontakt_section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            #kontakt_section .kontakt_txt {
+                grid-column: 1/1;
+            }
+            #kontakt_section .kontakt_img {
+                grid-column: 2/2;
+                height: 100%;
+            }
+            #kontakt_section .kontakt_img img {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <section id="first_section">
+            <div class="first_background">
+                <div class="first_logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+                <div class="first_txt_wrapper splash_ani">
+                    <h2>Om os</h2>
+                    <div class="linje"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusamus consequatur obcaecati unde delectus, dolores temporibus odio nobis nisi?</p>
+                </div>
+            </div>
+        </section>
+        <section id="velkommen_section">
+            <div class="velkommen_txt">
+                <h2>Velkommen til vingården</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In molestiae voluptatem natus aut velit laborum inventore dolor illum quaerat aliquid, dignissimos quasi reprehenderit eius maiores minima doloribus nisi temporibus officiis!
+                    <br>
+                    <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quis totam magnam molestias voluptate error quae natus, alias quaerat iure mollitia odio nemo animi autem officia consequuntur, fugit maiores incidunt.</p>
+
+            </div>
+        </section>
+        <section id="video_section">
+            <img src="img/om_os/om_velkommen.jpg" alt="">
+        </section>
+        <section id="kontakt_section">
+            <div class="kontakt_txt">
+                <h2>Kontakt os</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae velit cumque totam, iste veniam ratione corrupti. Tempora fuga minus, inventore laboriosam ut a. Numquam voluptate sequi delectus quas ipsam molestiae!
+                    <br>
+                    <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt veniam odio quam eius earum sequi eaque, numquam ducimus laboriosam! Voluptatibus velit suscipit cumque minima voluptates, incidunt, laboriosam odit dicta exercitationem.</p>
+                <div class="btn">Kontakt os</div>
+            </div>
+            <div class="kontakt_img">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src=""></script>
+</body>
+
+</html>
