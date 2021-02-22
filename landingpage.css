@@ -352,6 +352,17 @@
 
  /* Events CSS */
 
+ /* nav links anden farve Events  */
+
+ .p_header #overordnet-nav .alm_menu a {
+     color: #CEC1A7;
+ }
+
+ .p_header #overordnet-nav .alm_menu a:hover {
+     color: #721615;
+
+ }
+
  /* Sektion 1 - bagggrund */
 
  #section_1 {
@@ -359,11 +370,12 @@
  }
 
  .baggrunds_billede {
-     background-image: url(img/eventsbg2.jpg);
+     background-image: url(img/eventsbg4.jpg);
+     opacity: 0.75;
      width: 100vw;
      height: 40vh;
      background-size: cover;
-     background-position: 70%;
+     background-position: 10% 95%;
      background-attachment: fixed;
      object-fit: cover;
  }
