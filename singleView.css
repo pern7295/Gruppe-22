@@ -1,4 +1,4 @@
-/* Overordnet css */
+/* ---------------- Overordnet css --------------- */
 
 * {
     box-sizing: border-box;
@@ -8,77 +8,142 @@
 body {
     background-color: #F2F6F7;
 }
+
+/* --- Definering af grid-area til baggrundsbillede + artikel --- */
+
 .single_container {
     display: grid;
     max-width: 100vw;
-    margin-bottom: 6%;
 }
 .land_billede,
+.bk_btn,
 article {
     grid-area: 1 / 1;
 }
+
+/* --------------------- Selve artiklen (generelt) -------------------*/
+
 article {
-    place-self: left center;
     max-width: 40%;
     margin-left: 10%;
-    margin-top: 6%;
     margin-bottom: 6%;
+    place-self: left center;
     background-color: rgba(241, 239, 234, 0.67);
     text-transform: uppercase;
     color: #000;
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 2%;
     text-align: center;
+    margin-top: 1%;
 }
 article h3 {
     font-family: 'span', serif;
-    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
 article p,
 article h4 {
     font-weight: 200;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 2;
     text-align: left;
     margin-left: 5%;
     width: 90%;
 }
 article h4 {
-    font-size: 1.1rem;
-}
-article .beskrivelse {
-    text-align: center;
-    margin-bottom: 10%;
+    font-size: 1.4rem;
 }
 article img {
     max-width: 50%;
+    margin-bottom: 5%;
 }
-button {
+.bk_btn {
+    max-width: 15%;
+    max-height: 5%;
     border: none;
     color: white;
     font-family: 'sofia pro', sans-serif;
     font-weight: 200;
     background-color: #4C0D0C;
-    min-width: 15%;
     text-align: right;
-    padding: 20px;
-    position: absolute;
-    top: 20%;
-    left: -1px;
     cursor: pointer;
+    padding-right: 2%;
 }
-button:hover {
+.bk_btn:hover {
     transform: translateX(-20%);
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
 .land_billede {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .land_ikon {
     width: 50px;
+}
+article .pris {
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: none;
+    margin-top: 5%;
+}
+.buy_btn {
+    border: none;
+    color: white;
+    font-family: 'sofia pro', sans-serif;
+    font-weight: 200;
+    background-color: #4C0D0C;
+    padding: 10px;
+    cursor: pointer;
+    width: 20%;
+}
+
+/* -------------- To ens kolonner ved siden af hinanden --------------*/
+
+.col {
+    flex: 50%;
+    padding: 10px;
+}
+.row {
+    display: flex;
+}
+.col-right p {
+    line-height: 2.3;
+}
+.col-left {
+    border-right: 1px solid #9f9f9f;
+}
+
+/*-------------------- Media-q's ----------------------*/
+
+@media screen and (max-width: 1000px) {
+    /* Ligger de to kolonner ovenpå hinanden istedet for ved siden af */
+    .row {
+        display: block;
+    }
+    article {
+        place-self: center center;
+        max-width: 80%;
+        margin-left: 0%;
+    }
+    .col-left {
+        border-right: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .bk_btn {
+        max-width: 20%;
+        max-height: 7%;
+    }
+}
+@media screen and (max-width: 424px) {
+    .bk_btn {
+        max-width: 30%;
+    }
 }

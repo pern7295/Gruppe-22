@@ -48,25 +48,29 @@
 
 
     <main>
-
-
-
         <div class="single_container">
             <img src="#" alt="" class="land_billede">
             <article class="wines">
-                <button>Tilbage til oversigt</button>
                 <img src="#" alt="" class="land_ikon">
                 <h3 class="navn"></h3>
                 <img src="#" alt="" class="billede">
-
-                <p class="beskrivelse">Pris: </p>
-                <h4> Om vinen</h4>
-                <p class="vintype"> Vintype: </p>
-                <p class="land"> Land: </p>
-                <p class="druesort"> Druesort: </p>
-                <p class="aargang"> Årgang: </p>
-                <p class="pris">Pris: </p>
+                <div class="row">
+                    <div class="col col-left">
+                        <h4> Beskrivelse</h4>
+                        <p class="beskrivelse"> </p>
+                    </div>
+                    <div class="col col-right">
+                        <h4> Om vinen</h4>
+                        <p class="vintype"> Vintype: </p>
+                        <p class="land"> Land: </p>
+                        <p class="druesort"> Druesort: </p>
+                        <p class="aargang"> Årgang: </p>
+                    </div>
+                </div>
+                <p class="pris"> </p>
+                <button class="buy_btn">Køb</button>
             </article>
+            <button class="bk_btn">Tilbage til oversigt</button>
 
         </div>
 
@@ -141,11 +145,11 @@
             document.querySelector(".druesort").textContent += vin.druesort;
             document.querySelector(".aargang").textContent += vin.aargang;
             document.querySelector(".beskrivelse").textContent = vin.beskrivelse;
-            document.querySelector(".pris").textContent += `${vin.pris},-`;
+            document.querySelector(".pris").textContent += `${vin.pris}kr/flaske`;
             document.querySelector(".land_ikon").src = medieurl + vin.land_ikon;
             document.querySelector(".land_billede").src = medieurl + vin.land_billede;
 
-            document.querySelector("button").addEventListener("click", tilbageTilListe);
+            document.querySelector(".bk_btn").addEventListener("click", tilbageTilListe);
 
         }
 
@@ -154,13 +158,6 @@
         }
 
     </script>
-
-
-
-
-
-
-
 </body>
 
 </html>
