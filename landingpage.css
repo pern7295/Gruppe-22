@@ -226,7 +226,7 @@
          width: 100%;
      }
 
-     .alm_menu {
+     .lp_header .alm_menu {
          /*margin-top: 1.5rem;*/
          display: flex;
          justify-content: space-around;
