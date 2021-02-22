@@ -16,6 +16,7 @@ body {
     max-width: 100vw;
 }
 .land_billede,
+.bk_btn,
 article {
     grid-area: 1 / 1;
 }
@@ -23,20 +24,20 @@ article {
 /* --------------------- Selve artiklen (generelt) -------------------*/
 
 article {
-    place-self: left center;
     max-width: 40%;
     margin-left: 10%;
     margin-bottom: 6%;
+    place-self: left center;
     background-color: rgba(241, 239, 234, 0.67);
     text-transform: uppercase;
     color: #000;
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 2%;
     text-align: center;
+    margin-top: 1%;
 }
 article h3 {
     font-family: 'span', serif;
-    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
@@ -57,18 +58,16 @@ article img {
     margin-bottom: 5%;
 }
 .bk_btn {
+    max-width: 15%;
+    max-height: 5%;
     border: none;
     color: white;
     font-family: 'sofia pro', sans-serif;
     font-weight: 200;
     background-color: #4C0D0C;
-    min-width: 15%;
     text-align: right;
-    padding: 20px;
-    position: absolute;
-    top: 20vh;
-    left: 0;
     cursor: pointer;
+    padding-right: 2%;
 }
 .bk_btn:hover {
     transform: translateX(-20%);
@@ -88,10 +87,11 @@ article img {
     width: 50px;
 }
 article .pris {
-    text-align: left;
+    text-align: center;
     font-weight: 600;
     font-size: 0.8rem;
     text-transform: none;
+    margin-top: 5%;
 }
 .buy_btn {
     border: none;
@@ -101,8 +101,7 @@ article .pris {
     background-color: #4C0D0C;
     padding: 10px;
     cursor: pointer;
-    width: 15%;
-    margin-right: 75%;
+    width: 20%;
 }
 
 /* -------------- To ens kolonner ved siden af hinanden --------------*/
@@ -123,9 +122,28 @@ article .pris {
 
 /*-------------------- Media-q's ----------------------*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
     /* Ligger de to kolonner ovenpå hinanden istedet for ved siden af */
     .row {
         display: block;
+    }
+    article {
+        place-self: center center;
+        max-width: 80%;
+        margin-left: 0%;
+    }
+    .col-left {
+        border-right: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .bk_btn {
+        max-width: 20%;
+        max-height: 7%;
+    }
+}
+@media screen and (max-width: 424px) {
+    .bk_btn {
+        max-width: 30%;
     }
 }
