@@ -222,7 +222,7 @@
      .alm_menu {
          margin-top: 1.5rem;
          display: flex;
-         justify-content: space-evenly;
+         justify-content: space-around;
      }
 
      .alm_menu img {
@@ -231,6 +231,7 @@
          padding: 0.5rem;
          margin-top: 1rem;
          cursor: pointer;
+         float: left;
      }
 
      header .alm_menu a {
@@ -238,9 +239,10 @@
          text-transform: uppercase;
          /*color: #F3EEE7;*/
          color: #22222E;
-         font-family: sofia pro, sans-serif;
+         font-family: span, serif;
          font-size: 1.5rem;
          padding: 3rem;
+         float: right;
      }
 
      #overordnet-nav a:hover {
