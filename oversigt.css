@@ -233,18 +233,28 @@ button {
 }
 
 .vin-overskrift {
-    border-bottom: 3px solid;
-    width: 134px;
+    /*border-bottom: 3px solid;
+    width: 134px;*/
     margin: auto;
 }
 
 
-    button:hover {
+button:hover {
     text-decoration: underline;
 
 }
 
+.flexii:hover {
+    transform: scale(1.2);
+}
 
+.flexiii:hover {
+    transform: scale(1.2);
+}
+
+.dropdown {
+    display: none;
+}
 
 @media only screen and (max-width: 1050px) {
 
@@ -340,25 +350,7 @@ button {
         width: 40%;
     }
 
-    .ikon_italien {
-        width: 25%;
-        margin: auto;
-    }
 
-    .ikon_frankrig {
-        width: 20%;
-        margin: auto;
-    }
-
-    .ikon_spanien {
-        width: 25%;
-        margin: auto;
-    }
-
-    .ikon_argentina {
-        width: 20%;
-        margin: auto;
-    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -519,8 +511,96 @@ button {
         }
     }
 
+    .button_flex {
+        display: block;
+        /* width: 80%;
+    margin-left: 10%;*/
 
+    }
 
+    .flexiii {
+        margin-top: 20px;
+    }
+
+    .flexii {
+        margin-top: 20px;
+        /*display: block;*/
+    }
+
+    .ikon_italien {
+        width: 10%;
+        margin: auto;
+    }
+
+    .ikon_frankrig {
+        width: 10%;
+        margin: auto;
+    }
+
+    .ikon_spanien {
+        width: 10%;
+        margin: auto;
+    }
+
+    .ikon_argentina {
+        width: 10%;
+        margin: auto;
+    }
+
+    .flexii:hover {
+        transform: scale(1.2);
+    }
+
+    .flexiii:hover {
+        transform: scale(1.2);
+    }
+
+    .dropbtn {
+        background-color: #4C0D0C;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        pointer-events: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+       /* background-color: #F1EFEA;*/
+        min-width: 120px;
+        z-index: 1;
+        margin: auto;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #4C0D0C;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #4C0D0C;
+    }
+
+    .button_flex {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 700px) {
