@@ -221,7 +221,7 @@
      }
 
      .alm_menu {
-         margin-top: 1.5rem;
+         /*margin-top: 1.5rem;*/
          display: flex;
          justify-content: space-around;
      }
@@ -238,7 +238,8 @@
          text-decoration: none;
          text-transform: uppercase;
          /*color: #F3EEE7;*/
-         color: #22222E;
+         /*color: #22222E;*/
+         color: #CEC1A7;
          font-family: span, serif;
          font-size: 1.5rem;
          padding: 3rem;
@@ -246,6 +247,7 @@
 
      #overordnet-nav a:hover {
          transform: translateY(-5%);
+         color: #721615;
      }
 
      /*Video & splash billede*/
@@ -272,4 +274,36 @@
      .overlay_logo {
          display: none;
      }
+
+     .overlay_tekst {
+         position: absolute;
+         background-image: url(img/tornLogo.svg);
+         background-size: cover;
+         opacity: 0.9;
+         width: 600px;
+         height: 300px;
+         top: 35%;
+         left: 30%;
+     }
+
+     /* Pernilles Animation */
+     .splash_ani {
+         animation-name: splash_ani_kf;
+         animation-duration: 2s;
+         animation-iteration-count: 1;
+         animation-fill-mode: both;
+         animation-timing-function: ease;
+     }
+
+     @keyframes splash_ani_kf {
+         0% {
+             opacity: 0;
+             transform: scale(1.5);
+         }
+
+         100% {
+             opacity: 1;
+         }
+     }
+
  }

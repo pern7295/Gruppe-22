@@ -70,6 +70,8 @@
         //Der klikkes på burgermenuen
         function start() {
             document.querySelector("#burgermenu").addEventListener("click", onClickMenu);
+            document.querySelector(".overlay_tekst").classList.add("splash_ani");
+            console.log("Logo animation");
         }
 
         //Når der er klikket på burgermenuen, benyttes css-toggle-classes til at ændre udseende på menuen
