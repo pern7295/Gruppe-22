@@ -6,98 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singleview</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="singleView.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-
-    <style>
-        /* Overordnet css */
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        main {
-            background-color: #F2F6F7;
-        }
-
-        .single_container {
-            display: grid;
-            max-width: 100vw;
-        }
-
-        .land_billede,
-        article {
-            grid-area: 1 / 1;
-        }
-
-        article {
-            place-self: left center;
-            max-width: 40%;
-            margin-left: 10%;
-            margin-top: 6%;
-            background-color: rgba(241, 239, 234, 0.67);
-            text-transform: uppercase;
-            color: #000;
-            font-family: 'sofia pro', sans-serif;
-            font-size: 1.5rem;
-            padding: 10px;
-            text-align: center;
-        }
-
-        article h3 {
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
-
-        article p {
-            font-weight: 200;
-            font-size: 1rem;
-            margin-bottom: 10px;
-            line-height: 1.5;
-            text-align: left;
-        }
-
-        article img {
-            max-width: 50%;
-        }
-
-        button {
-            border: none;
-            color: white;
-            font-family: 'sofia pro', sans-serif;
-            text-transform: uppercase;
-            font-weight: 600;
-            background-color: #4C0D0C;
-            min-width: 15%;
-            text-align: right;
-            padding: 20px;
-            position: absolute;
-            top: 20%;
-            left: -1px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            transform: translateX(-20%);
-            transition-duration: 1s;
-            transition-timing-function: ease-in-out;
-        }
-
-        .land_billede {
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .land_ikon {
-            width: 50px;
-        }
-
-    </style>
 </head>
 
 <body>
-     <header class="p_header">
+    <header class="p_header">
         <nav id="overordnet-nav">
             <div class="overlay_logo"></div>
 
@@ -141,15 +55,16 @@
         <div class="single_container">
             <img src="#" alt="" class="land_billede">
             <article class="wines">
-                <button>Tilbage til forside</button>
+                <button>Tilbage til oversigt</button>
                 <img src="#" alt="" class="land_ikon">
                 <h3 class="navn"></h3>
                 <p class="beskrivelse">Pris: </p>
+                <h4> Om vinen</h4>
                 <p class="vintype"> Vintype: </p>
                 <p class="land"> Land: </p>
                 <p class="druesort"> Druesort: </p>
                 <p class="aargang"> Årgang: </p>
-                <p class="pris"> </p>
+                <p class="pris">Pris: </p>
                 <img src="#" alt="" class="billede">
             </article>
 
@@ -159,34 +74,34 @@
 
     </main>
     <footer>
-            <div id="footer_flex">
-                <div class="col_1">
-                    <h4>Åbningstider</h4>
-                    <div class="line"></div>
-                    <p>Mandag - Fredag</p>
-                    <p>10.00 - 17.00</p>
-                    <p>Lørdag</p>
-                    <p>10.00 - 14.00</p>
-                    <p>Søndag</p>
-                    <p>Lukket</p>
-                </div>
-                <div class="col_2">
-                    <h4>Socialemedier</h4>
-                    <div class="line"></div>
-                    <img src="img/instagram.png" alt="Instagram Logo">
-                    <img src="img/facebook.png" alt="Instagram Logo">
-                </div>
-                <div class="col_3">
-                    <h4>Kontakt</h4>
-                    <div class="line"></div>
-                    <p>Tlf.</p>
-                    <p>+45 12 34 56 78</p>
-                    <p>Email</p>
-                    <p>godvin@email.dk</p>
-                </div>
+        <div id="footer_flex">
+            <div class="col_1">
+                <h4>Åbningstider</h4>
+                <div class="line"></div>
+                <p>Mandag - Fredag</p>
+                <p>10.00 - 17.00</p>
+                <p>Lørdag</p>
+                <p>10.00 - 14.00</p>
+                <p>Søndag</p>
+                <p>Lukket</p>
             </div>
-            <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
-        </footer>
+            <div class="col_2">
+                <h4>Socialemedier</h4>
+                <div class="line"></div>
+                <img src="img/instagram.png" alt="Instagram Logo">
+                <img src="img/facebook.png" alt="Instagram Logo">
+            </div>
+            <div class="col_3">
+                <h4>Kontakt</h4>
+                <div class="line"></div>
+                <p>Tlf.</p>
+                <p>+45 12 34 56 78</p>
+                <p>Email</p>
+                <p>godvin@email.dk</p>
+            </div>
+        </div>
+        <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
+    </footer>
 
     <script src="script.js"></script>
     <script>

@@ -18,10 +18,7 @@
 <body>
     <header class="p_header">
         <nav id="overordnet-nav">
-            <div class="overlay_logo"></div>
-
-
-
+           <img src="img/logo.png" alt="" class="logo2">
             <div id="burgermenu">
                 <div id="burgermenu_container">
                     <div id="bar1" class="bar"></div>
@@ -29,6 +26,7 @@
                     <div id="bar3" class="bar"></div>
                 </div>
             </div>
+
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
                     <a href="index.html">Om os</a>
@@ -37,14 +35,15 @@
                     <a href="oversigt.html">Udvalg</a>
                 </div>
                 <div id="burger3" class="burger_link">
-                    <a href="kontakt.html">Kontakt</a>
+                    <a href="#">Kontakt</a>
                 </div>
             </div>
             <div class="alm_menu">
-                <a href="index.html">Om os</a>
+                <img src="img/logo.png" alt="Logo">
+                <a href="#">Om os</a>
                 <a href="oversigt.html">Udvalg</a>
                 <a href="kontakt.html">Kontakt</a>
-                <a href="#">Vin Guide</a>
+                <a href="#">Events</a>
             </div>
             <!--Baggrund på burgermenu, ved klik-->
             <div id="burger_bck" class="burger_bck"></div>
@@ -65,20 +64,31 @@
                 <h2 class="vin-overskrift">Vin</h2>
                 <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
 
-                <div>
-                    <button data-land="alle" class="valgt">Alle vin</button>
+                <div class="button_flex">
 
-                    <!--<img src="img/italy_flag.png" alt="" class="ikon_italien">-->
-                    <button data-land="Italien">Italien</button>
+                    <div class="flexiii">
+                        <button data-land="alle" class="valgt">Alle vin</button>
 
-                    <!--  <img src="img/france_flag.png" alt="" class="ikon_frankrig">-->
-                    <button data-land="Frankrig">Frankrig</button>
+                    </div>
+                    <div class="flexii">
+                        <img src="img/italy_flag.png" alt="" class="ikon_italien">
+                        <button data-land="Italien">Italien</button>
+                    </div>
 
-                    <!--<img src="img/france_flag.png" alt="" class="ikon_spanien">-->
-                    <button data-land="Spanien">Spanien</button>
+                    <div class="flexii">
+                        <img src="img/france_flag.png" alt="" class="ikon_frankrig">
+                        <button data-land="Frankrig">Frankrig</button>
+                    </div>
 
-                    <!--<img src="img/france_flag.png" alt="" class="ikon_argentina">-->
-                    <button data-land="Argentina">Argentina</button>
+                    <div class="flexii">
+                        <img src="img/spain_flag.png" alt="" class="ikon_spanien">
+                        <button data-land="Spanien">Spanien</button>
+                    </div>
+
+                    <div class="flexii">
+                        <img src="img/argentina_flag.png" alt="" class="ikon_argentina">
+                        <button data-land="Argentina">Argentina</button>
+                    </div>
                 </div>
             </nav>
 
@@ -102,35 +112,35 @@
             </template>
         </div>
     </main>
-<footer>
-            <div id="footer_flex">
-                <div class="col_1">
-                    <h4>Åbningstider</h4>
-                    <div class="line"></div>
-                    <p>Mandag - Fredag</p>
-                    <p>10.00 - 17.00</p>
-                    <p>Lørdag</p>
-                    <p>10.00 - 14.00</p>
-                    <p>Søndag</p>
-                    <p>Lukket</p>
-                </div>
-                <div class="col_2">
-                    <h4>Socialemedier</h4>
-                    <div class="line"></div>
-                    <img src="img/instagram.png" alt="Instagram Logo">
-                    <img src="img/facebook.png" alt="Instagram Logo">
-                </div>
-                <div class="col_3">
-                    <h4>Kontakt</h4>
-                    <div class="line"></div>
-                    <p>Tlf.</p>
-                    <p>+45 12 34 56 78</p>
-                    <p>Email</p>
-                    <p>godvin@email.dk</p>
-                </div>
+    <footer>
+        <div id="footer_flex">
+            <div class="col_1">
+                <h4>Åbningstider</h4>
+                <div class="line"></div>
+                <p>Mandag - Fredag</p>
+                <p>10.00 - 17.00</p>
+                <p>Lørdag</p>
+                <p>10.00 - 14.00</p>
+                <p>Søndag</p>
+                <p>Lukket</p>
             </div>
-            <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
-        </footer>
+            <div class="col_2">
+                <h4>Socialemedier</h4>
+                <div class="line"></div>
+                <img src="img/instagram.png" alt="Instagram Logo">
+                <img src="img/facebook.png" alt="Instagram Logo">
+            </div>
+            <div class="col_3">
+                <h4>Kontakt</h4>
+                <div class="line"></div>
+                <p>Tlf.</p>
+                <p>+45 12 34 56 78</p>
+                <p>Email</p>
+                <p>godvin@email.dk</p>
+            </div>
+        </div>
+        <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
+    </footer>
     <script>
         const header = document.querySelector("h2");
         const medieurl = "https://tema7-763a.restdb.io/media/"

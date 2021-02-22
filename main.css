@@ -3,6 +3,7 @@
 
 h2 {
     font-size: 3rem;
+    font-family: span, serif;
 }
 
 p {
@@ -34,11 +35,11 @@ body {
 }
 
 
-.alm_menu {
-    margin-top: 1.5rem;
-    /*display: inline-block;*/
-    float: right;
-}
+/*.alm_menu {
+         margin-top: 1.5rem;
+         display: flex;
+         justify-content: space-around;
+     }
 
 
 .overlay_logo {
@@ -54,9 +55,43 @@ body {
 
 
 .p_header {
-    /*position: relative;
-    height: auto;*/
+    position: relative;
+    height: auto;
     width: 100%;
+}*/
+
+.alm_menu {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alm_menu img {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    float: left;
+}
+
+header .alm_menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    /*color: #F3EEE7;*/
+    color: #22222E;
+    font-family: span, serif;
+    font-size: 1.5rem;
+    padding: 3rem;
+    float: right;
+}
+
+#overordnet-nav a:hover {
+    transform: translateY(-5%);
+}
+
+.logo2 {
+    display: none;
 }
 
 /*#overordnet-nav {
@@ -69,7 +104,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
-    font-family: sofia pro, sans-serif;
+    font-family: span, serif;
     font-size: 1.5rem;
     padding-right: 20px;
 
@@ -149,6 +184,13 @@ footer h4 {
     .alm_menu {
         display: none;
     }
+
+    .logo2 {
+    display: inherit;
+        width: 6rem;
+        height: 6rem;
+        margin: auto;
+}
 
     #burgermenu {
         width: 3rem;
