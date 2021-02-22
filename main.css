@@ -47,7 +47,7 @@ body {
     z-index: 1;
     background-image: url(img/logo.png);
     background-size: cover;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
     width: 100px;
     height: 100px;
     display: inline-block;
