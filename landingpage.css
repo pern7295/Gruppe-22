@@ -198,6 +198,8 @@
 
      #body_lp {
          overflow-y: hidden;
+         overflow-x: hidden;
+         overflow: hidden;
      }
 
      /*Navigation landing_page*/
@@ -275,6 +277,10 @@
          display: none;
      }
 
+     .overlay_grid {
+         display: grid;
+     }
+
      .overlay_tekst {
          position: absolute;
          background-image: url(img/tornLogo.svg);
@@ -304,6 +310,32 @@
          100% {
              opacity: 1;
          }
+     }
+
+     /* CA knap */
+
+     .ca_knap {
+         position: absolute;
+         top: 90%;
+         right: -2%;
+         border: none;
+         font-family: 'sofia pro', sans-serif;
+         font-weight: 200;
+         background-color: #4C0D0C;
+         cursor: pointer;
+         padding-right: 4%;
+
+     }
+
+     .ca_knap a {
+         color: white;
+         text-decoration: none;
+     }
+
+     .ca_knap:hover {
+         transform: translateX(-15%);
+         transition-duration: 1s;
+         transition-timing-function: ease-in-out;
      }
 
  }
