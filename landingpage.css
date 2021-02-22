@@ -232,7 +232,6 @@
          padding: 0.5rem;
          margin-top: 1rem;
          cursor: pointer;
-         float: left;
      }
 
      header .alm_menu a {
@@ -243,7 +242,6 @@
          font-family: span, serif;
          font-size: 1.5rem;
          padding: 3rem;
-         float: right;
      }
 
      #overordnet-nav a:hover {
