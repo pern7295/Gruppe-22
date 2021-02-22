@@ -3,6 +3,7 @@
 
 h2 {
     font-size: 3rem;
+    font-family: span, serif;
 }
 
 p {
@@ -69,7 +70,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
-    font-family: sofia pro, sans-serif;
+    font-family: span, serif;
     font-size: 1.5rem;
     padding-right: 20px;
 
