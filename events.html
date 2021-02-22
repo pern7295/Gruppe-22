@@ -18,11 +18,13 @@
         }
 
         .baggrunds_billede {
-            background-image: url(img/splash_4.jpg);
+            background-image: url(img/eventsbg2.jpg);
             width: 100vw;
             height: 40vh;
-            background-position: 60% 55%;
+            background-size: cover;
+            background-position: 70%;
             background-attachment: fixed;
+            object-fit: cover;
         }
 
         .tekst h1 {
@@ -40,6 +42,7 @@
             background-color: rgba(249, 247, 242, 0.80);
             margin-top: 0;
             padding: 1rem;
+            text-align: center;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
@@ -47,7 +50,8 @@
         .tekst {
             position: absolute;
             padding: 1rem;
-            grid-area: 1/1;
+            top: 18vh;
+            left: 0;
         }
 
         /* Events */
@@ -64,11 +68,73 @@
             font-weight: 100;
             font-size: 1rem;
             margin-top: 0;
+            margin-bottom: 0;
         }
 
         #section_2 {
             padding: 1.5rem;
         }
+
+
+
+        .event {
+            display: grid;
+            grid-template-rows: repeat(6 1fr);
+            gap: 2rem;
+        }
+
+        .img_1 {
+            grid-area: 1;
+        }
+
+        .img_2 {
+            grid-area: 5/1;
+        }
+
+        .img_3 {
+            grid-area: 3/1;
+        }
+
+        /* Knap */
+
+        .indhold_btn {
+            margin-top: 2rem;
+            max-width: 300px;
+            align-self: center;
+            border: none;
+            padding: 1rem;
+            text-align: center;
+            font-family: 'sofia pro', sans-serif;
+            font-weight: 200;
+            text-transform: uppercase;
+            background-color: #4C0D0C;
+            color: white;
+            cursor: pointer;
+        }
+
+        .indhold_btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Indhold til event */
+        .indhold_1,
+        .indhold_2,
+        .indhold_3 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 2rem;
+        }
+
+        .lande_flag {
+            max-width: 2vw;
+            height: 2vw;
+            align-self: center;
+            margin-top: 0;
+        }
+
+
+        /*Footer*/
 
         footer {
             background-color: transparent;
@@ -79,27 +145,108 @@
             background-color: black;
         }
 
+        /* Pernilles Animation */
+        .splash_ani {
+            animation-name: splash_ani_kf;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-timing-function: ease;
+        }
+
+        @keyframes splash_ani_kf {
+            0% {
+                opacity: 0;
+                transform: scale(1.5);
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 800px) {
+            .tekst {
+                position: absolute;
+                padding: 1rem;
+                top: 35vh;
+                left: 0;
+            }
+        }
+
         @media (min-width: 1000px) {
 
+            header {
+                position: fixed;
+                height: auto;
+                width: 100%;
+                z-index: 2;
+            }
+
+            .alm_menu {
+                /*margin-top: 1.5rem;*/
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .alm_menu img {
+                width: 6rem;
+                height: 6rem;
+                padding: 0.5rem;
+                margin-top: 1rem;
+                cursor: pointer;
+            }
+
+            header .alm_menu a {
+                text-decoration: none;
+                text-transform: uppercase;
+                /*color: #F3EEE7;*/
+                /*color: #22222E;*/
+                color: #CEC1A7;
+                font-family: span, serif;
+                font-size: 1.5rem;
+                padding: 3rem;
+            }
+
+            #overordnet-nav a:hover {
+                transform: translateY(-5%);
+                color: #721615;
+            }
+
+            header .alm_menu .nav_logo {
+                margin: 0;
+                padding: 0;
+            }
+
             .baggrunds_billede {
-                height: 60vh;
+                height: 80vh;
             }
 
             .tekst {
-                top: 11rem;
-                left: 25rem;
+                z-index: 1;
+                top: 15rem;
+                left: 28rem;
                 max-width: 600px;
             }
 
             #section_2 {
-                max-width: 860px;
+                max-width: 1000px;
                 margin: auto;
+                margin-top: 3rem;
+                margin-bottom: 10rem;
             }
 
-            .event_1 {
+            .event {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 1rem;
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 2rem;
+                grid-row-gap: 5rem;
+            }
+
+
+            .img_2 {
+                grid-area: 2/2;
             }
         }
     </style>
@@ -133,11 +280,11 @@
                     </div>
                 </div>
                 <div class="alm_menu">
-                    <img src="img/logo.png" alt="Logo">
-                    <a href="#">Om os</a>
+                    <a class="nav_logo" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                    <a href="om_os.html">Om os</a>
                     <a href="oversigt.html">Udvalg</a>
                     <a href="kontakt.html">Kontakt</a>
-                    <a href="#">Events</a>
+                    <a href="events.html">Events</a>
                 </div>
                 <!--Baggrund på burgermenu, ved klik-->
                 <div id="burger_bck" class="burger_bck"></div>
@@ -149,30 +296,39 @@
         <div class="baggrunds_billede"></div>
         <div class="tekst">
             <h1>Events</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolor necessitatibus labore recusandae, veniam quae est, beatae deleniti iste tenetur quibusdam minima quia consectetur ea architecto aliquid error sed rerum. Sequi ex, assumenda quam officia alias, iure voluptatum eaque expedita voluptates soluta voluptate ea accusantium debitis, nemo harum temporibus optio.</p>
+            <p>Vi afholder diverse events i løbet af året, bla. vinsmagning på udvalgte vine. Vores events holdes i vores altid hyggelige vinbar, med behagelig live musik & hyggelig stemning.</p>
         </div>
     </section>
     <section id="section_2">
-        <div class="event_1">
-            <img src="img/splash_3.jpg" alt="">
+        <div class="event">
             <div class="indhold_1">
                 <h2>Smag på; Italien</h2>
                 <h3>26/02/21 Kl. 20.00</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
+                <img class="lande_flag" src="img/italy_flag.png" alt="Italiensk_flag">
+                <p>Drøm dig væk til Sydens Sol med de bedste Italienske druer & nyd live musikken hos Torn P.</p>
+                <p>Vinsmagning af 8 Italienske vine</p>
+                <p>600 kr. pr. deltager</p>
+                <button class="indhold_btn">Se vores udvalg af Italienske vine</button>
             </div>
+            <img class="img_1" src="img/events1_border.png" alt="Skænker vin">
+            <img class="img_2" src="img/events2_border.png" alt="Drikker vin">
+            <div class="indhold_2">
+                <h2>Smag på; Frankrig</h2>
+                <h3>13/03/21 Kl. 20.00</h3>
+                <img class="lande_flag" src="img/france_flag.png" alt="Frankrig_flag">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
+                <button class="indhold_btn">Se vores udvalg af Franske vine</button>
+            </div>
+            <div class="indhold_3">
+                <h2>Smag på; Argentina</h2>
+                <h3>10/04/21 Kl. 20.00</h3>
+                <img class="lande_flag" src="img/argentina_flag.png" alt="Italiensk_flag">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
+                <button class="indhold_btn">Se vores udvalg af Argentinske vine</button>
+            </div>
+            <img class="img_3" src="img/events3_border.png" alt="Vinflasker">
         </div>
-        <div class="event_2">
-            <h2>Smag på; Frankrig</h2>
-            <h3>13/03/21 Kl. 20.00</h3>
-            <img src="img/splash_3.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
-        </div>
-        <div class="event_3">
-            <h2>Smag på; Argentina</h2>
-            <h3>10/04/21 Kl. 20.00</h3>
-            <img src="img/splash_3.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
-        </div>
+
     </section>
     <div class="lang_line"></div>
     <footer>
@@ -210,6 +366,8 @@
         //Der klikkes på burgermenuen
         function start() {
             document.querySelector("#burgermenu").addEventListener("click", onClickMenu);
+            document.querySelector(".tekst").classList.add("splash_ani");
+            console.log("Logo animation");
         }
 
         //Når der er klikket på burgermenuen, benyttes css-toggle-classes til at ændre udseende på menuen
