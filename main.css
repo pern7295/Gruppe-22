@@ -1,17 +1,20 @@
-/*Overordnet*/
+/**********************************************RABBIAS CSS**********************************************************/
 
-section {
-    background: rgba(249, 247, 242, 0.79);
+
+h2 {
+    font-size: 3.2rem;
+    font-family: span, serif;
 }
 
+p {
+    font-size: 1rem;
+    font-family: sofia pro, sans-serif;
+    font-weight: 200;
 
-img {
-    width: 50%;
 }
 
-
-h3 {
-    font-size: 2rem;
+body {
+    background-color: #F1EFEA;
     margin: 0;
 }
 
@@ -33,10 +36,10 @@ h3 {
 
 
 /*.alm_menu {
-    margin-top: 1.5rem;
-    display: inline-block;
-    float: right;
-}
+         margin-top: 1.5rem;
+         display: flex;
+         justify-content: space-around;
+     }
 
 
 .overlay_logo {
@@ -55,30 +58,10 @@ h3 {
     position: relative;
     height: auto;
     width: 100%;
-}
-
-#overordnet-nav {
-    margin-top: 1.5rem;
-    display: inline-block;
-    float: right;
-}
-
-.p_header #overordnet-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    font-family: sofia pro, sans-serif;
-    font-size: 1.5rem;
-    padding-right: 20px;
-
-}
-
-#overordnet-nav a:hover {
-    transform: translateY(-15%);
 }*/
 
-/*.alm_menu {
-    margin-top: 1.5rem;
+.alm_menu {
+    /*margin-top: 1.5rem;*/
     display: flex;
     justify-content: space-around;
 }
@@ -95,7 +78,7 @@ h3 {
 header .alm_menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #F3EEE7;
+    /*color: #F3EEE7;*/
     color: #22222E;
     font-family: span, serif;
     font-size: 1.5rem;
@@ -105,248 +88,95 @@ header .alm_menu a {
 
 #overordnet-nav a:hover {
     transform: translateY(-5%);
+}
+
+.logo2 {
+    display: none;
+}
+
+/*#overordnet-nav {
+    margin-top: 1.5rem;
+    display: inline-block;
+    float: right;
 }*/
 
-
-
-
-/*styling*/
-
-button {
+.p_header #overordnet-nav a {
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
-    font-family: sofia pro, sans-serif;
-    font-size: 1.1rem;
-    /* padding-right: 20px;*/
-    border: none;
-    /*margin-top: 20px;*/
-    cursor: pointer;
-    background-color: transparent;
+    font-family: span, serif;
+    font-size: 1.5rem;
+    padding-right: 20px;
 
 }
 
-
-#liste {
-    display: grid;
-    max-width: 950px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2em;
-    margin: auto;
-    /*margin-top: 10px;*/
+#overordnet-nav a:hover {
+    transform: translateY(-15%);
 }
 
-.wines {
-    padding: 2em;
-    margin: 0em;
+
+
+
+
+footer {
+    padding: 1.5rem;
     text-align: center;
-    background-image: url(img/cirkel.svg);
-    background-size: 360px 360px;
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-
-
-}
-
-/*.pic {
-    background-image: url(img/splash_2.jpg);
-    background-size: cover;
-    background-position: 50%;
-    background-attachment: fixed;
-    height: 100%;
-    margin: 0;
-}*/
-
-.intro-tekst {
-    max-width: 480px;
-    text-align: center;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-
-
-.beskrivelse {
-    max-width: 200px;
-    margin: auto;
-}
-
-#filtrering-nav {
-    text-align: center;
-    max-width: 950px;
-    margin: auto;
-    background-color: rgba(249, 247, 242, 0.79);
-    padding-top: 70px;
-
-
-}
-
-.fake_button {
-    background-color: #4C0D0C;
-    border: none;
     color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px;
-    font-family: sofia pro, sans-serif;
+    margin-top: 1rem;
+    background-color: rgba(34, 34, 46, 0.40);
+}
+
+.footer_tekst {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+footer h4 {
+    font-family: span, serif;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.line {
+    width: 12rem;
+    height: 0.01rem;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+/* Socialmedie ikoner */
+.col_2 img {
+    width: 3rem;
+}
+
+.col_2 img:hover {
     cursor: pointer;
-}
-
-.button_flex {
-    display: flex;
-    width: 80%;
-    margin-left: 10%;
 
 }
 
-.flexii {
-    display: flex;
-    flex-direction: column;
-}
-
-/*.flexiii {
-   padding-left: 10px;
-}*/
-
-.ikon_italien {
-    width: 15%;
-    margin: auto;
-}
-
-.ikon_frankrig {
-    width: 15%;
-    margin: auto;
-}
-
-.ikon_spanien {
-    width: 15%;
-    margin: auto;
-}
-
-.ikon_argentina {
-    width: 15%;
-    margin: auto;
-}
+@media (min-width: 1000px) {
 
 
-@media only screen and (max-width: 1050px) {
-
-    #filtrering-nav {
-        text-align: center;
-        max-width: 750px;
-        margin: auto;
-        background-color: rgba(249, 247, 242, 0.79);
-        padding-top: 70px;
-
-
+    footer h4 {
+        margin-top: 0;
     }
 
-    #liste {
-        display: grid;
-        max-width: 750px;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 2em;
-        margin: auto;
-        /*margin-top: 10px;*/
+    #footer_flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
     }
 
-    .wines {
-        padding: 2em;
-        margin: 0em;
-        text-align: center;
-        background-image: url(img/cirkel.svg);
-        background-size: 330px 330px;
-        background-repeat: no-repeat;
-        background-position: 50% 100%;
-
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    img {
-        width: 60%;
-    }
-
-    .ikon_italien {
-        width: 20%;
-        margin: auto;
-    }
-
-    .ikon_frankrig {
-        width: 20%;
-        margin: auto;
-    }
-
-    .ikon_spanien {
-        width: 20%;
-        margin: auto;
-    }
-
-    .ikon_argentina {
-        width: 20%;
-        margin: auto;
+    .col_2 img {
+        width: 4rem;
+        padding-top: 2rem;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    #filtrering-nav {
-
-        text-align: center;
-        max-width: 540px;
-        margin: auto;
-        background-color: rgba(249, 247, 242, 0.79);
-        padding-top: 70px;
-
-
-    }
-
-    #liste {
-        display: grid;
-        max-width: 540px;
-        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-        grid-gap: 2em;
-        margin: auto;
-        /*margin-top: 10px;*/
-    }
-
-    img {
-        width: 40%;
-    }
-
-    .ikon_italien {
-        width: 25%;
-        margin: auto;
-    }
-
-    .ikon_frankrig {
-        width: 20%;
-        margin: auto;
-    }
-
-    .ikon_spanien {
-        width: 25%;
-        margin: auto;
-    }
-
-    .ikon_argentina {
-        width: 20%;
-        margin: auto;
-    }
-}
 
 @media only screen and (max-width: 700px) {
 
@@ -354,6 +184,13 @@ button {
     .alm_menu {
         display: none;
     }
+
+    .logo2 {
+    display: inherit;
+        width: 6rem;
+        height: 6rem;
+        margin: auto;
+}
 
     #burgermenu {
         width: 3rem;
