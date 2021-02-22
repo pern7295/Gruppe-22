@@ -118,14 +118,14 @@ button {
 
 }
 
-.pic {
+/*.pic {
     background-image: url(img/splash_2.jpg);
     background-size: cover;
     background-position: 50%;
     background-attachment: fixed;
     height: 100%;
     margin: 0;
-}
+}*/
 
 .intro-tekst {
     max-width: 480px;
