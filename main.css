@@ -83,7 +83,64 @@ body {
 
 
 
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+    background-color: rgba(34, 34, 46, 0.40);
+}
 
+.footer_tekst {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+footer h4 {
+    font-family: span, serif;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.line {
+    width: 12rem;
+    height: 0.01rem;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+/* Socialmedie ikoner */
+.col_2 img {
+    width: 3rem;
+}
+
+.col_2 img:hover {
+    cursor: pointer;
+
+}
+
+@media (min-width: 1000px) {
+
+
+    footer h4 {
+        margin-top: 0;
+    }
+
+    #footer_flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .col_2 img {
+        width: 4rem;
+        padding-top: 2rem;
+    }
+}
 
 
 @media only screen and (max-width: 700px) {
