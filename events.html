@@ -12,6 +12,11 @@
         }
 
         /* Sektion 1 - bagggrund */
+
+        #section_1 {
+            display: grid;
+        }
+
         .baggrunds_billede {
             background-image: url(img/splash_4.jpg);
             width: 100vw;
@@ -41,9 +46,8 @@
 
         .tekst {
             position: absolute;
-            top: 2rem;
-            left: 0;
-            padding: 3rem;
+            padding: 1rem;
+            grid-area: 1/1;
         }
 
         /* Events */
@@ -200,4 +204,23 @@
         </div>
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        //Der klikkes på burgermenuen
+        function start() {
+            document.querySelector("#burgermenu").addEventListener("click", onClickMenu);
+        }
+
+        //Når der er klikket på burgermenuen, benyttes css-toggle-classes til at ændre udseende på menuen
+        function onClickMenu() {
+            document.querySelector("#burgermenu_container").classList.toggle("change");
+            document.querySelector(".burgermenu_link").classList.toggle("change");
+            document.querySelector(".burger_bck").classList.toggle("change_img");
+            document.querySelector("#burger1").classList.toggle("change1");
+            document.querySelector("#burger2").classList.toggle("change1");
+            document.querySelector("#burger3").classList.toggle("change1");
+            document.querySelector("#burger4").classList.toggle("change1");
+        }
+    </script>
 </body></html>

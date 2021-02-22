@@ -198,6 +198,8 @@
 
      #body_lp {
          overflow-y: hidden;
+         overflow-x: hidden;
+         overflow: hidden;
      }
 
      /*Navigation landing_page*/
@@ -221,7 +223,7 @@
      }
 
      .alm_menu {
-         margin-top: 1.5rem;
+         /*margin-top: 1.5rem;*/
          display: flex;
          justify-content: space-around;
      }
@@ -238,7 +240,8 @@
          text-decoration: none;
          text-transform: uppercase;
          /*color: #F3EEE7;*/
-         color: #22222E;
+         /*color: #22222E;*/
+         color: #CEC1A7;
          font-family: span, serif;
          font-size: 1.5rem;
          padding: 3rem;
@@ -246,6 +249,7 @@
 
      #overordnet-nav a:hover {
          transform: translateY(-5%);
+         color: #721615;
      }
 
      /*Video & splash billede*/
@@ -272,4 +276,71 @@
      .overlay_logo {
          display: none;
      }
+
+     .overlay_grid {
+         display: grid;
+     }
+
+     .overlay_tekst {
+         position: absolute;
+         background-image: url(img/tornLogo.svg);
+         background-size: cover;
+         opacity: 0.9;
+         width: 600px;
+         height: 300px;
+         top: 35%;
+         left: 30%;
+     }
+
+     /* Pernilles Animation */
+     .splash_ani {
+         animation-name: splash_ani_kf;
+         animation-duration: 2s;
+         animation-iteration-count: 1;
+         animation-fill-mode: both;
+         animation-timing-function: ease;
+     }
+
+     @keyframes splash_ani_kf {
+         0% {
+             opacity: 0;
+             transform: scale(1.5);
+         }
+
+         100% {
+             opacity: 1;
+         }
+     }
+
+     /* CA knap */
+
+     .ca_knap {
+         position: absolute;
+         top: 90%;
+         right: 0;
+         border: none;
+         font-family: 'sofia pro', sans-serif;
+         font-weight: 200;
+         text-transform: uppercase;
+         background-color: #4C0D0C;
+         cursor: pointer;
+         padding-right: 3rem;
+         padding-left: 1.5rem;
+         padding-top: 0.8rem;
+         padding-bottom: 0.8rem;
+         border-top-left-radius: 1rem;
+         border-bottom-left-radius: 1rem;
+     }
+
+     .ca_knap a {
+         color: white;
+         text-decoration: none;
+     }
+
+     .ca_knap:hover {
+         transform: translateX(20%);
+         transition-duration: 1s;
+         transition-timing-function: ease-in-out;
+     }
+
  }

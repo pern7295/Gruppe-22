@@ -1,7 +1,7 @@
- document.addEventListener("DOMContentLoaded", start2);
+ document.addEventListener("DOMContentLoaded", start);
 
  //Der klikkes på burgermenuen
- function start2() {
+ function start() {
      document.querySelector("#burgermenu").addEventListener("click", onClickMenu);
  }
 
