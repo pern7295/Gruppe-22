@@ -95,7 +95,7 @@ img {
     padding: 2em;
     margin: 0em;
     text-align: center;
-    background-image: url(img/cirkel_2.png);
+    background-image: url(img/cirkel.svg);
     background-size: 360px 360px;
     background-repeat: no-repeat;
     background-position: 50% 100%;
@@ -202,7 +202,7 @@ h3 {
         padding: 2em;
         margin: 0em;
         text-align: center;
-        background-image: url(img/cirkel_2.png);
+        background-image: url(img/cirkel.svg);
         background-size: 330px 330px;
         background-repeat: no-repeat;
         background-position: 50% 100%;
@@ -430,8 +430,14 @@ h3 {
         opacity: 0.8;
         width: 100px;
         height: 100px;
-        display: inline-block;
-        margin: 0;
+        display: inherit;
+        margin: auto
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    .change_img {
+        width: 100%;
+    }
 }
