@@ -32,9 +32,9 @@ h3 {
 }
 
 
-.alm_menu {
+/*.alm_menu {
     margin-top: 1.5rem;
-    /*display: inline-block;*/
+    display: inline-block;
     float: right;
 }
 
@@ -52,16 +52,16 @@ h3 {
 
 
 .p_header {
-    /*position: relative;
-    height: auto;*/
+    position: relative;
+    height: auto;
     width: 100%;
 }
 
-/*#overordnet-nav {
+#overordnet-nav {
     margin-top: 1.5rem;
     display: inline-block;
     float: right;
-}*/
+}
 
 .p_header #overordnet-nav a {
     text-decoration: none;
@@ -75,7 +75,37 @@ h3 {
 
 #overordnet-nav a:hover {
     transform: translateY(-15%);
+}*/
+
+/*.alm_menu {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
 }
+
+.alm_menu img {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    float: left;
+}
+
+header .alm_menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F3EEE7;
+    color: #22222E;
+    font-family: span, serif;
+    font-size: 1.5rem;
+    padding: 3rem;
+    float: right;
+}
+
+#overordnet-nav a:hover {
+    transform: translateY(-5%);
+}*/
 
 
 

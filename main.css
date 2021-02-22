@@ -35,11 +35,11 @@ body {
 }
 
 
-.alm_menu {
-    margin-top: 1.5rem;
-    /*display: inline-block;*/
-    float: right;
-}
+/*.alm_menu {
+         margin-top: 1.5rem;
+         display: flex;
+         justify-content: space-around;
+     }
 
 
 .overlay_logo {
@@ -47,7 +47,7 @@ body {
     z-index: 1;
     background-image: url(img/logo.png);
     background-size: cover;
-    /*opacity: 0.8;*/
+    opacity: 0.8;
     width: 100px;
     height: 100px;
     display: inline-block;
@@ -55,9 +55,43 @@ body {
 
 
 .p_header {
-    /*position: relative;
-    height: auto;*/
+    position: relative;
+    height: auto;
     width: 100%;
+}*/
+
+.alm_menu {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alm_menu img {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    float: left;
+}
+
+header .alm_menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    /*color: #F3EEE7;*/
+    color: #22222E;
+    font-family: span, serif;
+    font-size: 1.5rem;
+    padding: 3rem;
+    float: right;
+}
+
+#overordnet-nav a:hover {
+    transform: translateY(-5%);
+}
+
+.logo2 {
+    display: none;
 }
 
 /*#overordnet-nav {
@@ -150,6 +184,13 @@ footer h4 {
     .alm_menu {
         display: none;
     }
+
+    .logo2 {
+    display: inherit;
+        width: 6rem;
+        height: 6rem;
+        margin: auto;
+}
 
     #burgermenu {
         width: 3rem;
