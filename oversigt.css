@@ -1,7 +1,7 @@
 /*Overordnet*/
 
 section {
-    background: rgba(249, 247, 242, 0.79);
+    background: rgb(255, 255, 255);
 }
 
 
@@ -14,6 +14,7 @@ h3 {
     font-size: 2rem;
     margin: 0;
 }
+
 
 
 
@@ -148,14 +149,6 @@ button {
 
 }
 
-/*.pic {
-    background-image: url(img/splash_2.jpg);
-    background-size: cover;
-    background-position: 50%;
-    background-attachment: fixed;
-    height: 100%;
-    margin: 0;
-}*/
 
 .intro-tekst {
     max-width: 480px;
@@ -176,7 +169,7 @@ button {
     text-align: center;
     max-width: 950px;
     margin: auto;
-    background-color: rgba(249, 247, 242, 0.79);
+    background: rgb(255, 255, 255);
     padding-top: 70px;
 
 
@@ -208,9 +201,6 @@ button {
     flex-direction: column;
 }
 
-/*.flexiii {
-   padding-left: 10px;
-}*/
 
 .ikon_italien {
     width: 15%;
@@ -232,6 +222,22 @@ button {
     margin: auto;
 }
 
+.splash {
+    background-image: url(img/splashbilledeoversigt.jpg);
+    background-size: cover;
+    background-position: 70%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.vin-overskrift {
+    border-bottom: 3px solid;
+    width: 134px;
+    margin: auto;
+}
+
 
 @media only screen and (max-width: 1050px) {
 
@@ -239,7 +245,7 @@ button {
         text-align: center;
         max-width: 750px;
         margin: auto;
-        background-color: rgba(249, 247, 242, 0.79);
+        background-color: rgb(255, 255, 255);
         padding-top: 70px;
 
 
@@ -308,7 +314,7 @@ button {
         text-align: center;
         max-width: 540px;
         margin: auto;
-        background-color: rgba(249, 247, 242, 0.79);
+        background: rgb(255, 255, 255);
         padding-top: 70px;
 
 
@@ -535,5 +541,9 @@ button {
 @media only screen and (max-width: 500px) {
     .change_img {
         width: 100%;
+    }
+
+    .splash {
+        background-position: 65%;
     }
 }
