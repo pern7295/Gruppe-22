@@ -5,8 +5,12 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #F2F6F7;
+    cursor: default;
 }
 
 /* --- Definering af grid-area til baggrundsbillede + artikel --- */
@@ -118,6 +122,26 @@ article .pris {
 }
 .col-left {
     border-right: 1px solid #9f9f9f;
+}
+
+/* --------------------------- Til toppen-knap -----------------------*/
+
+.gotopbtn {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 40px;
+    right: 50px;
+    background-color: #4C0D0C;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 45px;
+    color: #F2F6F7;
+}
+.gotopbtn:hover {
+    transform: scale(1.2);
 }
 
 /*-------------------- Media-q's ----------------------*/
