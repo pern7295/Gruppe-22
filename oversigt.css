@@ -1,19 +1,84 @@
+/*Overordnet*/
+
+section {
+    background: rgb(255, 255, 255);
+}
+
+
+img {
+    width: 50%;
+}
+
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+
+
 /*Navigationslinje*/
 
+<<<<<<< HEAD
 button {
+=======
+#burgermenu {
+    display: none;
+}
+
+.burgermenu_link {
+    display: none;
+}
+
+#burger_bck {
+    display: none;
+}
+
+
+/*.alm_menu {
+    margin-top: 1.5rem;
+    display: inline-block;
+    float: right;
+}
+
+
+.overlay_logo {
+    position: relative;
+    z-index: 1;
+    background-image: url(img/logo.png);
+    background-size: cover;
+    opacity: 0.8;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+
+.p_header {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+#overordnet-nav {
+    margin-top: 1.5rem;
+    display: inline-block;
+    float: right;
+}
+
+.p_header #overordnet-nav a {
+>>>>>>> fealles_passion/master
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
     font-family: sofia pro, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding-right: 20px;
-    border: none;
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: transparent;
 
 }
 
+<<<<<<< HEAD
 .indhold {
     background: rgb(232, 229, 225, 0.35);
     max-width: 860px;
@@ -23,6 +88,59 @@ button {
 
 img {
     width: 50%;
+=======
+#overordnet-nav a:hover {
+    transform: translateY(-15%);
+}*/
+
+/*.alm_menu {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alm_menu img {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    float: left;
+}
+
+header .alm_menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F3EEE7;
+    color: #22222E;
+    font-family: span, serif;
+    font-size: 1.5rem;
+    padding: 3rem;
+    float: right;
+}
+
+#overordnet-nav a:hover {
+    transform: translateY(-5%);
+}*/
+
+
+
+
+/*styling*/
+
+button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-family: sofia pro, sans-serif;
+    font-size: 1.1rem;
+    /* padding-right: 20px;*/
+    border: none;
+    /*margin-top: 20px;*/
+    cursor: pointer;
+    background-color: transparent;
+
+>>>>>>> fealles_passion/master
 }
 
 
@@ -47,6 +165,7 @@ img {
 
 }
 
+<<<<<<< HEAD
 .wines-pic {}
 
 #first_background {}
@@ -59,6 +178,8 @@ img {
     height: 100%;
     margin: 0;
 }
+=======
+>>>>>>> fealles_passion/master
 
 .intro-tekst {
     max-width: 480px;
@@ -68,22 +189,6 @@ img {
     margin-bottom: 40px;
 }
 
-.ikon_italien {
-    width: 10%;
-    background-image: url(img/italy_flag.png);
-}
-
-.ikon_frankrig {
-    width: 10%;
-}
-
-.ikon_spanien {
-    width: 10%;
-}
-
-.ikon_argentina {
-    width: 10%;
-}
 
 
 .beskrivelse {
@@ -92,10 +197,13 @@ img {
 }
 
 #filtrering-nav {
-
     text-align: center;
     max-width: 950px;
     margin: auto;
+<<<<<<< HEAD
+=======
+    background: rgb(255, 255, 255);
+>>>>>>> fealles_passion/master
     padding-top: 70px;
 
 
@@ -115,17 +223,83 @@ img {
     cursor: pointer;
 }
 
-h3 {
-    font-size: 2rem;
-    margin: 0;
+.button_flex {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.flexii {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ikon_italien {
+    width: 15%;
+    margin: auto;
+}
+
+.ikon_frankrig {
+    width: 15%;
+    margin: auto;
+}
+
+.ikon_spanien {
+    width: 15%;
+    margin: auto;
+}
+
+.ikon_argentina {
+    width: 15%;
+    margin: auto;
+}
+
+.splash {
+    background-image: url(img/splashbilledeoversigt.jpg);
+    background-size: cover;
+    background-position: 70%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.vin-overskrift {
+    /*border-bottom: 3px solid;
+    width: 134px;*/
+    margin: auto;
+}
+
+
+button:hover {
+    text-decoration: underline;
+
+}
+
+.flexii:hover {
+    transform: scale(1.2);
+}
+
+.flexiii:hover {
+    transform: scale(1.2);
+}
+
+.dropdown {
+    display: none;
 }
 
 @media only screen and (max-width: 1050px) {
-    #filtrering-nav {
 
+    #filtrering-nav {
         text-align: center;
         max-width: 750px;
         margin: auto;
+<<<<<<< HEAD
+=======
+        background-color: rgb(255, 255, 255);
+>>>>>>> fealles_passion/master
         padding-top: 70px;
 
 
@@ -144,7 +318,7 @@ h3 {
         padding: 2em;
         margin: 0em;
         text-align: center;
-        background-image: url(img/cirkel_2.png);
+        background-image: url(img/cirkel.svg);
         background-size: 330px 330px;
         background-repeat: no-repeat;
         background-position: 50% 100%;
@@ -166,6 +340,26 @@ h3 {
     img {
         width: 60%;
     }
+
+    .ikon_italien {
+        width: 20%;
+        margin: auto;
+    }
+
+    .ikon_frankrig {
+        width: 20%;
+        margin: auto;
+    }
+
+    .ikon_spanien {
+        width: 20%;
+        margin: auto;
+    }
+
+    .ikon_argentina {
+        width: 20%;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -174,6 +368,12 @@ h3 {
         text-align: center;
         max-width: 540px;
         margin: auto;
+<<<<<<< HEAD
+=======
+        background: rgb(255, 255, 255);
+        padding-top: 70px;
+
+>>>>>>> fealles_passion/master
 
     }
 
@@ -188,5 +388,293 @@ h3 {
 
     img {
         width: 40%;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    /*Navigation mobil*/
+    .alm_menu {
+        display: none;
+    }
+
+    #burgermenu {
+        width: 3rem;
+        height: 3rem;
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+        cursor: pointer;
+        z-index: 5;
+        display: block;
+    }
+
+    .bar {
+        height: 0.3rem;
+        width: 100%;
+        background-color: #000;
+        display: block;
+        border-radius: 0.3rem;
+        transition: 0.4s ease;
+        display: block;
+    }
+
+    .burgermenu_container {
+        position: fixed;
+        display: block;
+    }
+
+    /*-----------------------ANIMATION AF BURGERMENU-----------------*/
+
+    #bar1 {
+        transform: translateY(-1rem);
+    }
+
+    #bar3 {
+        transform: translateY(1rem);
+    }
+
+    #burger_bck {
+        position: fixed;
+        display: block;
+    }
+
+    .change .bar {
+        background-color: black;
+    }
+
+    .change #bar1 {
+        transform: translateY(0.4rem) rotateZ(-45deg);
+        background-color: black;
+    }
+
+    .change #bar3 {
+        transform: translateY(0rem) rotateZ(45deg);
+        background-color: black;
+    }
+
+    .change #bar2 {
+        display: none;
+    }
+
+    /*------JS-CLASSES, ANIMATION, BURGERMENU-------*/
+
+    .change .bar {
+        background-color: #F3EEE7;
+    }
+
+    .change #bar1 {
+        transform: translateY(0.4rem) rotateZ(-45deg);
+        background-color: #F3EEE7;
+    }
+
+    .change #bar3 {
+        transform: translateY(0.1rem) rotateZ(45deg);
+        background-color: #F3EEE7;
+    }
+
+    .change #bar2 {
+        display: none;
+    }
+
+    /*-----------BURGERMENU DISPLAY-----------*/
+
+    .burgermenu_link {
+        display: none;
+        position: fixed;
+        z-index: 2;
+        margin: auto;
+        margin-top: 9rem;
+        max-width: 100vw;
+    }
+
+    .burgermenu_link a {
+        color: #F3EEE7;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: left;
+        font-family: sofia pro, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .burgermenu_link a:hover {
+        color: white;
+    }
+
+    .burger_link {
+        display: block;
+        padding: 2rem;
+    }
+
+    /*-----------BURGERMENU DESIGN-----------*/
+
+    .burger_bck,
+    #burgermenu {
+        top: 0;
+        position: absolute;
+    }
+
+    .burger_bck {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        background-color: #22222E;
+        opacity: 0.9;
+        transition: 0.3s ease;
+    }
+
+    .change_img {
+        width: 30%;
+        height: 100%;
+    }
+
+    .change {
+        display: block;
+    }
+
+    .change1 {
+        animation-name: ease_nav_kf;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes ease_nav_kf {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .button_flex {
+        display: block;
+        /* width: 80%;
+    margin-left: 10%;*/
+
+    }
+
+    .flexiii {
+        margin-top: 20px;
+    }
+
+    .flexii {
+        margin-top: 20px;
+        /*display: block;*/
+    }
+
+    .ikon_italien {
+        width: 10%;
+        margin: auto;
+    }
+
+    .ikon_frankrig {
+        width: 10%;
+        margin: auto;
+    }
+
+    .ikon_spanien {
+        width: 10%;
+        margin: auto;
+    }
+
+    .ikon_argentina {
+        width: 10%;
+        margin: auto;
+    }
+
+    .flexii:hover {
+        transform: scale(1.2);
+    }
+
+    .flexiii:hover {
+        transform: scale(1.2);
+    }
+
+    .dropbtn {
+        background-color: #4C0D0C;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        pointer-events: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+       /* background-color: #F1EFEA;*/
+        min-width: 120px;
+        z-index: 1;
+        margin: auto;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #4C0D0C;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #4C0D0C;
+    }
+
+    .button_flex {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .p_header #overordnet-nav a {
+        color: #fff;
+
+
+    }
+
+    .overlay_logo {
+        position: relative;
+        z-index: 1;
+        background-image: url(img/logo.png);
+        background-size: cover;
+        opacity: 0.8;
+        width: 100px;
+        height: 100px;
+        display: inherit;
+        margin: auto
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .change_img {
+        width: 100%;
+    }
+
+    .splash {
+        background-position: 65%;
+    }
+
+    .intro-tekst {
+        max-width: 300px;
     }
 }

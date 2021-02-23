@@ -24,39 +24,55 @@
             </div>
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
-                    <a href="index.html">Om os</a>
+                    <a href="om_os.html">Om os</a>
                 </div>
                 <div id="burger2" class="burger_link">
                     <a href="oversigt.html">Udvalg</a>
                 </div>
                 <div id="burger3" class="burger_link">
-                    <a href="#">Kontakt</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <div id="burger4" class="burger_link">
+                    <a href="events.html">Events</a>
                 </div>
             </div>
             <div class="alm_menu">
+<<<<<<< HEAD
                 <a href="#">Om os</a>
                 <a href="oversigt.html">Udvalg</a>
                 <img src="img/logo.png" alt="Logo">
                 <a href="#">Kontakt</a>
                 <a href="#">Vin Guide</a>
+=======
+                <img src="img/logo.png" alt="Logo">
+                <a href="om_os.html">Om os</a>
+                <a href="oversigt.html">Udvalg</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="events.html">Events</a>
+>>>>>>> fealles_passion/master
             </div>
             <!--Baggrund på burgermenu, ved klik-->
             <div id="burger_bck" class="burger_bck"></div>
         </nav>
     </header>
     <main id="landing_page">
-        <!-- Splashbillede i mobil & tablet -->
-        <div class="splash"></div>
-        <!-- Video baggrund i desktop -->
-        <div class="video">
-            <video id="videoBG" autoplay muted loop>
-                <source src="http://nicolinechristiansen.dk/kea/vinoVid.mp4" type="video/mp4">
-                <!--http://nicolinechristiansen.dk/kea/forsideVid_vin.mp4 alternativ video-->
-                <!--http://nicolinechristiansen.dk/kea/vino_vid.mp4 mørk video-->
-            </video>
+        <div class="grid">
+            <!-- Splashbillede i mobil & tablet -->
+            <div class="splash"></div>
+            <!-- Video baggrund i desktop -->
+            <div class="video">
+                <video id="videoBG" autoplay muted loop>
+                    <source src="http://nicolinechristiansen.dk/kea/vinoVid.mp4" type="video/mp4">
+                    <!--http://nicolinechristiansen.dk/kea/forsideVid_vin.mp4 alternativ video-->
+                    <!--http://nicolinechristiansen.dk/kea/vino_vid.mp4 mørk video-->
+                </video>
+            </div>
+            <!-- Logo overlay på video-->
+
+            <div class="overlay_logo"></div>
+            <div class="overlay_tekst"></div>
+            <button class="ca_knap"> <a href="oversigt.html">Udforsk udvalget</a></button>
         </div>
-        <!-- Logo overlay på video-->
-        <div class="overlay_logo"></div>
     </main>
     <footer></footer>
     <!--<script src=""></script>-->
@@ -68,7 +84,12 @@
         //Der klikkes på burgermenuen
         function start() {
             document.querySelector("#burgermenu").addEventListener("click", onClickMenu);
+<<<<<<< HEAD
             console.log("Burgermenu åbner");
+=======
+            document.querySelector(".overlay_tekst").classList.add("splash_ani");
+            console.log("Logo animation");
+>>>>>>> fealles_passion/master
         }
 
         //Når der er klikket på burgermenuen, benyttes css-toggle-classes til at ændre udseende på menuen
