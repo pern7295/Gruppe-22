@@ -38,7 +38,7 @@
      justify-content: center;
  }
 
- /*-----------------------ANIMATION AF BURGERMENU-----------------*/
+ /*ANIMATION AF BURGERMENU*/
 
  .lp_header #bar1 {
      transform: translateY(-1rem);
@@ -70,7 +70,7 @@
      display: none;
  }
 
- /*------JS-CLASSES, ANIMATION, BURGERMENU-------*/
+ /*JS-CLASSES, ANIMATION, BURGERMENU*/
 
  .lp_header .change .bar {
      background-color: #22222E;
@@ -90,7 +90,7 @@
      display: none;
  }
 
- /*-----------BURGERMENU DISPLAY-----------*/
+ /*BURGERMENU DISPLAY*/
 
  .lp_header .burgermenu_link {
      display: none;
@@ -118,7 +118,7 @@
      padding: 2rem;
  }
 
- /*-----------BURGERMENU DESIGN-----------*/
+ /*BURGERMENU DESIGN*/
 
  .lp_header .burger_bck,
  #burgermenu {
@@ -190,7 +190,8 @@
      left: 15%;
  }
 
- /*Media til video*/
+ /*Media til landingpage*/
+
  @media (min-width: 1000px) {
 
      /*Landing page*/
@@ -273,10 +274,6 @@
          z-index: -1;
      }
 
-     /*.overlay_logo {
-         top: 30%;
-         left: 37.5%;
-     }*/
      .overlay_logo {
          display: none;
      }
@@ -349,14 +346,13 @@
 
  }
 
-
- /* Events CSS */
+ /************* Events CSS Starter Her *************/
 
  /* nav links anden farve Events  */
 
- .p_header #overordnet-nav .alm_menu a {
+ /*.p_header #overordnet-nav .alm_menu a {
      color: #CEC1A7;
- }
+ }*/
 
  .p_header #overordnet-nav .alm_menu a:hover {
      color: #721615;
@@ -407,7 +403,11 @@
      left: 0;
  }
 
- /* Events */
+ /* Sektion 2 - event oversigt */
+
+ #section_2 {
+     padding: 1.5rem;
+ }
 
  #section_2 h2 {
      font-size: 1.5rem;
@@ -424,11 +424,7 @@
      margin-bottom: 0;
  }
 
- #section_2 {
-     padding: 1.5rem;
- }
-
-
+ /*Grid og elementernes placering på eventsiden */
 
  .event {
      display: grid;
@@ -498,7 +494,7 @@
      background-color: black;
  }
 
- /* Pernilles Animation */
+ /* Pernilles Animation til logo/overskrift */
  .splash_ani {
      animation-name: splash_ani_kf;
      animation-duration: 2s;
@@ -518,13 +514,19 @@
      }
  }
 
+ /* Media til event side */
+
  @media (min-width: 800px) {
+
+     /*Placering af tekst på baggrund Event side */
      .tekst {
          position: absolute;
          padding: 1rem;
-         top: 35vh;
+         top: 25vh;
          left: 0;
      }
+
+     /*Navigation på events side */
 
      .p_header .alm_menu a {
          align-self: center;
@@ -533,9 +535,15 @@
      .p_header .alm_menu a img {
          margin-bottom: 1rem;
      }
+
+     .p_header {
+         background-color: #F1EFEA;
+     }
  }
 
  @media (min-width: 1000px) {
+
+     /* Header i Desktop */
 
      header {
          position: fixed;
@@ -563,7 +571,7 @@
          text-transform: uppercase;
          /*color: #F3EEE7;*/
          /*color: #22222E;*/
-         color: #CEC1A7;
+         /*color: #CEC1A7;*/
          font-family: span, serif;
          font-size: 1.5rem;
          padding: 3rem;
@@ -579,16 +587,20 @@
          padding: 0;
      }
 
+     /* Events Baggrundsbillede og placering af tekst */
+
      .baggrunds_billede {
          height: 80vh;
      }
 
      .tekst {
          z-index: 1;
-         top: 15rem;
-         left: 28rem;
+         top: 17rem;
+         left: 30rem;
          max-width: 600px;
      }
+
+     /*Grid & placering af elementer */
 
      #section_2 {
          max-width: 1000px;
@@ -596,6 +608,7 @@
          margin-top: 3rem;
          margin-bottom: 10rem;
      }
+
 
      .event {
          display: grid;
