@@ -360,7 +360,7 @@
 
  .p_header #overordnet-nav .alm_menu a:hover {
      color: #721615;
-
+     transform: translateY(-5%);
  }
 
  /* Sektion 1 - bagggrund */
@@ -524,6 +524,14 @@
          padding: 1rem;
          top: 35vh;
          left: 0;
+     }
+
+     .p_header .alm_menu a {
+         align-self: center;
+     }
+
+     .p_header .alm_menu a img {
+         margin-bottom: 1rem;
      }
  }
 
