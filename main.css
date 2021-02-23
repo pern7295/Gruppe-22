@@ -6,6 +6,11 @@ h2 {
     font-family: span, serif;
 }
 
+h3 {
+    font-family: span, serif;
+    font-weight: 600;
+}
+
 p {
     font-size: 1rem;
     font-family: sofia pro, sans-serif;
