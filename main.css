@@ -116,11 +116,11 @@ header .alm_menu a {
 .p_header #overordnet-nav a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+
     font-family: span, serif;
     font-size: 1.5rem;
     padding: 0;
-    padding-right: 20px;
+    /*padding-right: 20px;*/
 
 }
 
@@ -195,16 +195,30 @@ footer h4 {
 @media only screen and (max-width: 800px) {
 
     /*Navigation mobil*/
+
+    .p_header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        margin: auto;
+        background-color: #F1EFEA;
+        z-index: 1000;
+    }
+
     .alm_menu {
         display: none;
     }
 
     .logo2 {
-    display: inherit;
+        display: block;
         width: 6rem;
         height: 6rem;
         margin: auto;
-}
+    }
+
+    .fjerpad {
+        padding: 0;
+    }
 
     #burgermenu {
         width: 3rem;
