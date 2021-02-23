@@ -396,11 +396,12 @@
  /* Sub grid */
 
  #section_1 {
-     height: 50vw;
+     height: 80vw;
      background-image: url(img/eventsbg4.jpg);
      background-size: cover;
+     background-position: center bottom;
+     background-repeat: no-repeat;
      background-attachment: fixed;
-     object-fit: cover;
  }
 
  #section_1 .tekst {
@@ -543,15 +544,17 @@
          transition-timing-function: ease-in-out;
      }
 
+     #section_1 {
+         height: auto;
+         background-image: none;
+     }
+
+     .indhold_1,
+     .indhold_2,
+     .indhold_3 {
+         margin-top: 0;
+     }
  }
-
- .indhold_1,
- .indhold_2,
- .indhold_3 {
-     margin-top: 0;
- }
-
-
 
  @media (min-width: 1000px) {
 
@@ -610,12 +613,12 @@
      }
 
      .events {
-         margin-top: 7rem;
          padding-top: 4rem;
          display: grid;
          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
          grid-template-rows: 1fr 1fr 1fr;
          grid-row-gap: 3rem;
+         scroll-snap-type: mandatory;
      }
 
      .indhold_1,
