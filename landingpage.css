@@ -83,12 +83,12 @@
 
  .lp_header .change #bar1 {
      transform: translateY(0.4rem) rotateZ(-45deg);
-     background-color: #22222E;
+     background-color: #F3EEE7;
  }
 
  .lp_header .change #bar3 {
      transform: translateY(0.1rem) rotateZ(45deg);
-     background-color: #22222E;
+     background-color: #F3EEE7;
  }
 
  .lp_header .change #bar2 {
@@ -186,12 +186,13 @@
 
  .overlay_logo {
      position: absolute;
+     z-index: 1;
      background-image: url(img/logo.png);
      background-size: cover;
      opacity: 0.8;
      width: 350px;
      height: 350px;
-     top: 30%;
+     top: 35%;
      left: 15%;
  }
 
@@ -201,6 +202,62 @@
      display: none;
  }
 
+
+ /* Placering af logo på splash */
+ @media (min-width:600px) {
+     .overlay_logo {
+         left: 20%;
+     }
+ }
+
+ @media (min-width:700px) {
+     .overlay_logo {
+         left: 25%;
+     }
+ }
+
+ @media (min-width:800px) {
+     .overlay_logo {
+         left: 30%;
+     }
+
+     /* CA knap */
+
+     .ca_knap {
+         position: absolute;
+         top: 90%;
+         right: 0;
+         border: none;
+         font-family: 'sofia pro', sans-serif;
+         font-weight: 200;
+         text-transform: uppercase;
+         background-color: #4C0D0C;
+         cursor: pointer;
+         padding-right: 5rem;
+         padding-left: 1.5rem;
+         padding-top: 0.8rem;
+         padding-bottom: 0.8rem;
+         /*border-top-left-radius: 1rem;*/
+         /*border-bottom-left-radius: 1rem;*/
+     }
+
+     .ca_knap a {
+         color: white;
+         text-decoration: none;
+     }
+
+     .ca_knap:hover {
+         transform: translateX(20%);
+         transition-duration: 1s;
+         transition-timing-function: ease-in-out;
+     }
+ }
+
+ @media (min-width:900px) {
+     .overlay_logo {
+         left: 40%;
+     }
+ }
 
  /*Media til landingpage*/
 
@@ -286,6 +343,7 @@
          display: none;
      }
 
+     /* Forsøg på logo placering i grid */
      /*#vid_grid {
          display: grid;
          grid-template-columns: 1fr 1fr 1fr;
@@ -367,7 +425,7 @@
 
  }
 
- /* Events */
+ /*********************************Events CSS*********************************/
 
  /* Pernilles Animation til logo/overskrift */
  .splash_ani {
@@ -389,11 +447,13 @@
      }
  }
 
+ /* Header baggrund*/
+
  .p_header {
      background-color: #F1EFEA;
  }
 
- /* Sub grid */
+ /* Section 1 + baggrund + tekst */
 
  #section_1 {
      height: 80vw;
@@ -418,6 +478,8 @@
      margin-top: 2rem;
  }
 
+ /* Section 2 overordnet */
+
  #section_2 h2 {
      font-size: 1.5rem;
      align-self: center;
@@ -436,6 +498,8 @@
      padding: 1rem;
      margin-top: 5rem;
  }
+
+ /* Event Grid */
 
  .events {
      display: grid;
@@ -501,7 +565,7 @@
 
  @media (min-width: 800px) {
 
-     /*Cirkel billeder*/
+     /*Billeder størrelse*/
      #section_2 .img_1,
      .img_2,
      .img_3 {
@@ -511,37 +575,6 @@
          margin-top: 1rem;
          max-width: 500px;
          height: auto;
-     }
-
-     /* CA knap */
-
-     .ca_knap {
-         position: absolute;
-         top: 90%;
-         right: 0;
-         border: none;
-         font-family: 'sofia pro', sans-serif;
-         font-weight: 200;
-         text-transform: uppercase;
-         background-color: #4C0D0C;
-         cursor: pointer;
-         padding-right: 5rem;
-         padding-left: 1.5rem;
-         padding-top: 0.8rem;
-         padding-bottom: 0.8rem;
-         /*border-top-left-radius: 1rem;*/
-         /*border-bottom-left-radius: 1rem;*/
-     }
-
-     .ca_knap a {
-         color: white;
-         text-decoration: none;
-     }
-
-     .ca_knap:hover {
-         transform: translateX(20%);
-         transition-duration: 1s;
-         transition-timing-function: ease-in-out;
      }
 
      #section_1 {
@@ -571,6 +604,8 @@
          overflow: scroll;
      }
 
+     /* Styling af section 2 */
+
      #section_2 {
          background-color: rgba(249, 247, 242, 0.80);
          overflow-y: scroll;
@@ -578,23 +613,18 @@
          height: 100vh;
      }
 
-     #section_1 {
-         display: flex;
-         justify-content: center;
-         flex-direction: column;
-         color: white;
-         overflow: hidden;
-         padding-left: 1rem;
-         text-align: center;
+     /* Events grid */
+
+     .events {
+         padding-top: 4rem;
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+         grid-template-rows: 1fr 1fr 1fr;
+         grid-row-gap: 3rem;
+         scroll-snap-type: mandatory;
      }
 
-     #section_1 h1 {
-         margin-top: 4rem;
-     }
-
-     #section_1 p {
-         padding-right: 1rem;
-     }
+     /*Billeder & deres placering i grid*/
 
      #section_2 .img_1,
      .img_2,
@@ -612,14 +642,7 @@
          grid-area: 3/1;
      }
 
-     .events {
-         padding-top: 4rem;
-         display: grid;
-         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-         grid-template-rows: 1fr 1fr 1fr;
-         grid-row-gap: 3rem;
-         scroll-snap-type: mandatory;
-     }
+     /* Indhold i flex */
 
      .indhold_1,
      .indhold_2,
@@ -633,6 +656,25 @@
 
      .indhold_1 {
          margin-left: 2rem;
+     }
+
+     /* Styling af section 1 */
+     #section_1 {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         color: white;
+         overflow: hidden;
+         padding-left: 1rem;
+         text-align: center;
+     }
+
+     #section_1 h1 {
+         margin-top: 4rem;
+     }
+
+     #section_1 p {
+         padding-right: 1rem;
      }
 
      footer {
