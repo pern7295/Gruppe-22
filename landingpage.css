@@ -470,6 +470,7 @@
      text-align: center;
      padding: 1rem;
      color: white;
+     padding-top: 6rem;
  }
 
  #section_1 h1 {
@@ -563,6 +564,12 @@
      color: black;
  }
 
+ @media (min-width:600px) {
+     #section_1 {
+         height: 60vw;
+     }
+ }
+
  @media (min-width: 800px) {
 
      /*Billeder størrelse*/
@@ -577,10 +584,19 @@
          height: auto;
      }
 
-     #section_1 {
-         height: auto;
-         background-image: none;
+     /*Section 1 */
+
+     #section_1 .tekst {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         padding: 1rem;
+         color: white;
+         padding-top: 10rem;
      }
+
+
+     /*section_2 indhold */
 
      .indhold_1,
      .indhold_2,
@@ -602,6 +618,13 @@
          grid-template-columns: 1fr 2fr;
          grid-template-rows: 1fr;
          overflow: scroll;
+     }
+
+     /* Baggrundsbillede section 1 forsvinder */
+
+     #section_1 {
+         height: auto;
+         background-image: none;
      }
 
      /* Styling af section 2 */
