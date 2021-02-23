@@ -2,10 +2,15 @@
  * {
      box-sizing: border-box;
      margin: 0;
+
  }
 
  img {
      max-width: 100%;
+ }
+
+ #body_lp {
+     overflow-y: hidden;
  }
 
 
@@ -190,6 +195,13 @@
      left: 15%;
  }
 
+ /*CA Knap*/
+
+ .ca_knap {
+     display: none;
+ }
+
+
  /*Media til landingpage*/
 
  @media (min-width: 1000px) {
@@ -257,40 +269,53 @@
          color: #721615;
      }
 
-     /*Video & splash billede*/
+     /*Splash*/
      .splash {
-         display: none;
-     }
-
-     .video {
-         display: block;
          position: relative;
          z-index: -1;
-         width: 100%;
+         background-image: url(img/splash_7.jpeg);
+         background-size: cover;
+         background-position: 30% 50%;
+         width: 100vw;
+         height: 100vh;
      }
 
-     #videoBG {
-         width: 100%;
-         z-index: -1;
-     }
+     /* Logo */
 
      .overlay_logo {
          display: none;
      }
 
-     .overlay_grid {
+     /*#vid_grid {
          display: grid;
-     }
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-auto-rows: 1fr 1fr 1fr;
+     }*/
 
-     .overlay_tekst {
-         position: absolute;
-         background-image: url(img/tornLogo.svg);
+     /*.overlay_tekst {
+         z-index: 1;
+         background-image: url(img/tornLogo2.svg);
          background-size: cover;
          opacity: 0.9;
          width: 600px;
          height: 300px;
-         top: 35%;
+         grid-area: 2/2;
+     }*/
+
+     .overlay_tekst {
+         position: absolute;
+         background-image: url(img/tornLogo2.svg);
+         background-size: cover;
+         opacity: 0.9;
+         width: 600px;
+         height: 300px;
+         top: 33%;
          left: 30%;
+     }
+
+     /* CA knap */
+     .ca_knap {
+         display: block;
      }
 
      /* Pernilles Animation */
@@ -313,35 +338,31 @@
          }
      }
 
-     /* CA knap */
+ }
 
-     .ca_knap {
-         position: absolute;
-         top: 90%;
-         right: 0;
-         border: none;
-         font-family: 'sofia pro', sans-serif;
-         font-weight: 200;
-         text-transform: uppercase;
-         background-color: #4C0D0C;
-         cursor: pointer;
-         padding-right: 5rem;
-         padding-left: 1.5rem;
-         padding-top: 0.8rem;
-         padding-bottom: 0.8rem;
-         /*border-top-left-radius: 1rem;*/
-         /*border-bottom-left-radius: 1rem;*/
+ @media (min-width: 1380px) {
+
+     /*Video & splash billede*/
+     .splash {
+         display: none;
      }
 
-     .ca_knap a {
-         color: white;
-         text-decoration: none;
+     .video {
+         display: block;
+         position: relative;
+         z-index: -1;
+         object-fit: cover;
+         min-width: 100%;
+         min-height: 100%;
      }
 
-     .ca_knap:hover {
-         transform: translateX(20%);
-         transition-duration: 1s;
-         transition-timing-function: ease-in-out;
+     #videoBG {
+         width: 100%;
+         z-index: -1;
+     }
+
+     .overlay_logo {
+         display: none;
      }
 
  }
@@ -491,6 +512,37 @@
          height: auto;
      }
 
+     /* CA knap */
+
+     .ca_knap {
+         position: absolute;
+         top: 90%;
+         right: 0;
+         border: none;
+         font-family: 'sofia pro', sans-serif;
+         font-weight: 200;
+         text-transform: uppercase;
+         background-color: #4C0D0C;
+         cursor: pointer;
+         padding-right: 5rem;
+         padding-left: 1.5rem;
+         padding-top: 0.8rem;
+         padding-bottom: 0.8rem;
+         /*border-top-left-radius: 1rem;*/
+         /*border-bottom-left-radius: 1rem;*/
+     }
+
+     .ca_knap a {
+         color: white;
+         text-decoration: none;
+     }
+
+     .ca_knap:hover {
+         transform: translateX(20%);
+         transition-duration: 1s;
+         transition-timing-function: ease-in-out;
+     }
+
  }
 
  .indhold_1,
@@ -498,6 +550,8 @@
  .indhold_3 {
      margin-top: 0;
  }
+
+
 
  @media (min-width: 1000px) {
 
