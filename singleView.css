@@ -72,6 +72,7 @@ article img {
     text-align: right;
     cursor: pointer;
     padding-right: 2%;
+    z-index: 999;
 }
 .bk_btn:hover {
     transform: translateX(-20%);
@@ -176,7 +177,7 @@ article .pris {
 @media screen and (max-width: 700px) {
     .bk_btn {
         max-width: 20%;
-        max-height: 7%;
+        max-height: 5%;
     }
 }
 @media screen and (max-width: 424px) {
