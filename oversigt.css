@@ -6,6 +6,7 @@ section {
 
 
 img {
+    /*Billederne på oversigt.html har en width på 50%*/
     width: 50%;
 }
 
@@ -16,10 +17,9 @@ h3 {
 }
 
 
-
-
 /*Navigationslinje*/
 
+/*Burger menu bliver ikke displayet i web version*/
 #burgermenu {
     display: none;
 }
@@ -33,127 +33,22 @@ h3 {
 }
 
 
-/*.alm_menu {
-    margin-top: 1.5rem;
-    display: inline-block;
-    float: right;
-}
-
-
-.overlay_logo {
-    position: relative;
-    z-index: 1;
-    background-image: url(img/logo.png);
-    background-size: cover;
-    opacity: 0.8;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-}
-
-
-.p_header {
-    position: relative;
-    height: auto;
-    width: 100%;
-}
-
-#overordnet-nav {
-    margin-top: 1.5rem;
-    display: inline-block;
-    float: right;
-}
-
-.p_header #overordnet-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    font-family: sofia pro, sans-serif;
-    font-size: 1.5rem;
-    padding-right: 20px;
-
-}
-
-#overordnet-nav a:hover {
-    transform: translateY(-15%);
-}*/
-
-/*.alm_menu {
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.alm_menu img {
-    width: 6rem;
-    height: 6rem;
-    padding: 0.5rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    float: left;
-}
-
-header .alm_menu a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #F3EEE7;
-    color: #22222E;
-    font-family: span, serif;
-    font-size: 1.5rem;
-    padding: 3rem;
-    float: right;
-}
-
-#overordnet-nav a:hover {
-    transform: translateY(-5%);
-}*/
-
-
-
-
-/*styling*/
 
 button {
+    /*styling af button*/
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
     font-family: sofia pro, sans-serif;
     font-size: 1.1rem;
-    /* padding-right: 20px;*/
     border: none;
-    /*margin-top: 20px;*/
     cursor: pointer;
     background-color: transparent;
 
 }
 
 
-#liste {
-    display: grid;
-    max-width: 950px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2em;
-    margin: auto;
-    /*margin-top: 10px;*/
-}
-
-.wines {
-    padding: 2em;
-    margin: 0em;
-    text-align: center;
-    background-image: url(img/cirkel.svg);
-    background-size: 360px 360px;
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-
-
-}
-
-/*.billede:hover {
-    transform: scale(1.1);
-
-}*/
-
+/*Sekundær Menu*/
 .intro-tekst {
     max-width: 480px;
     text-align: center;
@@ -161,8 +56,6 @@ button {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-
-
 
 .beskrivelse {
     max-width: 200px;
@@ -194,11 +87,12 @@ button {
 }
 
 .fake_button:hover {
-    /*transform: translateY(-5%);*/
+    /*Når man holder musen over knappen vil den forstørres*/
     transform: scale(1.1);
 }
 
 .button_flex {
+    /*Så diverne inden i kommer vandret ved siden af hinanden vha flex.*/
     display: flex;
     width: 80%;
     margin-left: 10%;
@@ -206,6 +100,7 @@ button {
 }
 
 .flexii {
+    /*billederne til landene kommer over knapperne med flex og skaber et grid*/
     display: flex;
     flex-direction: column;
 }
@@ -231,6 +126,52 @@ button {
     margin: auto;
 }
 
+/*Auto på overskrift så den er centreret.*/
+.vin-overskrift {
+    margin: auto;
+}
+
+/*Underline når man holder over knapperne til den sekundærer menu*/
+button:hover {
+    text-decoration: underline;
+
+}
+
+/*Hover effect når du holder over knapperne til den sekundære menu så de forstørres*/
+.flexii:hover {
+    transform: scale(1.2);
+}
+
+/*Hover effect når du holder over knappen til den sekundære menu så de forstørres*/
+.flexiii:hover {
+    transform: scale(1.2);
+}
+
+
+/*Dynamisk og responsivt grid til indhold i template*/
+#liste {
+    display: grid;
+    max-width: 950px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2em;
+    margin: auto;
+}
+
+
+/*article hvor template data er i*/
+.wines {
+    padding: 2em;
+    margin: 0em;
+    text-align: center;
+    background-image: url(img/cirkel.svg);
+    background-size: 360px 360px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+
+}
+
+/*Splash billede til baggrund som er fixed. og har en max højde på 60vh-*/
 .splash {
     background-image: url(img/splashbilledeoversigt.jpg);
     background-size: cover;
@@ -241,59 +182,33 @@ button {
     height: 60vh;
 }
 
-.vin-overskrift {
-    /*border-bottom: 3px solid;
-    width: 134px;*/
-    margin: auto;
-}
 
-
-button:hover {
-    text-decoration: underline;
-
-}
-
-.flexii:hover {
-    transform: scale(1.2);
-}
-
-.flexiii:hover {
-    transform: scale(1.2);
-}
-
+/*Drop down menu er gemt i web version*/
 .dropdown {
     display: none;
 }
 
 @media only screen and (max-width: 1050px) {
 
+
+    /*Hvid afsnit i baggrunden bliver smallere i mindre version (responsiv)*/
     #filtrering-nav {
-        text-align: center;
         max-width: 750px;
-        margin: auto;
-        background-color: rgb(255, 255, 255);
-        padding-top: 70px;
+
 
 
     }
 
+    /*Hvid afsnit i baggrunden bliver smallere i mindre version (responsiv)*/
     #liste {
-        display: grid;
         max-width: 750px;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 2em;
-        margin: auto;
-        /*margin-top: 10px;*/
+
     }
 
+    /*Background image passer til størrelsen af article (resposiv)*/
     .wines {
-        padding: 2em;
-        margin: 0em;
-        text-align: center;
-        background-image: url(img/cirkel.svg);
         background-size: 330px 330px;
-        background-repeat: no-repeat;
-        background-position: 50% 100%;
+
 
     }
 
@@ -309,6 +224,7 @@ button:hover {
         font-size: 0.9rem;
     }
 
+    /*Ændret width til 60% (responsiv passer det bedre)*/
     img {
         width: 60%;
     }
@@ -335,26 +251,23 @@ button:hover {
 }
 
 @media only screen and (max-width: 700px) {
+
+
+    /*Ændret max-width så den hvide baggrund passer bedre (responsiv)*/
     #filtrering-nav {
-
-        text-align: center;
         max-width: 540px;
-        margin: auto;
-        background: rgb(255, 255, 255);
-        padding-top: 70px;
+
 
 
     }
 
+    /*Ændret max-width så den hvide baggrund passer bedre (responsiv)*/
     #liste {
-        display: grid;
         max-width: 540px;
-        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-        grid-gap: 2em;
-        margin: auto;
-        /*margin-top: 10px;*/
+
     }
 
+    /*Ændret width så billederne passer bedre (responsiv)*/
     img {
         width: 40%;
     }
@@ -365,6 +278,8 @@ button:hover {
 @media only screen and (max-width: 700px) {
 
     /*Navigation mobil*/
+
+    /*web menu gemmes væk*/
     .alm_menu {
         display: none;
     }
@@ -379,6 +294,7 @@ button:hover {
         display: block;
     }
 
+    /*Kommer lidt animation på med transition*/
     .bar {
         height: 0.3rem;
         width: 100%;
@@ -389,6 +305,7 @@ button:hover {
         display: block;
     }
 
+    /*Position er fixed så når med scroller ned på siden ket kan komme til burgermenuen. */
     .burgermenu_container {
         position: fixed;
         display: block;
@@ -467,9 +384,9 @@ button:hover {
         font-size: 1.5rem;
     }
 
-    .burgermenu_link a:hover {
+    /*.burgermenu_link a:hover {
         color: white;
-    }
+    }*/
 
     .burger_link {
         display: block;
@@ -502,6 +419,8 @@ button:hover {
         display: block;
     }
 
+
+    /*Brugt så burgermenuen animeres fra 3 streger til kryds*/
     .change1 {
         animation-name: ease_nav_kf;
         animation-duration: 0.5s;
@@ -520,10 +439,10 @@ button:hover {
         }
     }
 
+
+    /*Block display så diverne bliver vist lodret under hinanden istedet for vandret ved siden af hinanden*/
     .button_flex {
         display: block;
-        /* width: 80%;
-    margin-left: 10%;*/
 
     }
 
@@ -533,7 +452,6 @@ button:hover {
 
     .flexii {
         margin-top: 20px;
-        /*display: block;*/
     }
 
     .ikon_italien {
@@ -556,13 +474,16 @@ button:hover {
         margin: auto;
     }
 
+   /* Hover Effect
     .flexii:hover {
         transform: scale(1.2);
     }
 
     .flexiii:hover {
         transform: scale(1.2);
-    }
+    }*/
+
+    /*DropDown Sekuænder Menu*/
 
     .dropbtn {
         background-color: #4C0D0C;
@@ -582,7 +503,7 @@ button:hover {
     .dropdown-content {
         display: none;
         position: relative;
-       /* background-color: #F1EFEA;*/
+        /* background-color: #F1EFEA;*/
         min-width: 120px;
         z-index: 1;
         margin: auto;
@@ -595,53 +516,36 @@ button:hover {
         display: block;
     }
 
-    .dropdown-content a:hover {
-        background-color: #4C0D0C;
-    }
 
     .dropdown:hover .dropdown-content {
         display: block;
     }
 
-    .dropdown:hover .dropbtn {
-        background-color: #4C0D0C;
-    }
 
+    /*Gemt sekundær web menu væk*/
     .button_flex {
         display: none;
     }
 }
 
-@media only screen and (max-width: 700px) {
-
-    .p_header #overordnet-nav a {
+/*.p_header #overordnet-nav a {
         color: #fff;
+    }*/
 
-
-    }
-
-    .overlay_logo {
-        position: relative;
-        z-index: 1;
-        background-image: url(img/logo.png);
-        background-size: cover;
-        opacity: 0.8;
-        width: 100px;
-        height: 100px;
-        display: inherit;
-        margin: auto
-    }
-
-}
 
 @media only screen and (max-width: 500px) {
+
+    /*Viser burgermenu baggrund? Spørg pernille*/
     .change_img {
         width: 100%;
     }
 
+    /*Splash billede for en position på 65% så man kan se glasene på billedet bedre.*/
     .splash {
         background-position: 65%;
     }
+
+    /*Max width brugt til at holde content inde*/
 
     .intro-tekst {
         max-width: 300px;

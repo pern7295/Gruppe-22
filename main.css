@@ -1,6 +1,4 @@
-/**********************************************RABBIAS CSS**********************************************************/
-
-
+/*Overorndet*/
 h2 {
     font-size: 3.2rem;
     font-family: span, serif;
@@ -23,6 +21,7 @@ body {
     margin: 0;
 }
 
+/*Brugt til at få en mere visuel scrolling på hmtl siderne*/
 html {
     scroll-behavior: smooth;
 }
@@ -44,6 +43,7 @@ html {
     font-size: 45px;
     color: #F2F6F7;
 }
+
 .gotopbtn:hover {
     transform: scale(1.2);
 }
@@ -52,6 +52,7 @@ html {
 
 /*Navigationslinje*/
 
+/*Burgermenu gemt væk i web version*/
 #burgermenu {
     display: none;
 }
@@ -65,33 +66,8 @@ html {
 }
 
 
-/*.alm_menu {
-         margin-top: 1.5rem;
-         display: flex;
-         justify-content: space-around;
-     }
-
-
-.overlay_logo {
-    position: relative;
-    z-index: 1;
-    background-image: url(img/logo.png);
-    background-size: cover;
-    opacity: 0.8;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-}
-
-
-.p_header {
-    position: relative;
-    height: auto;
-    width: 100%;
-}*/
-
+/*Primær menu bliver vist og brugt space around og flex til styling af position på links.*/
 .alm_menu {
-    /*margin-top: 1.5rem;*/
     display: flex;
     justify-content: space-around;
 }
@@ -108,7 +84,6 @@ html {
 header .alm_menu a {
     text-decoration: none;
     text-transform: uppercase;
-    /*color: #F3EEE7;*/
     color: #22222E;
     font-family: span, serif;
     font-size: 1.5rem;
@@ -118,45 +93,35 @@ header .alm_menu a {
     align-items: center;
 }
 
+
+/*Hover effect så links flytter sig lodret op en smule*/
 #overordnet-nav .hovereffect:hover {
     transform: translateY(-5%);
 }
 
 
+/*Logo til mobil version gemt væk*/
 
 .logo2 {
     display: none;
 }
 
-.linklogo2 {
+/*.linklogo2 {
     margin: auto;
-}
-
-/*#overordnet-nav {
-    margin-top: 1.5rem;
-    display: inline-block;
-    float: right;
 }*/
 
+
+/*Styling til links i præmir menu*/
 .p_header #overordnet-nav a {
     text-decoration: none;
     text-transform: uppercase;
-
     font-family: span, serif;
     font-size: 1.5rem;
     padding: 0;
-    /*padding-right: 20px;*/
 
 }
 
-/*#overordnet-nav a:hover {
-    transform: translateY(-15%);
-}*/
-
-
-
-
-
+/*Footer styling*/
 footer {
     padding: 1.5rem;
     text-align: center;
@@ -179,6 +144,7 @@ footer h4 {
     margin-bottom: 0.3rem;
 }
 
+/*Linje brugt til under h4 for design.*/
 .line {
     width: 12rem;
     height: 0.01rem;
@@ -192,10 +158,12 @@ footer h4 {
     width: 3rem;
 }
 
+/*viser mouse finger når du hover*/
 .col_2 img:hover {
     cursor: pointer;
 
 }
+
 
 @media (min-width: 1000px) {
 
@@ -221,10 +189,12 @@ footer h4 {
 
     /*Navigation mobil*/
 
+    /*Gemt Back to top knap væk i mobil version*/
     .gotopbtn {
         display: none;
     }
 
+    /*Gjort header Sticky i mobil version*/
     .p_header {
         position: sticky;
         width: 100%;
@@ -234,6 +204,7 @@ footer h4 {
         z-index: 1000;
     }
 
+    /*Primær menu til web version gemt væk.*/
     .alm_menu {
         display: none;
     }
@@ -245,10 +216,11 @@ footer h4 {
         margin: auto;
     }
 
-    .fjerpad {
+    /*.fjerpad {
         padding: 0;
-    }
+    }*/
 
+    /*Burgermenu vist*/
     #burgermenu {
         width: 3rem;
         height: 3rem;
@@ -382,6 +354,7 @@ footer h4 {
         display: block;
     }
 
+    /*Brugt så burgermenuen animeres fra 3 streger til kryds*/
     .change1 {
         animation-name: ease_nav_kf;
         animation-duration: 0.5s;
@@ -400,33 +373,17 @@ footer h4 {
         }
     }
 
-
-
-}
-
-@media only screen and (max-width: 700px) {
-
+    /* Links skifter farve fra sort til hvid i mobil version i burgermenu*/
     .p_header #overordnet-nav a {
         color: #fff;
 
-
     }
-
-    .overlay_logo {
-        position: relative;
-        z-index: 1;
-        background-image: url(img/logo.png);
-        background-size: cover;
-        opacity: 0.8;
-        width: 100px;
-        height: 100px;
-        display: inherit;
-        margin: auto
-    }
-
 }
 
+
+
 @media only screen and (max-width: 500px) {
+
     .change_img {
         width: 100%;
     }

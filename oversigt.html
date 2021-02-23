@@ -21,7 +21,10 @@
 
 <body>
     <header class="p_header">
+        <!--Primære Navigation på siden-->
         <nav id="overordnet-nav">
+
+            <!--Logo og BurgerMenu til mobil version-->
             <a href="index.html" class="fjerpad"><img src="img/logo.png" alt="" class="logo2"></a>
             <div id="burgermenu">
                 <div id="burgermenu_container">
@@ -31,6 +34,7 @@
                 </div>
             </div>
 
+            <!--Links til undersider i burgermenu-->
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
                     <a href="om_os.html">Om os</a>
@@ -45,33 +49,40 @@
                     <a href="events.html">Events</a>
                 </div>
             </div>
+
+            <!--Baggrund på burgermenu, ved klik-->
+            <div id="burger_bck" class="burger_bck"></div>
+
+            <!--Navigation til web version-->
             <div class="alm_menu">
-                <a href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
                 <a href="om_os.html" class="hovereffect">Om os</a>
                 <a href="oversigt.html" class="hovereffect">Udvalg</a>
                 <a href="kontakt.html" class="hovereffect">Kontakt</a>
                 <a href="events.html" class="hovereffect">Events</a>
             </div>
-            <!--Baggrund på burgermenu, ved klik-->
-            <div id="burger_bck" class="burger_bck"></div>
+
+
         </nav>
 
     </header>
 
 
     <main>
-        <!--<h2>Alle</h2>-->
 
+        <!--Splashbillede (ligger i css som background)-->
         <section class="splash"></section>
 
 
-
+        <!--Sekunderdær filtrering med h2 og p over.-->
         <nav id="filtrering-nav">
             <h2 class="vin-overskrift">Vin</h2>
             <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
 
+
             <div class="button_flex">
 
+                <!--Filteringsknapper med data attributter-->
                 <div class="flexiii">
                     <button data-land="alle" class="valgt">Alle vin</button>
 
@@ -98,7 +109,7 @@
             </div>
 
 
-
+            <!--Dropdown menu til mobilversion af sekundær filtrering-->
             <div class="dropdown">
                 <button class="dropbtn">Vælg Land</button>
                 <div class="dropdown-content">
@@ -138,7 +149,7 @@
 
 
 
-
+        <!--Template til html skabelon med enkelte vine og deres kategorier.-->
         <template>
             <article class="wines" class="wines-pic">
                 <img src="" alt="" class="billede">
@@ -152,6 +163,7 @@
         </template>
     </main>
     <footer>
+
         <div id="footer_flex">
             <div class="col_1">
                 <h4>Åbningstider</h4>
@@ -178,9 +190,12 @@
                 <p>godvin@email.dk</p>
             </div>
         </div>
+
+
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
 
+   <!--Back to top knap-->
     <a class="gotopbtn" href="#"> <i class="fas fa-angle-up single_ani"></i>
     </a>
 
@@ -286,6 +301,8 @@
             document.querySelector("#burger1").classList.toggle("change1");
             document.querySelector("#burger2").classList.toggle("change1");
             document.querySelector("#burger3").classList.toggle("change1");
+            document.querySelector("#burger4").classList.toggle("change1");
+
         }
 
     </script>
