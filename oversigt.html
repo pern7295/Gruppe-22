@@ -200,19 +200,25 @@
     </a>
 
     <script>
+
+        /**/
         const header = document.querySelector("h2");
         const medieurl = "https://tema7-763a.restdb.io/media/"
 
+        /*Henter apikey fra restdb som bruges til at hente data.*/
         const myHeaders = {
 
             "x-apikey": "602e5f605ad3610fb5bb6308"
         }
 
+        /*Når siden er loadet går funktionen start igang.*/
         document.addEventListener("DOMContentLoaded", start);
 
+        /*Deifneret variablerne vine og filter som skal bruges i de næste funktioner*/
         let vine;
         let filter = "alle";
 
+        /*Filterknapper bliver defineret som en konstant og der gøres så man kan klikke på filter knapperne*/
         function start() {
             console.log(start);
 
@@ -224,6 +230,7 @@
 
         }
 
+        /*/*Her startes funktionen hvor filter knapperne skifter i forhold til hvad man trykker på og viser dens indhold.*/*/
         function filtrerVine() {
             console.log(filtrerVine);
 
@@ -237,6 +244,7 @@
             header.textContent = this.textContent;
         }
 
+        /*Der hentes data fra json som så sendes videre til funktionen VisVine*/
         async function loadJSON() {
             const JSONData = await fetch("https://tema7-763a.restdb.io/rest/vinsite", {
                 headers: myHeaders
@@ -248,6 +256,7 @@
 
         }
 
+        /*Her sættes hver vin ind i html så det blive vist på sitet. der bliver defineret to konstanter, dest og skabelon.*/
         function visVine() {
             console.log(visVine);
 
@@ -255,11 +264,11 @@
             const skabelon = document.querySelector("template").content;
 
 
-            dest.textContent = "";
-            vine.forEach(vin => {
+            dest.textContent = ""; /*Der tømmes for indhold så der kan komme nyt i.*/
+            vine.forEach(vin => { /*array'et vine løbes igennem og hver vin indsættes i html*/
 
                 if (filter == vin.land || filter == "alle") {
-                    const klon = skabelon.cloneNode(true);
+                    const klon = skabelon.cloneNode(true); /*html template klones og fyldes med indhold*/
 
                     klon.querySelector(".billede").src = medieurl + vin.billede;
                     klon.querySelector(".navn").textContent = vin.navn;
@@ -274,17 +283,20 @@
 
 
 
-                    klon.querySelector(".wines").addEventListener("click", () => visDetaljer(vin));
+                    klon.querySelector(".wines").addEventListener("click", () => visDetaljer(vin)); /*Går videre til funktion visDetaljer der viser en single*/
 
-                    dest.appendChild(klon);
+                    dest.appendChild(klon); /*klonen tilføjes til DOM*/
                 }
             })
 
+            /*Funktionen visDetaljer linker til en ny location via linket til singlepage sitet vha. id*/
             function visDetaljer(hvilken) {
                 location.href = `singleView.html?id=${hvilken._id}`;
             }
 
         }
+
+
 
         document.addEventListener("DOMContentLoaded", start2);
 
