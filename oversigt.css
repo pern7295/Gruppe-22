@@ -633,4 +633,8 @@ button:hover {
     .splash {
         background-position: 65%;
     }
+
+    .intro-tekst {
+        max-width: 300px;
+    }
 }
