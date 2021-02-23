@@ -196,7 +196,7 @@
      left: 15%;
  }
 
- /*CA Knap*/
+ /*Skjuler CA Knap*/
 
  .ca_knap {
      display: none;
@@ -221,7 +221,7 @@
          left: 30%;
      }
 
-     /* CA knap */
+     /* Placering af CA knap */
 
      .ca_knap {
          position: absolute;
@@ -270,6 +270,7 @@
          margin: 0;
      }
 
+     /*skjuler scroll */
      #body_lp {
          overflow-y: hidden;
          overflow-x: hidden;
@@ -359,6 +360,8 @@
          height: 300px;
          grid-area: 2/2;
      }*/
+
+     /*Placering af logo på video*/
 
      .overlay_tekst {
          position: absolute;
@@ -464,6 +467,8 @@
      background-attachment: fixed;
  }
 
+
+ /*Justeres h2, h3 & p tag i boksen */
  #section_1 .tekst {
      display: flex;
      flex-direction: column;
@@ -508,6 +513,7 @@
      grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
  }
 
+ /* Placering af billeder i mobilversion af siden*/
  .img_1 {
      grid-area: 1/1;
  }
@@ -565,6 +571,8 @@
  }
 
  @media (min-width:600px) {
+
+     /*Ændrer baggrundsbillede højde*/
      #section_1 {
          height: 60vw;
      }
@@ -572,7 +580,7 @@
 
  @media (min-width: 800px) {
 
-     /*Billeder størrelse*/
+     /*Billeder i event grid størrelse*/
      #section_2 .img_1,
      .img_2,
      .img_3 {
@@ -607,7 +615,7 @@
 
  @media (min-width: 1000px) {
 
-     /* Overordnet grid */
+     /* Overordnet grid som gør det muligt at have to elementer ved siden af hinanden og derfor en scrollboks i grid */
      #grid_container {
          background-image: url(img/eventsbg4.jpg);
          width: 100vw;
@@ -627,11 +635,12 @@
          background-image: none;
      }
 
+     /*Justering af tekst boks i section 1*/
      #section_1 .tekst {
          padding-top: 0;
      }
 
-     /* Styling af section 2 */
+     /* Styling af section 2 - baggrund - overflow */
 
      #section_2 {
          background-color: rgba(249, 247, 242, 0.80);
@@ -648,7 +657,6 @@
          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
          grid-template-rows: 1fr 1fr 1fr;
          grid-row-gap: 3rem;
-         scroll-snap-type: mandatory;
      }
 
      /*Billeder & deres placering i grid*/
@@ -704,6 +712,7 @@
          padding-right: 1rem;
      }
 
+     /*Footer*/
      footer {
          margin-top: 0;
          background-color: white;
