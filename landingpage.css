@@ -58,17 +58,17 @@
  }
 
  .lp_header .change .bar {
-     background-color: black;
+     background-color: #F3EEE7;
  }
 
  .lp_header .change #bar1 {
      transform: translateY(0.4rem) rotateZ(-45deg);
-     background-color: black;
+     background-color: #F3EEE7;
  }
 
  .lp_header .change #bar3 {
      transform: translateY(0rem) rotateZ(45deg);
-     background-color: black;
+     background-color: #F3EEE7;
  }
 
  .lp_header .change #bar2 {
@@ -107,15 +107,15 @@
  }
 
  .lp_header .burgermenu_link a {
-     color: #22222E;
+     color: #F3EEE7;
      text-decoration: none;
      text-transform: uppercase;
-     font-family: sofia pro, sans-serif;
+     font-family: span, sans-serif;
      font-size: 1.5rem;
  }
 
  .lp_header .burgermenu_link a:hover {
-     color: #721615;
+     color: white;
  }
 
  .lp_header .burger_link {
@@ -135,7 +135,7 @@
      z-index: 1;
      width: 0;
      height: 0;
-     background-color: white;
+     background-color: #22222E;
      opacity: 0.9;
      transition: 0.3s ease;
  }
