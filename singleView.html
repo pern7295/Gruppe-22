@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="singleView.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
 
 </head>
 
 <body>
     <header class="p_header">
         <nav id="overordnet-nav">
-            <img src="img/logo.png" alt="" class="logo2">
+            <a href="index.html" class="fjerpad"><img src="img/logo.png" alt="" class="logo2"></a>
             <div id="burgermenu">
                 <div id="burgermenu_container">
                     <div id="bar1" class="bar"></div>
@@ -26,7 +27,7 @@
 
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
-                    <a href="index.html">Om os</a>
+                    <a href="om_os.html">Om os</a>
                 </div>
                 <div id="burger2" class="burger_link">
                     <a href="oversigt.html">Udvalg</a>
@@ -34,13 +35,16 @@
                 <div id="burger3" class="burger_link">
                     <a href="#">Kontakt</a>
                 </div>
+                <div id="burger4" class="burger_link">
+                    <a href="events.html">Events</a>
+                </div>
             </div>
             <div class="alm_menu">
-                <img src="img/logo.png" alt="Logo">
-                <a href="#">Om os</a>
-                <a href="oversigt.html">Udvalg</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="#">Events</a>
+                <a href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+                <a href="om_os.html" class="hovereffect">Om os</a>
+                <a href="oversigt.html" class="hovereffect">Udvalg</a>
+                <a href="kontakt.html" class="hovereffect">Kontakt</a>
+                <a href="events.html" class="hovereffect">Events</a>
             </div>
             <!--Baggrund på burgermenu, ved klik-->
             <div id="burger_bck" class="burger_bck"></div>
@@ -51,8 +55,8 @@
 
     <main>
         <div class="single_container">
-            <img src="#" alt="" class="land_billede">
-            <article class="wines">
+            <img src="#" alt="" class="land_billede single_ani">
+            <article class="wines single_ani">
                 <img src="#" alt="" class="land_ikon">
                 <h3 class="navn"></h3>
                 <img src="#" alt="" class="billede">
@@ -72,7 +76,7 @@
                 <p class="pris"> </p>
                 <button class="buy_btn">Køb</button>
             </article>
-            <button class="bk_btn">Tilbage til oversigt</button>
+            <button class="bk_btn btn_ani">Tilbage til oversigt</button>
 
         </div>
 
@@ -109,7 +113,7 @@
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
 
-    <a class="gotopbtn" href="#"> <i class="fas fa-angle-up"></i>
+    <a class="gotopbtn" href="#"> <i class="fas fa-angle-up single_ani"></i>
     </a>
 
     <!--<a class="gotopbtn" href="#"> <i class="fas fa-chevron-down"></i>

@@ -107,6 +107,19 @@ article .pris {
     cursor: pointer;
     width: 20%;
 }
+.single_ani {
+    animation-name: single_ani_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+@keyframes single_ani_kf {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {}
+}
 
 /* -------------- To ens kolonner ved siden af hinanden --------------*/
 

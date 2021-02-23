@@ -5,11 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om os | Vinsite</title>
+
+    <!-- FONTS-->
     <link rel="stylesheet" href="https://use.typekit.net/nba7hlb.css">
     <link rel="stylesheet" href="main.css">
 
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+
+
     <style>
         /*iPHONE X - 375 x 812*/
+        /*Generel css - står hovedsageligt også i main.css*/
 
         img {
             width: 100%;
@@ -41,6 +51,14 @@
             padding-bottom: 2vh;
             font-family: sofia-pro, sans-serif;
         }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            font-family: sofia-pro, sans-serif;
+        }
+        /*Splash-sektion*/
 
         #first_section {
             background-image: url(img/om_os/om_splash.jpg);
@@ -103,12 +121,14 @@
             background-color: #2A2A28;
             margin: 0 auto;
         }
+        /*anden-sektion*/
 
         .velkommen_txt {
             padding: 1rem;
         }
+        /*img-scroll-sektion*/
 
-        #video_section {
+        #picture_section {
             height: 50vh;
             background-image: url(img/om_os/om_velkommen.jpg);
             background-size: cover;
@@ -117,6 +137,7 @@
             background-repeat: no-repeat;
             background-position: 50% 1%;
         }
+        /*kontakt-sektion*/
 
         #kontakt_section .kontakt_img {
             display: grid;
@@ -138,6 +159,7 @@
             grid-column: 2 / 3;
             grid-row: 2 / 3;
         }
+        /*styling af knap*/
 
         .btn {
             background-color: #4C0D0C;
@@ -217,9 +239,10 @@
 
 <body>
 
+    <!--Burgermenuen-->
     <header class="p_header">
         <nav id="overordnet-nav">
-            <img src="img/logo.png" alt="" class="logo2">
+            <a href="index.html" class="fjerpad"><img src="img/logo.png" alt="" class="logo2"></a>
             <div id="burgermenu">
                 <div id="burgermenu_container">
                     <div id="bar1" class="bar"></div>
@@ -230,7 +253,7 @@
 
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
-                    <a href="index.html">Om os</a>
+                    <a href="om_os.html">Om os</a>
                 </div>
                 <div id="burger2" class="burger_link">
                     <a href="oversigt.html">Udvalg</a>
@@ -238,13 +261,16 @@
                 <div id="burger3" class="burger_link">
                     <a href="#">Kontakt</a>
                 </div>
+                <div id="burger4" class="burger_link">
+                    <a href="events.html">Events</a>
+                </div>
             </div>
             <div class="alm_menu">
-                <img src="img/logo.png" alt="Logo">
-                <a href="#">Om os</a>
-                <a href="oversigt.html">Udvalg</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="#">Events</a>
+                <a href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+                <a href="om_os.html" class="hovereffect">Om os</a>
+                <a href="oversigt.html" class="hovereffect">Udvalg</a>
+                <a href="kontakt.html" class="hovereffect">Kontakt</a>
+                <a href="events.html" class="hovereffect">Events</a>
             </div>
             <!--Baggrund på burgermenu, ved klik-->
             <div id="burger_bck" class="burger_bck"></div>
@@ -257,22 +283,19 @@
                 <div class="first_txt_wrapper splash_ani">
                     <h2>Om os</h2>
                     <div class="linje"></div>
-                    <p>Velkommen til *vores vinbar*! Vi tilbyder vin fra overalt i verden, som du kan nyde på vores vinbars lækre omgivelser.
-                        <br>
-                        <br> Udforsk vores site, og lær om vores vinsmagningsarangementer,
-                        <br> vinbar og meget mere. </p>
+                    <p>Velkommen til Torn P's vinbar! Vi tilbyder vin fra overalt i verden, som du kan nyde på vores vinbars lækre omgivelser.</p>
                 </div>
             </div>
         </section>
         <section id="velkommen_section">
             <div class="velkommen_txt">
                 <h2>Vi byder dig velkommen</h2>
-                <p>Hos *vores vinbar*, kan du nyde udsøgt vin. Vi excellerer i både spanske, itallienske, argentiske og franske vine, og har eksperter ansat til at give dig den perfekte oplevelse, hvad end der gælder et besøg på en af vores samarbejspartneres lokale vingårde, et besøg på vores hyggelige vinbar, eller nogle af vores andre events. </p>
+                <p>Hos Torn P'svinbar, kan du nyde udsøgt vin. Vi excellerer i både spanske, itallienske, argentiske og franske vine, og har eksperter ansat til at give dig den perfekte oplevelse, hvad end der gælder et besøg på en af vores samarbejspartneres lokale vingårde, et besøg på vores hyggelige vinbar, eller nogle af vores andre events. </p>
                 <div class="btn">
-                    <a href="kontakt.html"></a>Se vores events</div>
+                    <a href="events.html">Se vores events</a></div>
             </div>
         </section>
-        <section id="video_section">
+        <section id="picture_section">
         </section>
         <section id="kontakt_section">
             <div class="kontakt_txt">
@@ -283,11 +306,11 @@
                     <br>
                     <br>Du kan læse mere om hvordan du kontakter os, herunder.</p>
                 <div class="btn">
-                    <a href="kontakt.html"></a>Kontakt os</div>
+                    <a href="kontakt.html">Kontakt os</a></div>
                 <h3>Vores udvalg</h3>
                 <p>Vi har et stort udvalg af forskellige vine, som vi nøje har udvalgt, gennem vores dygtige fagpersonale, som kan guide dig til hvilken vin, du bør vælge til dit næste måltid.</p>
                 <div class="btn">
-                    <a href="oversigt.html"></a>Vores vinudvalg</div>
+                    <a href="oversigt.html">Vores vinudvalg</a></div>
             </div>
             <div class="kontakt_img">
                 <img src="img/logo.png" alt="Logo">
@@ -325,7 +348,8 @@
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
 
-
+<a class="gotopbtn" href="#"> <i class="fas fa-angle-up single_ani"></i>
+    </a>
 
 
     <script src="script.js"></script>

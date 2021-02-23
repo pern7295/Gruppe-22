@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="https://use.typekit.net/ddc5nrl.css">
     <!--Favicon-->
     <link rel="icon" type="image/png" href="img/logo.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
 </head>
 
 <body>
     <header class="p_header">
         <nav id="overordnet-nav">
-            <img src="img/logo.png" alt="" class="logo2">
+            <a href="index.html" class="fjerpad"><img src="img/logo.png" alt="" class="logo2"></a>
             <div id="burgermenu">
                 <div id="burgermenu_container">
                     <div id="bar1" class="bar"></div>
@@ -27,7 +30,7 @@
 
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
-                    <a href="index.html">Om os</a>
+                    <a href="om_os.html">Om os</a>
                 </div>
                 <div id="burger2" class="burger_link">
                     <a href="oversigt.html">Udvalg</a>
@@ -40,11 +43,11 @@
                 </div>
             </div>
             <div class="alm_menu">
-                <a class="nav_logo" href="index.html"><img src="img/logo.png" alt="Logo"></a>
-                <a href="om_os.html">Om os</a>
-                <a href="oversigt.html">Udvalg</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="events.html">Events</a>
+                <a href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+                <a href="om_os.html" class="hovereffect">Om os</a>
+                <a href="oversigt.html" class="hovereffect">Udvalg</a>
+                <a href="kontakt.html" class="hovereffect">Kontakt</a>
+                <a href="events.html" class="hovereffect">Events</a>
             </div>
             <!--Baggrund på burgermenu, ved klik-->
             <div id="burger_bck" class="burger_bck"></div>
@@ -121,6 +124,9 @@
         </div>
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
+    <a class="gotopbtn" href="#"> <i class="fas fa-angle-up single_ani"></i>
+    </a>
+
     <script>
         document.addEventListener("DOMContentLoaded", start);
 
