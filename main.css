@@ -23,6 +23,31 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* --------------------------- Til toppen-knap -----------------------*/
+
+.gotopbtn {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 40px;
+    right: 50px;
+    background-color: #4C0D0C;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 45px;
+    color: #F2F6F7;
+}
+.gotopbtn:hover {
+    transform: scale(1.2);
+}
+
 
 
 /*Navigationslinje*/
