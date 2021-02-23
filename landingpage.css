@@ -627,6 +627,10 @@
          background-image: none;
      }
 
+     #section_1 .tekst {
+         padding-top: 0;
+     }
+
      /* Styling af section 2 */
 
      #section_2 {
