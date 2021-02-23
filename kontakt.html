@@ -12,25 +12,23 @@
     form {
         width: 500px;
         margin: 0 auto;
-        margin-bottom: 5vw;
-        padding: 1rem;
         margin-top: 4vw;
-
-
-
     }
 
     .formular {
-        padding: 4vw;
-        background-color: #CEC1A7;
+        padding: 2vw;
+        background-color: #ded4c0;
         /*        Tilføj optacity kun til farven når baggrundsbillede er lagt ind*/
         height: 620px;
-        width: 200px;
+        width: 300px;
+        /*        margin-top: 15vw;*/
+
 
     }
 
     label {
         font-weight: 600;
+        margin-left: 1.5vw;
 
     }
 
@@ -38,10 +36,14 @@
         border-radius: 3px;
         background-color: #4C0D0C;
         padding: 4px;
-        width: 15vw;
+        width: 18vw;
         color: white;
         border: 0;
+        margin-right: 0.8vw;
         text-align: center;
+        cursor: pointer;
+        float: right;
+        /*        Stå nederst til venstre*/
     }
 
     #baggrund {
@@ -50,8 +52,9 @@
     }
 
     h1 {
-        margin: 5vw;
+        /*        margin: 5vw;*/
         text-align: center;
+        margin-top: 0;
     }
 
 
@@ -105,6 +108,10 @@
         margin: 2px;
     }
 
+    input {
+        width: 20vw
+    }
+
     label {
         font-family: span, serif;
         padding: 2px;
@@ -112,7 +119,36 @@
     }
 
     textarea {
-        width: 190px;
+        width: 280px;
+    }
+
+    #afhent {
+        margin-left: 2.5vw;
+
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 2vw;
+        text-align: left;
+    }
+
+    .splash {
+        background-image: url(img/vinbillede.jpg);
+        background-size: cover;
+        background-position: 70%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #boxomindhold {
+        width: 80%;
+        background-color: white;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     @media (min-width: 800px) {
@@ -127,6 +163,7 @@
         .indhold {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-gap: 0;
             /*            grid-auto-flow: dense;*/
             /*            grid-gap: 100px;*/
             /*
@@ -136,73 +173,101 @@
 */
         }
 
-        .formular {}
 
         #tekst {
             margin: 0;
         }
 
         #text2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            /*            grid-auto-flow: dense;*/
+            margin-left: 2.5vw;
         }
 
+        .listek {
+            line-height: 0;
+        }
 
+        #bestil {
+            width: 12vw;
+        }
+
+        form {
+            margin-bottom: 2vw;
+        }
+
+        .col_3 {
+            line-height: 0;
+        }
+
+        .linex {
+            margin-top: 2vw;
+        }
+
+    }
+
+    @media (min-width: 1000px) {
+        #fragt {
+            margin-top: -3vw;
+        }
+
+        #text2 {
+            margin-top: -5vw;
+        }
     }
 </style>
 
 <body>
     <main>
-        <div>
-            <header class="p_header">
-                <nav id="overordnet-nav">
-                    <img src="img/logo.png" alt="" class="logo2">
-                    <div id="burgermenu">
-                        <div id="burgermenu_container">
-                            <div id="bar1" class="bar"></div>
-                            <div id="bar2" class="bar"></div>
-                            <div id="bar3" class="bar"></div>
-                        </div>
+        <header class="p_header">
+            <nav id="overordnet-nav">
+                <img src="img/logo.png" alt="" class="logo2">
+                <div id="burgermenu">
+                    <div id="burgermenu_container">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
                     </div>
+                </div>
 
-                    <div class="burgermenu_link">
-                        <div id="burger1" class="burger_link">
-                            <a href="index.html">Om os</a>
-                        </div>
-                        <div id="burger2" class="burger_link">
-                            <a href="oversigt.html">Udvalg</a>
-                        </div>
-                        <div id="burger3" class="burger_link">
-                            <a href="#">Kontakt</a>
-                        </div>
+                <div class="burgermenu_link">
+                    <div id="burger1" class="burger_link">
+                        <a href="index.html">Om os</a>
                     </div>
-                    <div class="alm_menu">
-                        <img src="img/logo.png" alt="Logo">
-                        <a href="#">Om os</a>
+                    <div id="burger2" class="burger_link">
                         <a href="oversigt.html">Udvalg</a>
-                        <a href="kontakt.html">Kontakt</a>
-                        <a href="#">Events</a>
                     </div>
-                    <!--Baggrund på burgermenu, ved klik-->
-                    <div id="burger_bck" class="burger_bck"></div>
-                </nav>
-            </header>
+                    <div id="burger3" class="burger_link">
+                        <a href="#">Kontakt</a>
+                    </div>
+                </div>
+                <div class="alm_menu">
+                    <img src="img/logo.png" alt="Logo">
+                    <a href="#">Om os</a>
+                    <a href="oversigt.html">Udvalg</a>
+                    <a href="kontakt.html">Kontakt</a>
+                    <a href="#">Events</a>
+                </div>
+                <!--Baggrund på burgermenu, ved klik-->
+                <div id="burger_bck" class="burger_bck"></div>
+            </nav>
+        </header>
 
-            <div class="baggrundsbillede"></div>
-            <div id="baggrund"></div>
-            <!--        Indsæt baggrundsbillede-->
-            <br><br>
+
+        <div id="baggrund"></div>
+        <!--        Indsæt baggrundsbillede-->
+        <br><br>
+        <section class="splash"></section>
+        <!--            <img id="splashkontakt" src="img/vinbillede.jpg" alt="Billede af hvidvinflaske og to glas på et picninctæppe, med kurv og tæppe ved siden af">-->
+        <section id="boxomindhold">
+            <div>
+                <h1>Kontakt</h1>
+                <div class="line"></div>
+            </div>
             <div class="indhold">
                 <div>
-                    <div>
-                        <h1>Kontakt</h1>
-                        <div class="line"></div>
-                    </div>
                     <div id="tekst">
                         <h2></h2>
                         <div class="listek">
-                            <p>X har åbent følgende dage:</p>
+                            <p>Torn P har åbent følgende dage:</p>
                             <p>Mandag: 10-17</p>
                             <p>Tirsdag: 10-17</p>
                             <p>Onsdag: 10-17</p>
@@ -211,33 +276,37 @@
                             <p>Lørdag: 10-20</p>
                             <p>Søndag: LUKKET</p>
                         </div>
-                        <p>Du kan altid bestille vores vine via kontaktformularen, og afhente i butikken eller få tilsendt din vinpakke til døren, med GLS.</p>
-                        <p>Husk at du altid kan få gratis fragt, ved køb over 1000 kr.</p>
+                        <div id="afhent">
+                            <p>Find os på Guldbergsgade 19, 2200 København N</p>
+                            <p>Du kan altid bestille vores vine via kontaktformularen, og afhente i baren eller få tilsendt din vinpakke til døren.</p>
+                            <div id="fragt">
+                                <p>Husk at du altid kan få gratis fragt, ved køb over 1000 kr.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container">
                     <form class="formular">
+                        <h2>Udfyld kontaktformularen her:</h2>
 
-                        <label for="fname">Fornavn</label>
                         <input type="text" id="fname" name="efternavn" placeholder="Dit fornavn..">
                         <br><br>
-                        <label for="lname">Efternavn</label>
+
                         <input type="text" id="lname" name="efternavn" placeholder="Dit efternavn..">
                         <br><br>
-                        <label for="country">Land</label>
+
+                        <input type="text" id="mail" name="E-mail" placeholder="Din e-mail..">
+                        <br><br>
+
+                        <input type="text" id="tlf" name="Telefonnummer" placeholder="Dit telefonnummer..">
+                        <br><br>
                         <select id="country" name="country">
                             <option value="danmark">Danmark</option>
                             <option value="sverige">Sverige</option>
                             <option value="norge">Norge</option>
                         </select>
                         <br><br>
-                        <label for="mail">E-mail</label>
-                        <input type="text" id="mail" name="E-mail" placeholder="Din e-mail..">
-                        <br><br>
-                        <label for="tlf">Telefonnummer</label>
-                        <input type="text" id="tlf" name="Telefonnummer" placeholder="Dit telefonnummer..">
-                        <br><br>
-                        <label for="vin">Vin</label>
+
                         <select id="vin" name="vin">
                             <option value="vælg">-- Vælg vin --</option>
                             <option value="rodvin">Afinus</option>
@@ -255,17 +324,19 @@
                         </select>
                         <br><br>
                         <textarea id="subject" name="subject" placeholder="Skriv besked.." style="height:200px"></textarea>
-                        <input id="bestil" type="bestil" value="Bestil">
+                        <button id="bestil">Bestil</button>
                     </form>
 
                 </div>
             </div>
             <div id="text2">
-                <p>Ved henvendelser eller spørgsmål til vin, afhentning eller butikken, er du velkommen til at kontakte os på tlf.: XXXXXXXX eller mail: info@XXXX.com. Derudover kan du finde os på både Instagram og Facebook, hvor du også kan blive opdateret på de nyeste vine, samt flere tilbud.</p>
+                <p>Ved henvendelser om reservation af borde, booking af events eller vin, er du velkommen til at kontakte os på tlf.: XXXXXXXX eller mail: info@tornp.dk. Derudover kan du finde os på både Instagram og Facebook, hvor du også kan blive opdateret på de nyeste vine og events, samt gode tilbud og vinsmagninger.</p>
             </div>
-            <!--            Tilføj footer-->
-            <footer>
-                <div id="footer_flex">
+        </section>
+        <!--            Tilføj footer-->
+        <footer>
+            <div id="footer_flex">
+                <!--
                     <div class="col_1">
                         <h4>Åbningstider</h4>
                         <div class="line"></div>
@@ -276,24 +347,25 @@
                         <p>Søndag</p>
                         <p>Lukket</p>
                     </div>
-                    <div class="col_2">
-                        <h4>Socialemedier</h4>
-                        <div class="line"></div>
-                        <img src="img/instagram.png" alt="Instagram Logo">
-                        <img src="img/facebook.png" alt="Instagram Logo">
-                    </div>
-                    <div class="col_3">
-                        <h4>Kontakt</h4>
-                        <div class="line"></div>
-                        <p>Tlf.</p>
-                        <p>+45 12 34 56 78</p>
-                        <p>Email</p>
-                        <p>godvin@email.dk</p>
-                    </div>
+-->
+                <div class="col_2">
+                    <h4>Socialemedier</h4>
+                    <div class="line"></div>
+                    <img src="img/instagram.png" alt="Instagram Logo">
+                    <img src="img/facebook.png" alt="Instagram Logo">
                 </div>
-                <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
-            </footer>
-        </div>
+                <div class="col_3">
+                    <h4>Kontakt</h4>
+                    <div class="linex"></div>
+                    <p>Tlf.</p>
+                    <p>+45 12 34 56 78</p>
+                    <p>Email</p>
+                    <p>godvin@email.dk</p>
+                </div>
+            </div>
+
+            <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
+        </footer>
     </main>
     <script src="script.js"></script>
 </body></html>

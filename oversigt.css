@@ -149,6 +149,10 @@ button {
 
 }
 
+/*.billede:hover {
+    transform: scale(1.1);
+
+}*/
 
 .intro-tekst {
     max-width: 480px;
@@ -187,6 +191,11 @@ button {
     margin: 10px 2px;
     font-family: sofia pro, sans-serif;
     cursor: pointer;
+}
+
+.fake_button:hover {
+    /*transform: translateY(-5%);*/
+    transform: scale(1.1);
 }
 
 .button_flex {
@@ -229,7 +238,7 @@ button {
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 }
 
 .vin-overskrift {
@@ -632,5 +641,9 @@ button:hover {
 
     .splash {
         background-position: 65%;
+    }
+
+    .intro-tekst {
+        max-width: 300px;
     }
 }
