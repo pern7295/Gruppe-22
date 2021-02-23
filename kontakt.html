@@ -36,11 +36,13 @@
         border-radius: 3px;
         background-color: #4C0D0C;
         padding: 4px;
-        width: 20vw;
+        width: 18vw;
         color: white;
         border: 0;
+        margin-right: 0.8vw;
         text-align: center;
         cursor: pointer;
+        float: right;
         /*        Stå nederst til venstre*/
     }
 
@@ -52,7 +54,7 @@
     h1 {
         /*        margin: 5vw;*/
         text-align: center;
-        margin-top: 4vw;
+        margin-top: 0;
     }
 
 
@@ -106,6 +108,10 @@
         margin: 2px;
     }
 
+    input {
+        width: 20vw
+    }
+
     label {
         font-family: span, serif;
         padding: 2px;
@@ -137,12 +143,13 @@
         height: 100vh;
     }
 
-    /*
-#boxomindhold {
-width: 80%;
-background-color: white;
-}
-*/
+    #boxomindhold {
+        width: 80%;
+        background-color: white;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
     @media (min-width: 800px) {
 
@@ -206,7 +213,6 @@ background-color: white;
             margin-top: -5vw;
         }
     }
-
 </style>
 
 <body>
@@ -252,7 +258,7 @@ background-color: white;
             <br><br>
             <section class="splash"></section>
             <!--            <img id="splashkontakt" src="img/vinbillede.jpg" alt="Billede af hvidvinflaske og to glas på et picninctæppe, med kurv og tæppe ved siden af">-->
-            <div id="boxomindhold">
+            <section id="boxomindhold">
                 <div>
                     <h1>Kontakt</h1>
                     <div class="line"></div>
@@ -284,26 +290,24 @@ background-color: white;
                         <form class="formular">
                             <h2>Udfyld kontaktformularen her:</h2>
 
-                            <label for="fname">Fornavn:</label>
                             <input type="text" id="fname" name="efternavn" placeholder="Dit fornavn..">
                             <br><br>
-                            <label for="lname">Efternavn:</label>
+
                             <input type="text" id="lname" name="efternavn" placeholder="Dit efternavn..">
                             <br><br>
-                            <label for="country">Land:</label>
+
+                            <input type="text" id="mail" name="E-mail" placeholder="Din e-mail..">
+                            <br><br>
+
+                            <input type="text" id="tlf" name="Telefonnummer" placeholder="Dit telefonnummer..">
+                            <br><br>
                             <select id="country" name="country">
                                 <option value="danmark">Danmark</option>
                                 <option value="sverige">Sverige</option>
                                 <option value="norge">Norge</option>
                             </select>
                             <br><br>
-                            <label for="mail">E-mail:</label>
-                            <input type="text" id="mail" name="E-mail" placeholder="Din e-mail..">
-                            <br><br>
-                            <label for="tlf">Telefonnummer:</label>
-                            <input type="text" id="tlf" name="Telefonnummer" placeholder="Dit telefonnummer..">
-                            <br><br>
-                            <label for="vin">Vin:</label>
+
                             <select id="vin" name="vin">
                                 <option value="vælg">-- Vælg vin --</option>
                                 <option value="rodvin">Afinus</option>
@@ -329,7 +333,7 @@ background-color: white;
                 <div id="text2">
                     <p>Ved henvendelser om reservation af borde, booking af events eller vin, er du velkommen til at kontakte os på tlf.: XXXXXXXX eller mail: info@tornp.dk. Derudover kan du finde os på både Instagram og Facebook, hvor du også kan blive opdateret på de nyeste vine og events, samt gode tilbud og vinsmagninger.</p>
                 </div>
-            </div>
+            </section>
             <!--            Tilføj footer-->
             <footer>
                 <div id="footer_flex">
@@ -366,6 +370,4 @@ background-color: white;
         </div>
     </main>
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
