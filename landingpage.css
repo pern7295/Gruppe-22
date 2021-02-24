@@ -566,8 +566,6 @@
 
  footer {
      margin-top: 4rem;
-     background-color: white;
-     color: black;
  }
 
  @media (min-width:600px) {
@@ -715,8 +713,6 @@
      /*Footer*/
      footer {
          margin-top: 0;
-         background-color: white;
-         color: black;
      }
 
 
