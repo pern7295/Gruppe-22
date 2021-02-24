@@ -69,9 +69,10 @@
                     <h3>26/02/21 Kl. 20.00</h3>
                     <img class="lande_flag" src="img/italy_flag.png" alt="Italiensk_flag">
                     <p>Drøm dig væk til Sydens Sol med de bedste Italienske druer & nyd live musikken hos Torn P.</p>
-                    <p>Vinsmagning af 8 Italienske vine</p>
+                    <p>Vinsmagning af 4 Italienske vine</p>
+                    <br>
                     <p>600 kr. pr. deltager</p>
-                    <button class="indhold_btn">Se vores udvalg af Italienske vine</button>
+                    <button class="indhold_btn">Se vores udvalg</button>
                 </div>
                 <img class="img_1" src="img/events1_border.png" alt="Skænker vin">
                 <img class="img_2" src="img/events2_border.png" alt="Drikker vin">
@@ -80,14 +81,14 @@
                     <h3>13/03/21 Kl. 20.00</h3>
                     <img class="lande_flag" src="img/france_flag.png" alt="Frankrig_flag">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
-                    <button class="indhold_btn">Se vores udvalg af Franske vine</button>
+                    <button class="indhold_btn">Se vores udvalg</button>
                 </div>
                 <div class="indhold_3">
                     <h2>Smag på; Argentina</h2>
                     <h3>10/04/21 Kl. 20.00</h3>
                     <img class="lande_flag" src="img/argentina_flag.png" alt="Italiensk_flag">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
-                    <button class="indhold_btn">Se vores udvalg af Argentinske vine</button>
+                    <button class="indhold_btn">Se vores udvalg</button>
                 </div>
                 <img class="img_3" src="img/events3_border.png" alt="Vinflasker">
             </div>
@@ -127,25 +128,12 @@
     </a>
     <script src="script.js"></script>
     <script>
-        /*document.addEventListener("DOMContentLoaded", start);
+        //Åbner vinudvalgs siden
+        document.querySelector(".indhold_btn").addEventListener("click", goTo);
 
-//Der klikkes på burgermenuen
-function start() {
-document.querySelector("#burgermenu").addEventListener("click", onClickMenu);
-document.querySelector(".tekst").classList.add("splash_ani");
-console.log("Logo animation");
-}
-
-//Når der er klikket på burgermenuen, benyttes css-toggle-classes til at ændre udseende på menuen
-function onClickMenu() {
-document.querySelector("#burgermenu_container").classList.toggle("change");
-document.querySelector(".burgermenu_link").classList.toggle("change");
-document.querySelector(".burger_bck").classList.toggle("change_img");
-document.querySelector("#burger1").classList.toggle("change1");
-document.querySelector("#burger2").classList.toggle("change1");
-document.querySelector("#burger3").classList.toggle("change1");
-document.querySelector("#burger4").classList.toggle("change1");
-}*/
+        function goTo() {
+            window.open("oversigt.html");
+        }
 
     </script>
 </body>
