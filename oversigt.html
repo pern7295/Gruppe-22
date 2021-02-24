@@ -203,6 +203,8 @@
 
         /**/
         const header = document.querySelector("h2");
+
+        /*Til at hente billeder*/
         const medieurl = "https://tema7-763a.restdb.io/media/"
 
         /*Henter apikey fra restdb som bruges til at hente data.*/
@@ -244,7 +246,7 @@
             header.textContent = this.textContent;
         }
 
-        /*Der hentes data fra json som så sendes videre til funktionen VisVine*/
+        /*Der hentes data fra json fra url'en, som så sendes videre til funktionen VisVine*/
         async function loadJSON() {
             const JSONData = await fetch("https://tema7-763a.restdb.io/rest/vinsite", {
                 headers: myHeaders
