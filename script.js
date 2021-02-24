@@ -13,4 +13,9 @@
      document.querySelector("#burger1").classList.toggle("change1");
      document.querySelector("#burger2").classList.toggle("change1");
      document.querySelector("#burger3").classList.toggle("change1");
+
+     document.querySelector("body").classList.toggle("overflow");
  }
+
+
+

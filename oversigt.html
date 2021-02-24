@@ -195,12 +195,13 @@
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
 
-   <!--Back to top knap-->
+    <!--Back to top knap-->
     <a class="gotopbtn" href="#"> <i class="fas fa-angle-up single_ani"></i>
     </a>
 
-    <script>
+    <script src="script.js"></script>
 
+    <script>
         /**/
         const header = document.querySelector("h2");
 
@@ -267,7 +268,8 @@
 
 
             dest.textContent = ""; /*Der tømmes for indhold så der kan komme nyt i.*/
-            vine.forEach(vin => { /*array'et vine løbes igennem og hver vin indsættes i html*/
+            vine.forEach(vin => {
+                /*array'et vine løbes igennem og hver vin indsættes i html*/
 
                 if (filter == vin.land || filter == "alle") {
                     const klon = skabelon.cloneNode(true); /*html template klones og fyldes med indhold*/
@@ -300,7 +302,7 @@
 
 
 
-        document.addEventListener("DOMContentLoaded", start2);
+      /*  document.addEventListener("DOMContentLoaded", start2);
 
         //Der klikkes på burgermenuen
         function start2() {
@@ -317,7 +319,7 @@
             document.querySelector("#burger3").classList.toggle("change1");
             document.querySelector("#burger4").classList.toggle("change1");
 
-        }
+        }*/
 
     </script>
 </body>

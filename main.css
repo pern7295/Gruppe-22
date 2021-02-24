@@ -27,6 +27,9 @@ html {
 }
 
 
+.overflow {
+    overflow: hidden;
+}
 /* --------------------------- Til toppen-knap -----------------------*/
 
 .gotopbtn {
