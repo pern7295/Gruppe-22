@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="alm_menu">
-                <a href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
                 <a href="om_os.html" class="hovereffect">Om os</a>
                 <a href="oversigt.html" class="hovereffect">Udvalg</a>
                 <a href="kontakt.html" class="hovereffect">Kontakt</a>
@@ -116,29 +116,32 @@
     <a class="gotopbtn" href="#"> <i class="fas fa-angle-up single_ani"></i>
     </a>
 
-    <!--<a class="gotopbtn" href="#"> <i class="fas fa-chevron-down"></i>
-    </a>-->
-
-
     <script src="script.js"></script>
     <script>
+        /* ----- Øverst i scriptet hentes alle URL-parameterne ud ------ */
         const urlParams = new URLSearchParams(window.location.search);
-        const id = urlParams.get("id");
+        const id = urlParams.get("id"); /* ----- Parameteret fra url-strengen bliver overført til en variabel der kan bruges i scriptet ------ */
 
+        /* Henter billeder fra restdb */
         const medieurl = "https://tema7-763a.restdb.io/media/";
-        let vin;
-        const myHeaders = {
 
+        /*Defineret variablen vin, som skal bruges i senere funktioner*/
+        let vin;
+
+        /*Henter apikey fra restdb som bruges til at hente data.*/
+        const myHeaders = {
             "x-apikey": "602e5f605ad3610fb5bb6308"
         }
-
-
         console.log("id", id);
+
+        /*Når siden er loadet går funktionen loadJSON igang.*/
         document.addEventListener("DOMContentLoaded", loadJSON);
 
 
+        /*Der hentes data fra json fra url'en, som sendes videre til funktionen visVin*/
         async function loadJSON() {
             console.log(loadJSON);
+            /*Her sættes id'et der hentes fra url-parameterne ind i vores kald og modtager kun en post*/
             const JSONData = await fetch(`https://tema7-763a.restdb.io/rest/vinsite/${id}`, {
                 headers: myHeaders
             });
@@ -148,9 +151,8 @@
             console.log("Vine", vin);
             visVin(vin);
         }
-
+        /*Her sættes hver vores indhold fra restdb ind i html så kan blive vist på sitet. Da vi kun får en post, skal den bare hentes og IKKE loopes*/
         function visVin() {
-
             document.querySelector(".billede").src = medieurl + vin.billede;
             document.querySelector(".navn").textContent = vin.navn;
             document.querySelector(".vintype").textContent += vin.vintype;
@@ -161,11 +163,11 @@
             document.querySelector(".pris").textContent += `${vin.pris}kr/flaske`;
             document.querySelector(".land_ikon").src = medieurl + vin.land_ikon;
             document.querySelector(".land_billede").src = medieurl + vin.land_billede;
-
+            /*Eventhandler der aktiverer gå-tilbage-funktionen*/
             document.querySelector(".bk_btn").addEventListener("click", tilbageTilListe);
-
         }
 
+        /*Funktion der muliggør at gå tilbage til browserhistorikken*/
         function tilbageTilListe() {
             history.back();
         }
