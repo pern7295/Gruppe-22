@@ -4,10 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vin oversigt</title>
+    <title>Vin oversigt | Torn P</title>
     <link rel="stylesheet" href="oversigt.css">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <link rel="icon" type="image/png" href="img/logo.png">
 
     <style>
 
@@ -21,10 +25,18 @@
         <nav id="overordnet-nav">
 =======
     <header class="p_header">
+        <!--Primære Navigation på siden-->
         <nav id="overordnet-nav">
+<<<<<<< HEAD
             <img src="img/logo.png" alt="" class="logo2">
 >>>>>>> fealles_passion/master
+=======
+
+            <!--Logo og BurgerMenu til mobil version-->
+            <a href="index.html" class="fjerpad"><img src="img/logo.png" alt="" class="logo2"></a>
+>>>>>>> fealles_passion/master
             <div id="burgermenu">
+               <!--Stregerne til burgermenuen-->
                 <div id="burgermenu_container">
                     <div id="bar1" class="bar"></div>
                     <div id="bar2" class="bar"></div>
@@ -37,6 +49,7 @@
                     <a href="index.html">Om os</a>
 =======
 
+            <!--Links til undersider i burgermenu-->
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
                     <a href="om_os.html">Om os</a>
@@ -46,7 +59,7 @@
                     <a href="oversigt.html">Udvalg</a>
                 </div>
                 <div id="burger3" class="burger_link">
-                    <a href="#">Kontakt</a>
+                    <a href="kontakt.html">Kontakt</a>
                 </div>
 <<<<<<< HEAD
             </div>
@@ -61,24 +74,29 @@
                     <a href="events.html">Events</a>
                 </div>
             </div>
+
+            <!--Baggrund på burgermenu, ved klik-->
+            <div id="burger_bck" class="burger_bck"></div>
+
+            <!--Navigation til web version-->
             <div class="alm_menu">
-                <a href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
                 <a href="om_os.html" class="hovereffect">Om os</a>
                 <a href="oversigt.html" class="hovereffect">Udvalg</a>
                 <a href="kontakt.html" class="hovereffect">Kontakt</a>
                 <a href="events.html" class="hovereffect">Events</a>
 >>>>>>> fealles_passion/master
             </div>
-            <!--Baggrund på burgermenu, ved klik-->
-            <div id="burger_bck" class="burger_bck"></div>
+
+
         </nav>
 
     </header>
 
 
     <main>
-        <!--<h2>Alle</h2>-->
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         <div class="pic">
             <br>
@@ -161,16 +179,21 @@
             </footer>
         </div>
 =======
+=======
+        <!--Splashbillede (ligger i css som background)-->
+>>>>>>> fealles_passion/master
         <section class="splash"></section>
 
 
-
+        <!--Sekunderdær filtrering med h2 og p over.-->
         <nav id="filtrering-nav">
             <h2 class="vin-overskrift">Vin</h2>
             <p class="intro-tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iure sed beatae ducimus amet. Non minima in corporis sunt quidem quia hic earum rerum tempore aliquid ipsum, nesciunt eius natus deserunt! Cumque, harum possimus commodi </p>
 
+
             <div class="button_flex">
 
+                <!--Filteringsknapper med data attributter-->
                 <div class="flexiii">
                     <button data-land="alle" class="valgt">Alle vin</button>
 
@@ -197,7 +220,7 @@
             </div>
 
 
-
+            <!--Dropdown menu til mobilversion af sekundær filtrering-->
             <div class="dropdown">
                 <button class="dropbtn">Vælg Land</button>
                 <div class="dropdown-content">
@@ -237,7 +260,7 @@
 
 
 
-
+        <!--Template til html skabelon med enkelte vine og deres kategorier.-->
         <template>
             <article class="wines" class="wines-pic">
                 <img src="" alt="" class="billede">
@@ -252,6 +275,7 @@
 >>>>>>> fealles_passion/master
     </main>
     <footer>
+
         <div id="footer_flex">
             <div class="col_1">
                 <h4>Åbningstider</h4>
@@ -278,22 +302,38 @@
                 <p>godvin@email.dk</p>
             </div>
         </div>
+
+
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
+
+    <!--Back to top knap-->
+    <a class="gotopbtn" href="#"> <i class="fas fa-angle-up single_ani"></i>
+    </a>
+
+    <script src="script.js"></script>
+
     <script>
+        /**/
         const header = document.querySelector("h2");
+
+        /*Til at hente billeder*/
         const medieurl = "https://tema7-763a.restdb.io/media/"
 
+        /*Henter apikey fra restdb som bruges til at hente data.*/
         const myHeaders = {
 
             "x-apikey": "602e5f605ad3610fb5bb6308"
         }
 
+        /*Når siden er loadet går funktionen start igang.*/
         document.addEventListener("DOMContentLoaded", start);
 
+        /*Deifneret variablerne vine og filter som skal bruges i de næste funktioner*/
         let vine;
         let filter = "alle";
 
+        /*Filterknapper bliver defineret som en konstant og der gøres så man kan klikke på filter knapperne*/
         function start() {
             console.log(start);
 
@@ -305,6 +345,7 @@
 
         }
 
+        /*/*Her startes funktionen hvor filter knapperne skifter i forhold til hvad man trykker på og viser dens indhold.*/
         function filtrerVine() {
             console.log(filtrerVine);
 
@@ -318,6 +359,7 @@
             header.textContent = this.textContent;
         }
 
+        /*Der hentes data fra json fra url'en, som så sendes videre til funktionen VisVine*/
         async function loadJSON() {
             const JSONData = await fetch("https://tema7-763a.restdb.io/rest/vinsite", {
                 headers: myHeaders
@@ -329,6 +371,7 @@
 
         }
 
+        /*Her sættes hver vin ind i html så det blive vist på sitet. der bliver defineret to konstanter, dest og skabelon.*/
         function visVine() {
             console.log(visVine);
 
@@ -336,31 +379,26 @@
             const skabelon = document.querySelector("template").content;
 
 
-            dest.textContent = "";
+            dest.textContent = ""; /*Der tømmes for indhold så der kan komme nyt i.*/
             vine.forEach(vin => {
+                /*array'et vine løbes igennem og hver vin indsættes i html*/
 
                 if (filter == vin.land || filter == "alle") {
-                    const klon = skabelon.cloneNode(true);
+                    const klon = skabelon.cloneNode(true); /*html template klones og fyldes med indhold*/
 
                     klon.querySelector(".billede").src = medieurl + vin.billede;
                     klon.querySelector(".navn").textContent = vin.navn;
                     klon.querySelector(".vintype").textContent = "Vintype:" + " " + vin.vintype;
                     klon.querySelector(".land").textContent = "Land:" + " " + vin.land;
-                    /*    klon.querySelector(".druesort").textContent = vin.druesort;
-                        klon.querySelector(".aargang").textContent = vin.aargang;*/
-                    /*klon.querySelector(".beskrivelse").textContent = vin.beskrivelse;*/
                     klon.querySelector(".pris").textContent = "Pris:" + " " + vin.pris + ",-";
-                    /* klon.querySelector(".land_ikon").src = vin.land_ikon;
-                     klon.querySelector(".land_billede").src = medieurl + vin.land_billede;*/
 
+                    klon.querySelector(".wines").addEventListener("click", () => visDetaljer(vin)); /*Går videre til funktion visDetaljer der viser en single*/
 
-
-                    klon.querySelector(".wines").addEventListener("click", () => visDetaljer(vin));
-
-                    dest.appendChild(klon);
+                    dest.appendChild(klon); /*klonen tilføjes til DOM*/
                 }
             })
 
+            /*Funktionen visDetaljer linker til en ny location via linket til singlepage sitet vha. id*/
             function visDetaljer(hvilken) {
                 location.href = `singleView.html?id=${hvilken._id}`;
             }
@@ -369,7 +407,9 @@
 <<<<<<< HEAD
 =======
 
-        document.addEventListener("DOMContentLoaded", start2);
+
+
+      /*  document.addEventListener("DOMContentLoaded", start2);
 
         //Der klikkes på burgermenuen
         function start2() {
@@ -384,7 +424,9 @@
             document.querySelector("#burger1").classList.toggle("change1");
             document.querySelector("#burger2").classList.toggle("change1");
             document.querySelector("#burger3").classList.toggle("change1");
-        }
+            document.querySelector("#burger4").classList.toggle("change1");
+
+        }*/
 
 >>>>>>> fealles_passion/master
     </script>

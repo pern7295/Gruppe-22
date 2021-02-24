@@ -4,16 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+    <title>Events | Torn P</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="landingpage.css">
+    <!--Fonts-->
     <link rel="stylesheet" href="https://use.typekit.net/ddc5nrl.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
 </head>
 
 <body>
     <header class="p_header">
         <nav id="overordnet-nav">
-            <img src="img/logo.png" alt="" class="logo2">
+            <a href="index.html" class="fjerpad"><img src="img/logo.png" alt="" class="logo2"></a>
             <div id="burgermenu">
                 <div id="burgermenu_container">
                     <div id="bar1" class="bar"></div>
@@ -24,24 +30,24 @@
 
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
-                    <a href="index.html">Om os</a>
+                    <a href="om_os.html">Om os</a>
                 </div>
                 <div id="burger2" class="burger_link">
                     <a href="oversigt.html">Udvalg</a>
                 </div>
                 <div id="burger3" class="burger_link">
-                    <a href="#">Kontakt</a>
+                    <a href="kontakt.html">Kontakt</a>
                 </div>
                 <div id="burger4" class="burger_link">
                     <a href="events.html">Events</a>
                 </div>
             </div>
             <div class="alm_menu">
-                <a class="nav_logo" href="index.html"><img src="img/logo.png" alt="Logo"></a>
-                <a href="om_os.html">Om os</a>
-                <a href="oversigt.html">Udvalg</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="events.html">Events</a>
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                <a href="om_os.html" class="hovereffect">Om os</a>
+                <a href="oversigt.html" class="hovereffect">Udvalg</a>
+                <a href="kontakt.html" class="hovereffect">Kontakt</a>
+                <a href="events.html" class="hovereffect">Events</a>
             </div>
             <!--Baggrund på burgermenu, ved klik-->
             <div id="burger_bck" class="burger_bck"></div>
@@ -49,45 +55,46 @@
 
     </header>
 
-    <section id="section_1">
-        <div class="baggrunds_billede"></div>
-        <div class="tekst">
-            <h1>Events</h1>
-            <p>Vi afholder diverse events i løbet af året, bla. vinsmagning på udvalgte vine. Vores events holdes i vores altid hyggelige vinbar, med behagelig live musik & hyggelig stemning.</p>
+    <section id="grid_container">
+        <div id="section_1">
+            <div class="tekst">
+                <h1>Events</h1>
+                <p>Vi afholder diverse events i løbet af året, bla. vinsmagning på udvalgte vine. Vores events holdes i vores altid hyggelige vinbar, med behagelig live musik & hyggelig stemning.</p>
+            </div>
         </div>
-    </section>
-    <section id="section_2">
-        <div class="event">
-            <div class="indhold_1">
-                <h2>Smag på; Italien</h2>
-                <h3>26/02/21 Kl. 20.00</h3>
-                <img class="lande_flag" src="img/italy_flag.png" alt="Italiensk_flag">
-                <p>Drøm dig væk til Sydens Sol med de bedste Italienske druer & nyd live musikken hos Torn P.</p>
-                <p>Vinsmagning af 8 Italienske vine</p>
-                <p>600 kr. pr. deltager</p>
-                <button class="indhold_btn">Se vores udvalg af Italienske vine</button>
+        <div id="section_2">
+            <div class="events">
+                <div class="indhold_1">
+                    <h2>Smag på; Italien</h2>
+                    <h3>26/02/21 Kl. 20.00</h3>
+                    <img class="lande_flag" src="img/italy_flag.png" alt="Italiensk_flag">
+                    <p>Drøm dig væk til Sydens Sol med de bedste Italienske druer & nyd live musikken hos Torn P.</p>
+                    <p>Vinsmagning af 4 Italienske vine</p>
+                    <br>
+                    <p>600 kr. pr. deltager</p>
+                    <button class="indhold_btn">Se vores udvalg</button>
+                </div>
+                <img class="img_1" src="img/events1_border.png" alt="Skænker vin">
+                <img class="img_2" src="img/events2_border.png" alt="Drikker vin">
+                <div class="indhold_2">
+                    <h2>Smag på; Frankrig</h2>
+                    <h3>13/03/21 Kl. 20.00</h3>
+                    <img class="lande_flag" src="img/france_flag.png" alt="Frankrig_flag">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
+                    <button class="indhold_btn">Se vores udvalg</button>
+                </div>
+                <div class="indhold_3">
+                    <h2>Smag på; Argentina</h2>
+                    <h3>10/04/21 Kl. 20.00</h3>
+                    <img class="lande_flag" src="img/argentina_flag.png" alt="Italiensk_flag">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
+                    <button class="indhold_btn">Se vores udvalg</button>
+                </div>
+                <img class="img_3" src="img/events3_border.png" alt="Vinflasker">
             </div>
-            <img class="img_1" src="img/events1_border.png" alt="Skænker vin">
-            <img class="img_2" src="img/events2_border.png" alt="Drikker vin">
-            <div class="indhold_2">
-                <h2>Smag på; Frankrig</h2>
-                <h3>13/03/21 Kl. 20.00</h3>
-                <img class="lande_flag" src="img/france_flag.png" alt="Frankrig_flag">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
-                <button class="indhold_btn">Se vores udvalg af Franske vine</button>
-            </div>
-            <div class="indhold_3">
-                <h2>Smag på; Argentina</h2>
-                <h3>10/04/21 Kl. 20.00</h3>
-                <img class="lande_flag" src="img/argentina_flag.png" alt="Italiensk_flag">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellendus debitis et, aliquid laudantium cum fuga cupiditate pariatur perspiciatis. Ad?</p>
-                <button class="indhold_btn">Se vores udvalg af Argentinske vine</button>
-            </div>
-            <img class="img_3" src="img/events3_border.png" alt="Vinflasker">
         </div>
 
     </section>
-    <div class="lang_line"></div>
     <footer>
         <div id="footer_flex">
             <div class="col_1">
@@ -117,25 +124,15 @@
         </div>
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
+    <a class="gotopbtn" href="#"> <i class="fas fa-angle-up single_ani"></i>
+    </a>
+    <script src="script.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", start);
+        //Åbner vinudvalgs siden
+        document.querySelector(".indhold_btn").addEventListener("click", goTo);
 
-        //Der klikkes på burgermenuen
-        function start() {
-            document.querySelector("#burgermenu").addEventListener("click", onClickMenu);
-            document.querySelector(".tekst").classList.add("splash_ani");
-            console.log("Logo animation");
-        }
-
-        //Når der er klikket på burgermenuen, benyttes css-toggle-classes til at ændre udseende på menuen
-        function onClickMenu() {
-            document.querySelector("#burgermenu_container").classList.toggle("change");
-            document.querySelector(".burgermenu_link").classList.toggle("change");
-            document.querySelector(".burger_bck").classList.toggle("change_img");
-            document.querySelector("#burger1").classList.toggle("change1");
-            document.querySelector("#burger2").classList.toggle("change1");
-            document.querySelector("#burger3").classList.toggle("change1");
-            document.querySelector("#burger4").classList.toggle("change1");
+        function goTo() {
+            window.open("oversigt.html");
         }
 
     </script>

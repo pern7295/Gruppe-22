@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Forside | Torn P</title>
     <link rel="stylesheet" href="landingpage.css">
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <style>
-    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/ddc5nrl.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 
 <body id="body_lp">
@@ -56,26 +56,21 @@
         </nav>
     </header>
     <main id="landing_page">
-        <div class="grid">
-            <!-- Splashbillede i mobil & tablet -->
-            <div class="splash"></div>
-            <!-- Video baggrund i desktop -->
-            <div class="video">
-                <video id="videoBG" autoplay muted loop>
-                    <source src="http://nicolinechristiansen.dk/kea/vinoVid.mp4" type="video/mp4">
-                    <!--http://nicolinechristiansen.dk/kea/forsideVid_vin.mp4 alternativ video-->
-                    <!--http://nicolinechristiansen.dk/kea/vino_vid.mp4 mørk video-->
-                </video>
-            </div>
-            <!-- Logo overlay på video-->
-
-            <div class="overlay_logo"></div>
-            <div class="overlay_tekst"></div>
-            <button class="ca_knap"> <a href="oversigt.html">Udforsk udvalget</a></button>
+        <!-- Logo overlay på video-->
+        <div class="overlay_logo"></div>
+        <div class="overlay_tekst"></div>
+        <button class="ca_knap"> <a href="oversigt.html">Udforsk udvalget</a></button>
+        <!-- Splashbillede i mobil & tablet -->
+        <div class="splash"></div>
+        <!-- Video baggrund i desktop -->
+        <div class="video">
+            <video id="videoBG" autoplay muted loop>
+                <source src="http://nicolinechristiansen.dk/kea/vinoVid.mp4" type="video/mp4">
+                <!--http://nicolinechristiansen.dk/kea/forsideVid_vin.mp4 alternativ video-->
+                <!--http://nicolinechristiansen.dk/kea/vino_vid.mp4 mørk video-->
+            </video>
         </div>
     </main>
-    <footer></footer>
-    <!--<script src=""></script>-->
     <script>
         document.addEventListener("DOMContentLoaded", start);
         //Overlay Logo fader ind på landing page
@@ -101,5 +96,8 @@
             document.querySelector("#burger2").classList.toggle("change1");
             document.querySelector("#burger3").classList.toggle("change1");
         }
+
     </script>
-</body></html>
+</body>
+
+</html>

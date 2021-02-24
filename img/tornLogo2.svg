@@ -1,0 +1,59 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="600" height="290.26" viewBox="0 0 600 290.26">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-7 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        font-size: 127px;
+        fill: #cec1a7;
+        font-family: Span-Regular, Span;
+        letter-spacing: -0.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0.05em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0.05em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0.06em;
+      }
+
+      .cls-6 {
+        letter-spacing: -0.03em;
+      }
+
+      .cls-7 {
+        font-size: 60px;
+        font-family: SofiaPro-ExtraLight, Sofia Pro;
+        font-weight: 200;
+        letter-spacing: 0.1em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0.1em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0.07em;
+      }
+
+      .cls-10 {
+        fill: #4b0e0c;
+      }
+    </style>
+  </defs>
+  <g id="Torn_P_s" data-name="Torn P s" class="cls-1">
+    <text class="cls-2" transform="translate(54.19 158.11)">T<tspan class="cls-3" x="77.72" y="0">o</tspan><tspan class="cls-4" x="151.38" y="0">rn </tspan><tspan class="cls-5" x="324.73" y="0">P</tspan><tspan class="cls-6" x="407.15" y="0">’</tspan><tspan class="cls-4" x="430.14" y="0">s</tspan></text>
+  </g>
+  <g id="Vinbar" class="cls-1">
+    <text class="cls-7" transform="translate(204.19 226.52)">V<tspan class="cls-8" x="37.86" y="0">inba</tspan><tspan class="cls-9" x="183.06" y="0">r</tspan></text>
+  </g>
+  <rect id="Rectangle_146" data-name="Rectangle 146" class="cls-10" x="39.5" y="39.49" width="521" height="14"/>
+  <rect id="Rectangle_146-2" data-name="Rectangle 146" class="cls-10" x="44.23" y="236.45" width="521" height="14"/>
+</svg>

@@ -5,9 +5,6 @@
     margin: 0;
     padding: 0;
 }
-html {
-    scroll-behavior: smooth;
-}
 body {
     background-color: #F2F6F7;
     cursor: default;
@@ -23,6 +20,7 @@ body {
 .bk_btn,
 article {
     grid-area: 1 / 1;
+    /* Muliggør placering af elementer ovenpå hinanden alt efter html-rækkefølge */
 }
 
 /* --------------------- Selve artiklen (generelt) -------------------*/
@@ -32,7 +30,9 @@ article {
     margin-left: 10%;
     margin-bottom: 6%;
     place-self: left center;
+    /* Placering af artikl i grid-area */
     background-color: rgba(241, 239, 234, 0.67);
+    /* Baggrundsfarve med opacity så kort kan ses */
     text-transform: uppercase;
     color: #000;
     font-size: 1.5rem;
@@ -72,6 +72,7 @@ article img {
     text-align: right;
     cursor: pointer;
     padding-right: 2%;
+    z-index: 999;
 }
 .bk_btn:hover {
     transform: translateX(-20%);
@@ -106,6 +107,28 @@ article .pris {
     padding: 10px;
     cursor: pointer;
     width: 20%;
+}
+.buy_btn:hover {
+    transform: scale(1.1);
+}
+
+/* Animation af indhold ved load */
+
+.single_ani {
+    animation-name: single_ani_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+@keyframes single_ani_kf {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* -------------- To ens kolonner ved siden af hinanden --------------*/
@@ -151,6 +174,7 @@ article .pris {
     .row {
         display: block;
     }
+    /* Placerer artikel i midten af grid-area */
     article {
         place-self: center center;
         max-width: 80%;
@@ -163,7 +187,7 @@ article .pris {
 @media screen and (max-width: 700px) {
     .bk_btn {
         max-width: 20%;
-        max-height: 7%;
+        max-height: 5%;
     }
 }
 @media screen and (max-width: 424px) {

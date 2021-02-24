@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singleview</title>
+    <title>Singleview | Torn P</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="singleView.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
 
 <<<<<<< HEAD
     <style>
@@ -107,7 +108,11 @@
 <body>
     <header class="p_header">
         <nav id="overordnet-nav">
+<<<<<<< HEAD
             <img src="img/logo.png" alt="" class="logo2">
+>>>>>>> fealles_passion/master
+=======
+            <a href="index.html" class="fjerpad"><img src="img/logo.png" alt="" class="logo2"></a>
 >>>>>>> fealles_passion/master
             <div id="burgermenu">
                 <div id="burgermenu_container">
@@ -122,16 +127,20 @@
 >>>>>>> fealles_passion/master
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
-                    <a href="index.html">Om os</a>
+                    <a href="om_os.html">Om os</a>
                 </div>
                 <div id="burger2" class="burger_link">
                     <a href="oversigt.html">Udvalg</a>
                 </div>
                 <div id="burger3" class="burger_link">
-                    <a href="#">Kontakt</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <div id="burger4" class="burger_link">
+                    <a href="events.html">Events</a>
                 </div>
             </div>
             <div class="alm_menu">
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <a href="#">Om os</a>
                 <a href="oversigt.html">Udvalg</a>
@@ -145,6 +154,13 @@
                 <a href="kontakt.html">Kontakt</a>
                 <a href="#">Events</a>
 >>>>>>> fealles_passion/master
+=======
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                <a href="om_os.html" class="hovereffect">Om os</a>
+                <a href="oversigt.html" class="hovereffect">Udvalg</a>
+                <a href="kontakt.html" class="hovereffect">Kontakt</a>
+                <a href="events.html" class="hovereffect">Events</a>
+>>>>>>> fealles_passion/master
             </div>
             <!--Baggrund på burgermenu, ved klik-->
             <div id="burger_bck" class="burger_bck"></div>
@@ -155,8 +171,8 @@
 
     <main>
         <div class="single_container">
-            <img src="#" alt="" class="land_billede">
-            <article class="wines">
+            <img src="#" alt="" class="land_billede single_ani">
+            <article class="wines single_ani">
                 <img src="#" alt="" class="land_ikon">
                 <h3 class="navn"></h3>
                 <img src="#" alt="" class="billede">
@@ -176,7 +192,7 @@
                 <p class="pris"> </p>
                 <button class="buy_btn">Køb</button>
             </article>
-            <button class="bk_btn">Tilbage til oversigt</button>
+            <button class="bk_btn btn_ani">Tilbage til oversigt</button>
 
         </div>
 
@@ -213,29 +229,35 @@
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
 
-    <a class="gotopbtn" href="#"> <i class="fas fa-angle-up"></i>
+    <a class="gotopbtn" href="#"> <i class="fas fa-angle-up single_ani"></i>
     </a>
-
 
     <script src="script.js"></script>
     <script>
+        /* ----- Øverst i scriptet hentes alle URL-parameterne ud ------ */
         const urlParams = new URLSearchParams(window.location.search);
-        const id = urlParams.get("id");
+        const id = urlParams.get("id"); /* ----- Parameteret fra url-strengen bliver overført til en variabel der kan bruges i scriptet ------ */
 
+        /* Henter billeder fra restdb */
         const medieurl = "https://tema7-763a.restdb.io/media/";
-        let vin;
-        const myHeaders = {
 
+        /*Defineret variablen vin, som skal bruges i senere funktioner*/
+        let vin;
+
+        /*Henter apikey fra restdb som bruges til at hente data.*/
+        const myHeaders = {
             "x-apikey": "602e5f605ad3610fb5bb6308"
         }
-
-
         console.log("id", id);
+
+        /*Når siden er loadet går funktionen loadJSON igang.*/
         document.addEventListener("DOMContentLoaded", loadJSON);
 
 
+        /*Der hentes data fra json fra url'en, som sendes videre til funktionen visVin*/
         async function loadJSON() {
             console.log(loadJSON);
+            /*Her sættes id'et der hentes fra url-parameterne ind i vores kald og modtager kun en post*/
             const JSONData = await fetch(`https://tema7-763a.restdb.io/rest/vinsite/${id}`, {
                 headers: myHeaders
             });
@@ -245,9 +267,8 @@
             console.log("Vine", vin);
             visVin(vin);
         }
-
+        /*Her sættes hver vores indhold fra restdb ind i html så kan blive vist på sitet. Da vi kun får en post, skal den bare hentes og IKKE loopes*/
         function visVin() {
-
             document.querySelector(".billede").src = medieurl + vin.billede;
             document.querySelector(".navn").textContent = vin.navn;
             document.querySelector(".vintype").textContent += vin.vintype;
@@ -258,11 +279,11 @@
             document.querySelector(".pris").textContent += `${vin.pris}kr/flaske`;
             document.querySelector(".land_ikon").src = medieurl + vin.land_ikon;
             document.querySelector(".land_billede").src = medieurl + vin.land_billede;
-
+            /*Eventhandler der aktiverer gå-tilbage-funktionen*/
             document.querySelector(".bk_btn").addEventListener("click", tilbageTilListe);
-
         }
 
+        /*Funktion der muliggør at gå tilbage til browserhistorikken*/
         function tilbageTilListe() {
             history.back();
         }
