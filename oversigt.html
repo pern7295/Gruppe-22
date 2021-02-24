@@ -195,14 +195,17 @@
         <p class="footer_tekst">Fælles Passion Projekt | Gruppe 22 | 2.semester MMD</p>
     </footer>
 
-   <!--Back to top knap-->
+    <!--Back to top knap-->
     <a class="gotopbtn" href="#"> <i class="fas fa-angle-up single_ani"></i>
     </a>
 
-    <script>
+    <script src="script.js"></script>
 
+    <script>
         /**/
         const header = document.querySelector("h2");
+
+        /*Til at hente billeder*/
         const medieurl = "https://tema7-763a.restdb.io/media/"
 
         /*Henter apikey fra restdb som bruges til at hente data.*/
@@ -230,7 +233,7 @@
 
         }
 
-        /*/*Her startes funktionen hvor filter knapperne skifter i forhold til hvad man trykker på og viser dens indhold.*/*/
+        /*/*Her startes funktionen hvor filter knapperne skifter i forhold til hvad man trykker på og viser dens indhold.*/
         function filtrerVine() {
             console.log(filtrerVine);
 
@@ -244,7 +247,7 @@
             header.textContent = this.textContent;
         }
 
-        /*Der hentes data fra json som så sendes videre til funktionen VisVine*/
+        /*Der hentes data fra json fra url'en, som så sendes videre til funktionen VisVine*/
         async function loadJSON() {
             const JSONData = await fetch("https://tema7-763a.restdb.io/rest/vinsite", {
                 headers: myHeaders
@@ -265,7 +268,8 @@
 
 
             dest.textContent = ""; /*Der tømmes for indhold så der kan komme nyt i.*/
-            vine.forEach(vin => { /*array'et vine løbes igennem og hver vin indsættes i html*/
+            vine.forEach(vin => {
+                /*array'et vine løbes igennem og hver vin indsættes i html*/
 
                 if (filter == vin.land || filter == "alle") {
                     const klon = skabelon.cloneNode(true); /*html template klones og fyldes med indhold*/
@@ -298,7 +302,7 @@
 
 
 
-        document.addEventListener("DOMContentLoaded", start2);
+      /*  document.addEventListener("DOMContentLoaded", start2);
 
         //Der klikkes på burgermenuen
         function start2() {
@@ -315,7 +319,7 @@
             document.querySelector("#burger3").classList.toggle("change1");
             document.querySelector("#burger4").classList.toggle("change1");
 
-        }
+        }*/
 
     </script>
 </body>

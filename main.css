@@ -27,6 +27,9 @@ html {
 }
 
 
+.overflow {
+    overflow: hidden;
+}
 /* --------------------------- Til toppen-knap -----------------------*/
 
 .gotopbtn {
@@ -215,10 +218,6 @@ footer h4 {
         height: 6rem;
         margin: auto;
     }
-
-    /*.fjerpad {
-        padding: 0;
-    }*/
 
     /*Burgermenu vist*/
     #burgermenu {
