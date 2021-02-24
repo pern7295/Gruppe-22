@@ -34,10 +34,12 @@
         #bar1 {
             transform: translateY(-1rem);
         }
+        /*Barens position, før klik*/
 
         #bar3 {
             transform: translateY(1rem);
         }
+        /*Barens position, før klik*/
 
         #burger_bck {
             position: fixed;
@@ -51,35 +53,19 @@
             transform: translateY(0.4rem) rotateZ(-45deg);
             background-color: black;
         }
+        /*Barens position, efter klik*/
 
         .change #bar3 {
             transform: translateY(0rem) rotateZ(45deg);
             background-color: black;
         }
+        /*Barens position, efter klik*/
 
         .change #bar2 {
             display: none;
         }
-        /*------JS-CLASSES, ANIMATION, BURGERMENU-------*/
-
-        .change .bar {
-            background-color: black;
-        }
-
-        .change #bar1 {
-            transform: translateY(0.4rem) rotateZ(-45deg);
-            background-color: black;
-        }
-
-        .change #bar3 {
-            transform: translateY(0rem) rotateZ(45deg);
-            background-color: black;
-        }
-
-        .change #bar2 {
-            display: none;
-        }
-        /*-----------BURGERMENU DISPLAY-----------*/
+        /*Bar 2 forsvinder, ved klik*/
+        /*-----------BURGERMENU LINKS DESIGN-----------*/
 
         .burgermenu_link {
             display: none;
@@ -105,7 +91,7 @@
             display: block;
             padding: 2rem;
         }
-        /*-----------BURGERMENU DESIGN-----------*/
+        /*-----------BURGERMENU-BAGGRUND DESIGN-----------*/
 
         .burger_bck,
         #burgermenu {
@@ -125,6 +111,7 @@
             width: 20%;
             height: 100%;
         }
+        /*Bestemmer på størrelsen af baggrunden der udfoldes*/
 
         .change {
             display: block;
@@ -137,6 +124,7 @@
             animation-timing-function: linear;
             animation-fill-mode: forwards;
         }
+        /*Tilføjer en ease-animation, ved klik*/
 
         @keyframes ease_nav_kf {
             0% {
@@ -154,7 +142,7 @@
 
     <header>
         <nav>
-            <!--Burgermenuen indsættes i en container, med div'er til hver sit ID - de styles med classen "bar-->
+            <!--Burgermenuen indsættes i en container, med div'er til hver sit ID - de styles med classen "bar" - hver div svarer til en række i burgermenuen -->
             <div id="burgermenu">
                 <div id="burgermenu_container">
                     <div id="bar1" class="bar"></div>
@@ -162,7 +150,7 @@
                     <div id="bar3" class="bar"></div>
                 </div>
             </div>
-
+            <!--Links i div'er-->
             <div class="burgermenu_link">
                 <div id="burger1" class="burger_link">
                     <a href="">Indsæt link</a>
@@ -184,6 +172,7 @@
 
 
     <script>
+        //Der ventes på at dommen at loaded
         document.addEventListener("DOMContentLoaded", start);
 
         //Der klikkes på burgermenuen
