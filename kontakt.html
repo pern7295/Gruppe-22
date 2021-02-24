@@ -20,7 +20,7 @@
 
     .formular {
         padding: 2vw;
-        background-color: #ded4c0;
+        background-color: #e8e1d2;
         height: 660px;
         width: 300px;
     }
@@ -157,8 +157,10 @@
 
         form {
             margin-bottom: 2vw;
+            margin-right: 5vw;
         }
 
+        /* ------ Baggrund og splash ------ */
         #boxomindhold {
             width: 92%;
         }
@@ -167,13 +169,13 @@
             width: 97.9vw;
         }
 
-        form {
-            margin-right: 5vw;
-        }
+
 
         /* ------------ Desktopversion --------------- */
 
         @media (min-width: 1000px) {
+
+            /* ------ Tekst ------ */
             #fragt {
                 margin-top: -3vw;
             }
@@ -182,6 +184,7 @@
                 margin-top: -5vw;
             }
 
+            /* ------ Baggrund og splash ------ */
             #boxomindhold {
                 width: 80%;
                 padding: 1vw;
@@ -191,6 +194,7 @@
                 width: 100%;
             }
 
+            /* ------ Formular ------ */
             form {
                 margin-right: 7vw;
             }
@@ -201,6 +205,7 @@
     <main>
         <header class="p_header">
             <nav id="overordnet-nav">
+                <!-------------- Logo og burgermenu ----------------->
                 <a href="index.html" class="fjerpad"><img src="img/logo.png" alt="" class="logo2"></a>
                 <div id="burgermenu">
                     <div id="burgermenu_container">
@@ -224,6 +229,7 @@
                         <a href="events.html">Events</a>
                     </div>
                 </div>
+                <!-------------- Navbar i desktop ----------------->
                 <div class="alm_menu">
                     <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
                     <a href="om_os.html" class="hovereffect">Om os</a>
@@ -235,12 +241,12 @@
                 <div id="burger_bck" class="burger_bck"></div>
             </nav>
         </header>
-
-
+        <!-------------- Baggrund og splash ----------------->
         <div id="baggrund"></div>
         <br><br>
         <section class="splash"></section>
         <section id="boxomindhold">
+            <!-------------- Indhold med h2 og åbningstider + adresse og info ----------------->
             <div>
                 <h2>Kontakt</h2>
             </div>
@@ -248,7 +254,7 @@
                 <div>
                     <div id="tekst">
                         <div class="listek">
-                            <p>Torn P's har åbent følgende dage:</p>
+                            <p>Torn P har åbent følgende dage:</p>
                             <p>Mandag: 10-17</p>
                             <p>Tirsdag: 10-17</p>
                             <p>Onsdag: 10-17</p>
@@ -266,7 +272,7 @@
                         </div>
                     </div>
                 </div>
-                <!--               ------------ Kontaktformular ----------------->
+                <!-------------- Kontaktformular ----------------->
                 <div class="container">
                     <form class="formular">
                         <h3>Udfyld kontaktformularen her:</h3>
@@ -291,7 +297,6 @@
                             <option value="norge">Norge</option>
                         </select>
                         <br><br>
-
                         <select id="vin" name="vin">
                             <option value="vælg">-- Vælg vin --</option>
                             <option value="rodvin">Afinus</option>
@@ -314,12 +319,13 @@
 
                 </div>
             </div>
+            <!-------------- Tekst om henvendelser ----------------->
             <div id="text2">
                 <p>Ved henvendelser om reservation af borde, booking af events eller vin, er du velkommen til at kontakte os på tlf.: XXXXXXXX eller mail: info@tornp.dk. Derudover kan du finde os på både Instagram og Facebook, hvor du også kan blive opdateret på de nyeste vine og events, samt gode tilbud og vinsmagninger.</p>
             </div>
         </section>
     </main>
-    <!--            Tilføj footer-->
+    <!-------------- Footer med generelle informationer ----------------->
     <footer>
 
         <div id="footer_flex">
