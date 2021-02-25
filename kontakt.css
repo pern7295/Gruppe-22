@@ -1,0 +1,201 @@
+ /*  ----------- Styling af formular --------- */
+ form {
+     width: 500px;
+     margin: 0 auto;
+     margin-top: 4vw;
+ }
+
+ .formular {
+     padding: 2vw;
+     background-color: #e8e1d2;
+     height: 720px;
+     width: 300px;
+ }
+
+ input,
+ #country,
+ #vin,
+ #subject {
+     border: 0;
+     padding: 5px;
+ }
+
+ input,
+ textarea {
+     font-family: sofia pro, sans-serif;
+     margin: 2px;
+ }
+
+ input {
+     width: 280px;
+ }
+
+ label {
+     font-family: span, serif;
+     padding: 2px;
+     font-size: 0.8rem;
+     font-weight: 600;
+     margin-left: 1.5vw;
+ }
+
+ textarea {
+     width: 280px;
+ }
+
+ #bestil {
+     border-radius: 3px;
+     background-color: #4C0D0C;
+     padding: 4px;
+     width: 18vw;
+     color: white;
+     border: 0;
+     margin-right: 1.8vw;
+     text-align: center;
+     cursor: pointer;
+     float: right;
+ }
+
+ /*  ------------- Baggrund ----------- */
+ #baggrund {
+     background-color: #E8E5E1;
+     width: 50%;
+ }
+
+ #boxomindhold {
+     width: 80%;
+     background-color: white;
+     margin: auto;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+
+ /*  ------------  Styling af tekst ------------ */
+ h2 {
+     /*        margin: 5vw;*/
+     text-align: center;
+     margin-top: 2vw;
+     margin-bottom: 2vw;
+
+ }
+
+ main p {
+     margin: 5vw;
+     letter-spacing: 1px;
+
+ }
+
+ #text2 {
+     margin: 2vw;
+ }
+
+ /* ------------ Liste med åbningstider + infotekst --------------- */
+
+ .listek {
+     text-align: center;
+ }
+
+
+
+ #afhent {
+     margin-left: 2.5vw;
+
+ }
+
+ /* ------------ Splashbillede --------------- */
+ .splash {
+     background-image: url(img/vinbillede.jpg);
+     background-size: cover;
+     background-position: 70%;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     width: 96.6vw;
+     height: 60vh;
+ }
+
+ /* ------------ Tabletversion --------------- */
+
+ @media (min-width: 800px) {
+
+     /* ------ Grid ------ */
+     .indhold {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 0;
+     }
+
+     /* ------ Tekst ------ */
+     #tekst {
+         margin: 0;
+     }
+
+     #text2 {
+         margin-left: 2.5vw;
+         margin-right: 46vw;
+         margin-top: -15vw
+     }
+
+     .listek {
+         line-height: 0;
+     }
+
+     /* ------ Formular ------ */
+     #bestil {
+         width: 12vw;
+     }
+
+     form {
+         margin-bottom: 2vw;
+         margin-right: 5vw;
+     }
+
+     /* ------ Baggrund og splash ------ */
+     #boxomindhold {
+         width: 92%;
+     }
+
+     .splash {
+         width: 97.9vw;
+     }
+
+     @media (min-width: 900px) {
+         #text2 {
+             margin-top: 0;
+             margin-right: 35vw;
+         }
+     }
+
+
+     /* ------------ Desktopversion --------------- */
+
+     @media (min-width: 1000px) {
+
+         /* ------ Tekst ------ */
+         #fragt {
+             margin-top: -3vw;
+         }
+
+         #text2 {
+             margin-top: -5vw;
+             margin-right: 35vw;
+         }
+
+         /* ------ Baggrund og splash ------ */
+         #boxomindhold {
+             width: 80%;
+             padding: 1vw;
+         }
+
+         .splash {
+             width: 100%;
+         }
+
+         /* ------ Formular ------ */
+         form {
+             margin-right: 7vw;
+         }
+
+         #bestil {
+             margin-right: 0.6vw;
+         }
+     }
