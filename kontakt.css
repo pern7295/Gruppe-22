@@ -157,45 +157,47 @@
      .splash {
          width: 97.9vw;
      }
+ }
 
-     @media (min-width: 900px) {
-         #text2 {
-             margin-top: 0;
-             margin-right: 35vw;
-         }
+ @media (min-width: 900px) {
+     #text2 {
+         margin-top: 0;
+         margin-right: 35vw;
+     }
+ }
+
+
+
+ /* ------------ Desktopversion --------------- */
+
+ @media (min-width: 1000px) {
+
+     /* ------ Tekst ------ */
+     #fragt {
+         margin-top: -3vw;
      }
 
-
-     /* ------------ Desktopversion --------------- */
-
-     @media (min-width: 1000px) {
-
-         /* ------ Tekst ------ */
-         #fragt {
-             margin-top: -3vw;
-         }
-
-         #text2 {
-             margin-top: -5vw;
-             margin-right: 35vw;
-         }
-
-         /* ------ Baggrund og splash ------ */
-         #boxomindhold {
-             width: 80%;
-             padding: 1vw;
-         }
-
-         .splash {
-             width: 100%;
-         }
-
-         /* ------ Formular ------ */
-         form {
-             margin-right: 7vw;
-         }
-
-         #bestil {
-             margin-right: 0.6vw;
-         }
+     #text2 {
+         margin-top: -5vw;
+         margin-right: 35vw;
      }
+
+     /* ------ Baggrund og splash ------ */
+     #boxomindhold {
+         width: 80%;
+         padding: 1vw;
+     }
+
+     .splash {
+         width: 100%;
+     }
+
+     /* ------ Formular ------ */
+     form {
+         margin-right: 7vw;
+     }
+
+     #bestil {
+         margin-right: 0.6vw;
+     }
+ }
