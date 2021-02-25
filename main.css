@@ -129,9 +129,9 @@ header .alm_menu a {
 footer {
     padding: 1.5rem;
     text-align: center;
-    color: white;
+    color: #5d574b;
     margin-top: 1rem;
-    background-color: rgba(34, 34, 46, 0.40);
+    background-color: #CEC1A7;
 }
 
 .footer_tekst {
