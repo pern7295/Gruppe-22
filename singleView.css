@@ -98,7 +98,7 @@ article .pris {
     text-transform: none;
     margin-top: 5%;
 }
-.buy_btn {
+article a {
     border: none;
     color: white;
     font-family: 'sofia pro', sans-serif;
@@ -107,6 +107,12 @@ article .pris {
     padding: 10px;
     cursor: pointer;
     width: 20%;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 0.8rem;
+}
+.buy_btn {
+    margin-bottom: 5%;
 }
 .buy_btn:hover {
     transform: scale(1.1);
