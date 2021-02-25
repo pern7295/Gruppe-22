@@ -174,12 +174,13 @@
  }
 
  .splash {
-     position: relative;
+     position: fixed;
      background-image: url(img/splash_7.jpeg);
      background-size: cover;
      background-position: 80%;
-     width: 100vw;
-     height: 100vh;
+     width: 200vw;
+     height: 100%;
+     object-fit: fill;
  }
 
  /*Logo*/
@@ -327,8 +328,31 @@
          color: #721615;
      }
 
-     /*Splash*/
+     /*Video & splash billede*/
      .splash {
+         display: none;
+     }
+
+     .video {
+         display: block;
+         position: relative;
+         z-index: -1;
+         object-fit: cover;
+         min-width: 100%;
+         min-height: 100%;
+     }
+
+     #videoBG {
+         width: 100%;
+         z-index: -1;
+     }
+
+     .overlay_logo {
+         display: none;
+     }
+
+     /*Splash*/
+     /*.splash {
          position: relative;
          z-index: -1;
          background-image: url(img/splash_7.jpeg);
@@ -336,7 +360,7 @@
          background-position: 30% 50%;
          width: 100vw;
          height: 100vh;
-     }
+     }*/
 
      /* Logo */
 
@@ -397,33 +421,6 @@
          100% {
              opacity: 1;
          }
-     }
-
- }
-
- @media (min-width: 1380px) {
-
-     /*Video & splash billede*/
-     .splash {
-         display: none;
-     }
-
-     .video {
-         display: block;
-         position: relative;
-         z-index: -1;
-         object-fit: cover;
-         min-width: 100%;
-         min-height: 100%;
-     }
-
-     #videoBG {
-         width: 100%;
-         z-index: -1;
-     }
-
-     .overlay_logo {
-         display: none;
      }
 
  }
