@@ -173,7 +173,7 @@ button:hover {
 
 /*Splash billede til baggrund som er fixed. og har en max højde på 60vh-*/
 .splash {
-    background-image: url(img/splashbilledeoversigt.jpg);
+    background-image: url(img/splashbilledeoversigt.webp);
     background-size: cover;
     background-position: 70%;
     background-attachment: fixed;

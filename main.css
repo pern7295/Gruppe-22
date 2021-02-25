@@ -7,6 +7,7 @@ h2 {
 h3 {
     font-family: span, serif;
     font-weight: 600;
+    font-size: 1.5rem;
 }
 
 p {
@@ -128,9 +129,9 @@ header .alm_menu a {
 footer {
     padding: 1.5rem;
     text-align: center;
-    color: white;
+    color: #5d574b;
     margin-top: 1rem;
-    background-color: rgba(34, 34, 46, 0.40);
+    background-color: rgba(206, 193, 167, 0.75);
 }
 
 .footer_tekst {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" type="image/png" href="img/logo.png">
+    <meta name="Description" content="Put your description here.">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 <style>
@@ -198,7 +199,12 @@
             form {
                 margin-right: 7vw;
             }
+
+            #bestil {
+                margin-right: 0.6vw;
+            }
         }
+
 </style>
 
 <body>
@@ -206,7 +212,7 @@
     <header class="p_header">
         <nav id="overordnet-nav">
             <!-------------- Logo og burgermenu ----------------->
-            <a href="index.html" class="fjerpad"><img src="img/logo.png" alt="" class="logo2"></a>
+            <a href="index.html"><img src="img/logo.png" alt="" class="logo2"></a>
             <div id="burgermenu">
                 <div id="burgermenu_container">
                     <div id="bar1" class="bar"></div>
@@ -276,20 +282,22 @@
                 <div class="container">
                     <form class="formular">
                         <h3>Udfyld kontaktformularen her:</h3>
-
+                        <label></label>
                         <input type="text" id="fname" name="efternavn" placeholder="Dit fornavn..">
                         <br><br>
-
+                        <label></label>
                         <input type="text" id="lname" name="efternavn" placeholder="Dit efternavn..">
                         <br><br>
-
+                        <label></label>
                         <input type="text" id="mail" name="E-mail" placeholder="Din e-mail..">
                         <br><br>
-
+                        <label></label>
                         <input type="text" id="tlf" name="Telefonnummer" placeholder="Dit telefonnummer..">
                         <br><br>
+                        <label></label>
                         <input type="text" id="adresse" name="Adresse" placeholder="Din adresse..">
                         <br><br>
+                        <label></label>
                         <select id="country" name="country">
                             <option value="vælg">-- Vælg land --</option>
                             <option value="danmark">Danmark</option>
@@ -297,6 +305,7 @@
                             <option value="norge">Norge</option>
                         </select>
                         <br><br>
+                        <label></label>
                         <select id="vin" name="vin">
                             <option value="vælg">-- Vælg vin --</option>
                             <option value="rodvin">Afinus</option>
@@ -313,6 +322,7 @@
                             <option value="hvidvin">Terres Blanche</option>
                         </select>
                         <br><br>
+                        <label></label>
                         <textarea id="subject" name="subject" placeholder="Skriv besked.." style="height:200px"></textarea>
                         <button id="bestil">Bestil</button>
                     </form>
@@ -365,4 +375,6 @@
 
 
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
