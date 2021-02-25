@@ -131,7 +131,7 @@ footer {
     text-align: center;
     color: #5d574b;
     margin-top: 1rem;
-    background-color: #CEC1A7;
+    background-color: rgba(206, 193, 167, 0.75);
 }
 
 .footer_tekst {
